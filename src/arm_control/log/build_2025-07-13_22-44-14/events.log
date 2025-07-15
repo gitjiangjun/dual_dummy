@@ -1,0 +1,398 @@
+[0.000000] (-) TimerEvent: {}
+[0.000210] (arm_control) JobQueued: {'identifier': 'arm_control', 'dependencies': OrderedDict()}
+[0.000723] (arm_control) JobStarted: {'identifier': 'arm_control'}
+[0.011954] (arm_control) JobProgress: {'identifier': 'arm_control', 'progress': 'cmake'}
+[0.013432] (arm_control) Command: {'cmd': ['/usr/bin/cmake', '/home/jj/dual_dummy/src/arm_control', '-DCMAKE_INSTALL_PREFIX=/home/jj/dual_dummy/src/arm_control/install/arm_control'], 'cwd': '/home/jj/dual_dummy/src/arm_control/build/arm_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jj'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jj'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e6226a51d1a39929c581fd78687394d2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jj'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jj-virtual-machine:@/tmp/.ICE-unix/1212,unix/jj-virtual-machine:/tmp/.ICE-unix/1212'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e6491eb3_5a61_40c8_b622_7e21ecbd9c59'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3YFI92'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.296'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jj/dual_dummy/src/arm_control/build/arm_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e6226a51d1a39929c581fd78687394d2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.032632] (arm_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099135] (-) TimerEvent: {}
+[0.172212] (arm_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.200180] (-) TimerEvent: {}
+[0.206255] (arm_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.209154] (arm_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.216347] (arm_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.228349] (arm_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.244612] (arm_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.288324] (arm_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.289791] (arm_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.300779] (-) TimerEvent: {}
+[0.401909] (-) TimerEvent: {}
+[0.413531] (arm_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.485072] (arm_control) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.502858] (-) TimerEvent: {}
+[0.528671] (arm_control) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[0.560210] (arm_control) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.603933] (-) TimerEvent: {}
+[0.704855] (-) TimerEvent: {}
+[0.805919] (-) TimerEvent: {}
+[0.906906] (-) TimerEvent: {}
+[0.958479] (arm_control) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.007978] (-) TimerEvent: {}
+[1.109001] (-) TimerEvent: {}
+[1.210023] (-) TimerEvent: {}
+[1.310999] (-) TimerEvent: {}
+[1.412068] (-) TimerEvent: {}
+[1.513099] (-) TimerEvent: {}
+[1.588362] (arm_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.614096] (-) TimerEvent: {}
+[1.715123] (-) TimerEvent: {}
+[1.816147] (-) TimerEvent: {}
+[1.828623] (arm_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.859592] (arm_control) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.863092] (arm_control) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.897283] (arm_control) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.897738] (arm_control) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.897845] (arm_control) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.897997] (arm_control) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.917177] (-) TimerEvent: {}
+[1.923103] (arm_control) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.018185] (-) TimerEvent: {}
+[2.030415] (arm_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.093935] (arm_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.094768] (arm_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/jj/dual_dummy/src/arm_control/build/arm_control/rosidl_generator_c>;$<BUILD_INTERFACE:/home/jj/dual_dummy/src/arm_control/build/arm_control/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/jj/dual_dummy/src/arm_control/build/arm_control/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/jj/dual_dummy/src/arm_control/build/arm_control/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/jj/dual_dummy/src/arm_control/build/arm_control/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/jj/dual_dummy/src/arm_control/build/arm_control/rosidl_typesupport_introspection_cpp>;/home/jj/dual_dummy/src/arm_control/build/arm_control/rosidl_generator_c;/home/jj/dual_dummy/src/arm_control/build/arm_control/rosidl_generator_py\n'}
+[2.095047] (arm_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.097521] (arm_control) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.101988] (arm_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.104848] (arm_control) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.118481] (arm_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.118919] (-) TimerEvent: {}
+[2.119133] (arm_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.121620] (arm_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.126179] (arm_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.209337] (arm_control) StdoutLine: {'line': b'-- Generating done\n'}
+[2.219145] (-) TimerEvent: {}
+[2.232580] (arm_control) StdoutLine: {'line': b'-- Build files have been written to: /home/jj/dual_dummy/src/arm_control/build/arm_control\n'}
+[2.246185] (arm_control) CommandEnded: {'returncode': 0}
+[2.250052] (arm_control) JobProgress: {'identifier': 'arm_control', 'progress': 'build'}
+[2.250113] (arm_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jj/dual_dummy/src/arm_control/build/arm_control', '--', '-j4', '-l4'], 'cwd': '/home/jj/dual_dummy/src/arm_control/build/arm_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jj'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jj'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e6226a51d1a39929c581fd78687394d2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jj'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jj-virtual-machine:@/tmp/.ICE-unix/1212,unix/jj-virtual-machine:/tmp/.ICE-unix/1212'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e6491eb3_5a61_40c8_b622_7e21ecbd9c59'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3YFI92'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.296'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jj/dual_dummy/src/arm_control/build/arm_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e6226a51d1a39929c581fd78687394d2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.304931] (arm_control) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.316339] (arm_control) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.320185] (-) TimerEvent: {}
+[2.327789] (arm_control) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_arm_control\n'}
+[2.421234] (-) TimerEvent: {}
+[2.524130] (-) TimerEvent: {}
+[2.626447] (-) TimerEvent: {}
+[2.631588] (arm_control) StdoutLine: {'line': b'running egg_info\n'}
+[2.632905] (arm_control) StdoutLine: {'line': b'creating arm_control.egg-info\n'}
+[2.634056] (arm_control) StdoutLine: {'line': b'writing arm_control.egg-info/PKG-INFO\n'}
+[2.635358] (arm_control) StdoutLine: {'line': b'writing dependency_links to arm_control.egg-info/dependency_links.txt\n'}
+[2.637354] (arm_control) StdoutLine: {'line': b'writing top-level names to arm_control.egg-info/top_level.txt\n'}
+[2.637607] (arm_control) StdoutLine: {'line': b"writing manifest file 'arm_control.egg-info/SOURCES.txt'\n"}
+[2.640241] (arm_control) StdoutLine: {'line': b"reading manifest file 'arm_control.egg-info/SOURCES.txt'\n"}
+[2.641298] (arm_control) StdoutLine: {'line': b"writing manifest file 'arm_control.egg-info/SOURCES.txt'\n"}
+[2.687449] (arm_control) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_arm_control_egg\n'}
+[2.727263] (-) TimerEvent: {}
+[2.828413] (-) TimerEvent: {}
+[2.921451] (arm_control) StdoutLine: {'line': b'[  3%] Built target arm_control__cpp\n'}
+[2.928634] (-) TimerEvent: {}
+[2.935516] (arm_control) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.935793] (arm_control) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.935871] (arm_control) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.028787] (-) TimerEvent: {}
+[3.095575] (arm_control) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/arm_control__rosidl_generator_c.dir/rosidl_generator_c/arm_control/msg/detail/ik_result__functions.c.o\x1b[0m\n'}
+[3.128970] (-) TimerEvent: {}
+[3.162982] (arm_control) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/arm_control__rosidl_generator_c.dir/rosidl_generator_c/arm_control/msg/detail/trajectory_point__functions.c.o\x1b[0m\n'}
+[3.222973] (arm_control) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/arm_control__rosidl_generator_c.dir/rosidl_generator_c/arm_control/msg/detail/control_command__functions.c.o\x1b[0m\n'}
+[3.229216] (-) TimerEvent: {}
+[3.281919] (arm_control) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking C shared library libarm_control__rosidl_generator_c.so\x1b[0m\n'}
+[3.329393] (-) TimerEvent: {}
+[3.343317] (arm_control) StdoutLine: {'line': b'[ 16%] Built target arm_control__rosidl_generator_c\n'}
+[3.359848] (arm_control) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.419748] (arm_control) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/arm_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arm_control/msg/ik_result__type_support.cpp.o\x1b[0m\n'}
+[3.429603] (-) TimerEvent: {}
+[3.449142] (arm_control) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/arm_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arm_control/msg/detail/ik_result__type_support.cpp.o\x1b[0m\n'}
+[3.498860] (arm_control) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/arm_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arm_control/msg/detail/dds_fastrtps/ik_result__type_support.cpp.o\x1b[0m\n'}
+[3.529772] (-) TimerEvent: {}
+[3.632450] (-) TimerEvent: {}
+[3.735647] (-) TimerEvent: {}
+[3.789811] (arm_control) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/arm_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arm_control/msg/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[3.837688] (-) TimerEvent: {}
+[3.938820] (-) TimerEvent: {}
+[4.039449] (arm_control) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/arm_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arm_control/msg/detail/ik_result__type_support_c.cpp.o\x1b[0m\n'}
+[4.040281] (-) TimerEvent: {}
+[4.080612] (arm_control) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/arm_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arm_control/msg/detail/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[4.113632] (arm_control) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/arm_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arm_control/msg/detail/dds_fastrtps/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[4.140959] (-) TimerEvent: {}
+[4.244806] (-) TimerEvent: {}
+[4.345473] (-) TimerEvent: {}
+[4.406519] (arm_control) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/arm_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arm_control/msg/control_command__type_support.cpp.o\x1b[0m\n'}
+[4.446135] (-) TimerEvent: {}
+[4.546864] (-) TimerEvent: {}
+[4.602273] (arm_control) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/arm_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arm_control/msg/detail/trajectory_point__type_support_c.cpp.o\x1b[0m\n'}
+[4.647594] (arm_control) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/arm_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arm_control/msg/detail/control_command__type_support.cpp.o\x1b[0m\n'}
+[4.648023] (-) TimerEvent: {}
+[4.748574] (-) TimerEvent: {}
+[4.761043] (arm_control) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/arm_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arm_control/msg/detail/dds_fastrtps/control_command__type_support.cpp.o\x1b[0m\n'}
+[4.848727] (-) TimerEvent: {}
+[4.875274] (arm_control) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX shared library libarm_control__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.949014] (-) TimerEvent: {}
+[4.999114] (arm_control) StdoutLine: {'line': b'[ 40%] Built target arm_control__rosidl_typesupport_cpp\n'}
+[5.025263] (arm_control) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/arm_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arm_control/msg/detail/control_command__type_support_c.cpp.o\x1b[0m\n'}
+[5.032455] (arm_control) StdoutLine: {'line': b'[ 43%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.049662] (-) TimerEvent: {}
+[5.150029] (-) TimerEvent: {}
+[5.247406] (arm_control) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libarm_control__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[5.250479] (-) TimerEvent: {}
+[5.351667] (-) TimerEvent: {}
+[5.364791] (arm_control) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library libarm_control__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.425596] (arm_control) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking CXX shared library libarm_control__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.452111] (-) TimerEvent: {}
+[5.496200] (arm_control) StdoutLine: {'line': b'[ 49%] Built target arm_control__rosidl_typesupport_fastrtps_cpp\n'}
+[5.498704] (arm_control) StdoutLine: {'line': b'[ 49%] Built target arm_control__rosidl_typesupport_introspection_cpp\n'}
+[5.511626] (arm_control) StdoutLine: {'line': b'[ 50%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.530667] (arm_control) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/ik_node.dir/src/ik_node.cpp.o\x1b[0m\n'}
+[5.552619] (-) TimerEvent: {}
+[5.609827] (arm_control) StdoutLine: {'line': b'[ 52%] Built target arm_control__rosidl_typesupport_fastrtps_c\n'}
+[5.615558] (arm_control) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/arm_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_control/msg/detail/ik_result__type_support.c.o\x1b[0m\n'}
+[5.620665] (arm_control) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/arm_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_control/msg/detail/trajectory_point__type_support.c.o\x1b[0m\n'}
+[5.653079] (-) TimerEvent: {}
+[5.683184] (arm_control) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/arm_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_control/msg/detail/control_command__type_support.c.o\x1b[0m\n'}
+[5.689178] (arm_control) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/trajectory_node.dir/src/trajectory_node.cpp.o\x1b[0m\n'}
+[5.730939] (arm_control) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libarm_control__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.753601] (-) TimerEvent: {}
+[5.781219] (arm_control) StdoutLine: {'line': b'[ 61%] Built target arm_control__rosidl_typesupport_introspection_c\n'}
+[5.811642] (arm_control) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/arm_controller_node.dir/src/controller_node.cpp.o\x1b[0m\n'}
+[5.854101] (-) TimerEvent: {}
+[5.939473] (arm_control) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/arm_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/arm_control/msg/ik_result__type_support.cpp.o\x1b[0m\n'}
+[5.954904] (-) TimerEvent: {}
+[6.001025] (arm_control) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/arm_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/arm_control/msg/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[6.040600] (arm_control) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/arm_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/arm_control/msg/control_command__type_support.cpp.o\x1b[0m\n'}
+[6.055086] (-) TimerEvent: {}
+[6.083318] (arm_control) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libarm_control__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.144279] (arm_control) StdoutLine: {'line': b'[ 70%] Built target arm_control__rosidl_typesupport_c\n'}
+[6.155590] (-) TimerEvent: {}
+[6.173576] (arm_control) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/trajectory_viewer.dir/src/trajectory_viewer.cpp.o\x1b[0m\n'}
+[6.255731] (-) TimerEvent: {}
+[6.357031] (-) TimerEvent: {}
+[6.461131] (-) TimerEvent: {}
+[6.564882] (-) TimerEvent: {}
+[6.665856] (-) TimerEvent: {}
+[6.766563] (-) TimerEvent: {}
+[6.867686] (-) TimerEvent: {}
+[6.968874] (-) TimerEvent: {}
+[7.069930] (-) TimerEvent: {}
+[7.170911] (-) TimerEvent: {}
+[7.273171] (-) TimerEvent: {}
+[7.374136] (-) TimerEvent: {}
+[7.475107] (-) TimerEvent: {}
+[7.578403] (-) TimerEvent: {}
+[7.679625] (-) TimerEvent: {}
+[7.780626] (-) TimerEvent: {}
+[7.881579] (-) TimerEvent: {}
+[7.982676] (-) TimerEvent: {}
+[8.083524] (-) TimerEvent: {}
+[8.184496] (-) TimerEvent: {}
+[8.285436] (-) TimerEvent: {}
+[8.387910] (-) TimerEvent: {}
+[8.488705] (-) TimerEvent: {}
+[8.591583] (-) TimerEvent: {}
+[8.692550] (-) TimerEvent: {}
+[8.793544] (-) TimerEvent: {}
+[8.894513] (-) TimerEvent: {}
+[8.995474] (-) TimerEvent: {}
+[9.096453] (-) TimerEvent: {}
+[9.198329] (-) TimerEvent: {}
+[9.300314] (-) TimerEvent: {}
+[9.401280] (-) TimerEvent: {}
+[9.502337] (-) TimerEvent: {}
+[9.605728] (-) TimerEvent: {}
+[9.708764] (-) TimerEvent: {}
+[9.809824] (-) TimerEvent: {}
+[9.910693] (-) TimerEvent: {}
+[10.011684] (-) TimerEvent: {}
+[10.095236] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/ik_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KIKNode::IKNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.096867] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/ik_node.cpp:49:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kreference to \xe2\x80\x98\x1b[01m\x1b[Kplaceholders\x1b[m\x1b[K\xe2\x80\x99 is ambiguous\n'}
+[10.097052] (arm_control) StderrLine: {'line': b'   49 |             "joint_states", 10, bind(&IKNode::joint_callback, this, \x1b[01;31m\x1b[Kplaceholders\x1b[m\x1b[K::_1));\n'}
+[10.097123] (arm_control) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.097190] (arm_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:265\x1b[m\x1b[K,\n'}
+[10.097256] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[10.097402] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/motionlib.h:4\x1b[m\x1b[K,\n'}
+[10.097473] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/ik_node.cpp:5\x1b[m\x1b[K:\n'}
+[10.097555] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:174:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidates are: \xe2\x80\x98\x1b[01m\x1b[Knamespace Eigen::placeholders { }\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.097630] (arm_control) StderrLine: {'line': b'  174 | namespace \x1b[01;36m\x1b[Kplaceholders\x1b[m\x1b[K {\n'}
+[10.097696] (arm_control) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.097760] (arm_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[10.097826] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[10.097891] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[10.098011] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[10.098083] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[10.098149] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[10.098213] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/ik_node.cpp:1\x1b[m\x1b[K:\n'}
+[10.098277] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:219:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K                \xe2\x80\x98\x1b[01m\x1b[Knamespace std::placeholders { }\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.098343] (arm_control) StderrLine: {'line': b'  219 |   namespace \x1b[01;36m\x1b[Kplaceholders\x1b[m\x1b[K\n'}
+[10.098408] (arm_control) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.114985] (-) TimerEvent: {}
+[10.155067] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/trajectory_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KTrajectoryNode::TrajectoryNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.155333] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/trajectory_node.cpp:19:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kreference to \xe2\x80\x98\x1b[01m\x1b[Kplaceholders\x1b[m\x1b[K\xe2\x80\x99 is ambiguous\n'}
+[10.155408] (arm_control) StderrLine: {'line': b'   19 |             "ik_result", 10, bind(&TrajectoryNode::ik_callback, this, \x1b[01;31m\x1b[Kplaceholders\x1b[m\x1b[K::_1));\n'}
+[10.155475] (arm_control) StderrLine: {'line': b'      |                                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.155541] (arm_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:265\x1b[m\x1b[K,\n'}
+[10.155607] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[10.155689] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/motionlib.h:4\x1b[m\x1b[K,\n'}
+[10.155755] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/trajectory_node.cpp:5\x1b[m\x1b[K:\n'}
+[10.155820] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:174:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidates are: \xe2\x80\x98\x1b[01m\x1b[Knamespace Eigen::placeholders { }\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.155887] (arm_control) StderrLine: {'line': b'  174 | namespace \x1b[01;36m\x1b[Kplaceholders\x1b[m\x1b[K {\n'}
+[10.156044] (arm_control) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.156121] (arm_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[10.156187] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[10.156253] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[10.156318] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[10.156384] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[10.156448] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[10.156513] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/trajectory_node.cpp:1\x1b[m\x1b[K:\n'}
+[10.156651] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:219:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K                \xe2\x80\x98\x1b[01m\x1b[Knamespace std::placeholders { }\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.156730] (arm_control) StderrLine: {'line': b'  219 |   namespace \x1b[01;36m\x1b[Kplaceholders\x1b[m\x1b[K\n'}
+[10.156795] (arm_control) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.160547] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/trajectory_node.cpp:21:77:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kreference to \xe2\x80\x98\x1b[01m\x1b[Kplaceholders\x1b[m\x1b[K\xe2\x80\x99 is ambiguous\n'}
+[10.160848] (arm_control) StderrLine: {'line': b'   21 |             "joint_states", 10, bind(&TrajectoryNode::joint_callback, this, \x1b[01;31m\x1b[Kplaceholders\x1b[m\x1b[K::_1));\n'}
+[10.160993] (arm_control) StderrLine: {'line': b'      |                                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.161249] (arm_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:265\x1b[m\x1b[K,\n'}
+[10.161406] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[10.161533] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/motionlib.h:4\x1b[m\x1b[K,\n'}
+[10.161835] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/trajectory_node.cpp:5\x1b[m\x1b[K:\n'}
+[10.161988] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:174:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidates are: \xe2\x80\x98\x1b[01m\x1b[Knamespace Eigen::placeholders { }\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.162059] (arm_control) StderrLine: {'line': b'  174 | namespace \x1b[01;36m\x1b[Kplaceholders\x1b[m\x1b[K {\n'}
+[10.162124] (arm_control) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.163948] (arm_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[10.164153] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[10.164222] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[10.164288] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[10.164354] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[10.164525] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[10.164593] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/trajectory_node.cpp:1\x1b[m\x1b[K:\n'}
+[10.164659] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:219:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K                \xe2\x80\x98\x1b[01m\x1b[Knamespace std::placeholders { }\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.164726] (arm_control) StderrLine: {'line': b'  219 |   namespace \x1b[01;36m\x1b[Kplaceholders\x1b[m\x1b[K\n'}
+[10.164790] (arm_control) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.216639] (-) TimerEvent: {}
+[10.317574] (-) TimerEvent: {}
+[10.418546] (-) TimerEvent: {}
+[10.521447] (-) TimerEvent: {}
+[10.622418] (-) TimerEvent: {}
+[10.723408] (-) TimerEvent: {}
+[10.824382] (-) TimerEvent: {}
+[10.925353] (-) TimerEvent: {}
+[11.028907] (-) TimerEvent: {}
+[11.129925] (-) TimerEvent: {}
+[11.230868] (-) TimerEvent: {}
+[11.331843] (-) TimerEvent: {}
+[11.432852] (-) TimerEvent: {}
+[11.519840] (arm_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/trajectory_node.dir/build.make:76: CMakeFiles/trajectory_node.dir/src/trajectory_node.cpp.o] Error 1\n'}
+[11.521449] (arm_control) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:626: CMakeFiles/trajectory_node.dir/all] Error 2\n'}
+[11.522516] (arm_control) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[11.533147] (-) TimerEvent: {}
+[11.634797] (-) TimerEvent: {}
+[11.736392] (-) TimerEvent: {}
+[11.837376] (-) TimerEvent: {}
+[11.938360] (-) TimerEvent: {}
+[12.039920] (-) TimerEvent: {}
+[12.140886] (-) TimerEvent: {}
+[12.241898] (-) TimerEvent: {}
+[12.342869] (-) TimerEvent: {}
+[12.444454] (-) TimerEvent: {}
+[12.492028] (arm_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ik_node.dir/build.make:76: CMakeFiles/ik_node.dir/src/ik_node.cpp.o] Error 1\n'}
+[12.492794] (arm_control) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:599: CMakeFiles/ik_node.dir/all] Error 2\n'}
+[12.544662] (-) TimerEvent: {}
+[12.645726] (-) TimerEvent: {}
+[12.746483] (-) TimerEvent: {}
+[12.847686] (-) TimerEvent: {}
+[12.948678] (-) TimerEvent: {}
+[13.053628] (-) TimerEvent: {}
+[13.154500] (-) TimerEvent: {}
+[13.255442] (-) TimerEvent: {}
+[13.356446] (-) TimerEvent: {}
+[13.457345] (-) TimerEvent: {}
+[13.558381] (-) TimerEvent: {}
+[13.659354] (-) TimerEvent: {}
+[13.760310] (-) TimerEvent: {}
+[13.861296] (-) TimerEvent: {}
+[13.962259] (-) TimerEvent: {}
+[14.063200] (-) TimerEvent: {}
+[14.164176] (-) TimerEvent: {}
+[14.265168] (-) TimerEvent: {}
+[14.366119] (-) TimerEvent: {}
+[14.467104] (-) TimerEvent: {}
+[14.568064] (-) TimerEvent: {}
+[14.668815] (-) TimerEvent: {}
+[14.769754] (-) TimerEvent: {}
+[14.870729] (-) TimerEvent: {}
+[14.971683] (-) TimerEvent: {}
+[15.072953] (-) TimerEvent: {}
+[15.174014] (-) TimerEvent: {}
+[15.274997] (-) TimerEvent: {}
+[15.375959] (-) TimerEvent: {}
+[15.476951] (-) TimerEvent: {}
+[15.577903] (-) TimerEvent: {}
+[15.678787] (-) TimerEvent: {}
+[15.779762] (-) TimerEvent: {}
+[15.880799] (-) TimerEvent: {}
+[15.981537] (-) TimerEvent: {}
+[16.082003] (-) TimerEvent: {}
+[16.182806] (-) TimerEvent: {}
+[16.283770] (-) TimerEvent: {}
+[16.384247] (-) TimerEvent: {}
+[16.484687] (-) TimerEvent: {}
+[16.585964] (-) TimerEvent: {}
+[16.686682] (-) TimerEvent: {}
+[16.787293] (-) TimerEvent: {}
+[16.887911] (-) TimerEvent: {}
+[16.988580] (-) TimerEvent: {}
+[17.089511] (-) TimerEvent: {}
+[17.190002] (-) TimerEvent: {}
+[17.290845] (-) TimerEvent: {}
+[17.391751] (-) TimerEvent: {}
+[17.492714] (-) TimerEvent: {}
+[17.593424] (-) TimerEvent: {}
+[17.694086] (-) TimerEvent: {}
+[17.795004] (-) TimerEvent: {}
+[17.896097] (-) TimerEvent: {}
+[17.996611] (-) TimerEvent: {}
+[18.097466] (-) TimerEvent: {}
+[18.198146] (-) TimerEvent: {}
+[18.298841] (-) TimerEvent: {}
+[18.399470] (-) TimerEvent: {}
+[18.500885] (-) TimerEvent: {}
+[18.601617] (-) TimerEvent: {}
+[18.702912] (-) TimerEvent: {}
+[18.803628] (-) TimerEvent: {}
+[18.906954] (-) TimerEvent: {}
+[18.928996] (arm_control) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX executable trajectory_viewer\x1b[0m\n'}
+[19.007261] (-) TimerEvent: {}
+[19.108152] (-) TimerEvent: {}
+[19.208913] (-) TimerEvent: {}
+[19.309550] (-) TimerEvent: {}
+[19.410232] (-) TimerEvent: {}
+[19.514598] (-) TimerEvent: {}
+[19.615446] (-) TimerEvent: {}
+[19.716132] (-) TimerEvent: {}
+[19.757488] (arm_control) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/trajectory_viewer.dir/src/trajectory_viewer.cpp.o: in function `TrajectoryViewer::traj_callback(std::shared_ptr<arm_control::msg::TrajectoryPoint_<std::allocator<void> > >)':\n"}
+[19.757692] (arm_control) StderrLine: {'line': b"trajectory_viewer.cpp:(.text._ZN16TrajectoryViewer13traj_callbackESt10shared_ptrIN11arm_control3msg16TrajectoryPoint_ISaIvEEEE[_ZN16TrajectoryViewer13traj_callbackESt10shared_ptrIN11arm_control3msg16TrajectoryPoint_ISaIvEEEE]+0x124): undefined reference to `forwardKinematics(std::vector<ModifiedDHParameter, std::allocator<ModifiedDHParameter> > const&, Eigen::Matrix<double, -1, 1, 0, -1, 1> const&, int const&)'\n"}
+[19.816860] (-) TimerEvent: {}
+[19.833768] (arm_control) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[19.837190] (arm_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/trajectory_viewer.dir/build.make:184: trajectory_viewer] Error 1\n'}
+[19.837546] (arm_control) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:680: CMakeFiles/trajectory_viewer.dir/all] Error 2\n'}
+[19.917408] (-) TimerEvent: {}
+[20.018271] (-) TimerEvent: {}
+[20.119028] (-) TimerEvent: {}
+[20.219916] (-) TimerEvent: {}
+[20.321424] (-) TimerEvent: {}
+[20.422370] (-) TimerEvent: {}
+[20.523207] (-) TimerEvent: {}
+[20.624143] (-) TimerEvent: {}
+[20.724980] (-) TimerEvent: {}
+[20.825875] (-) TimerEvent: {}
+[20.926740] (-) TimerEvent: {}
+[21.027598] (-) TimerEvent: {}
+[21.100694] (arm_control) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX executable arm_controller_node\x1b[0m\n'}
+[21.127911] (-) TimerEvent: {}
+[21.228510] (-) TimerEvent: {}
+[21.329285] (-) TimerEvent: {}
+[21.430830] (-) TimerEvent: {}
+[21.531471] (-) TimerEvent: {}
+[21.632243] (-) TimerEvent: {}
+[21.732931] (-) TimerEvent: {}
+[21.833637] (-) TimerEvent: {}
+[21.934313] (-) TimerEvent: {}
+[21.955842] (arm_control) StdoutLine: {'line': b'[ 76%] Built target arm_controller_node\n'}
+[21.958477] (arm_control) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[21.965091] (arm_control) CommandEnded: {'returncode': 2}
+[21.983942] (arm_control) JobEnded: {'identifier': 'arm_control', 'rc': 2}
+[21.995611] (-) EventReactorShutdown: {}
