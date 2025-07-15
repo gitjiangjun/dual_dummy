@@ -1,0 +1,2 @@
+有dual_dummy的模型及其配置启动文件
+有ik,controller,trajectory,trajectory_view，四个节点。
