@@ -14,6 +14,8 @@ find_package(geometry_msgs REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(Eigen3 REQUIRED)
+find_package(urdf REQUIRED)
+find_package(kdl_parser REQUIRED)
 
 # 自定义消息生成
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -48,12 +50,16 @@ ament_target_dependencies(ik_node
   rclcpp
   sensor_msgs
   Eigen3
+  urdf
+  kdl_parser
 )
 # 链接自定义消息和motionlib库
 target_link_libraries(ik_node
   ${cpp_typesupport_target}
   Eigen3::Eigen
   motionlib  # 链接运动学库
+  ${urdf_LIBRARIES}
+  ${kdl_parser_LIBRARIES}
 )
 
 # 2. 轨迹规划节点
@@ -108,6 +114,12 @@ install(TARGETS
 # 安装消息和配置文件
 install(DIRECTORY
   msg
+  DESTINATION share/${PROJECT_NAME}
+)
+
+# 安装launch文件
+install(
+  DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}
 )
 

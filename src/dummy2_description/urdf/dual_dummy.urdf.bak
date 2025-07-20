@@ -232,12 +232,12 @@
   <!-- 机械臂关节定义 -->
 
   <joint name="left_base_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.3 -0.2 0"/> <!-- 机械臂偏移位置 -->
+    <origin rpy="0 0 0" xyz="-0.3 -0.2 0.025"/> <!-- 机械臂偏移位置 -->
     <parent link="base_plate"/>
     <child link="left_base_link"/>
   </joint>
   <joint name="left_joint1" type="revolute">
-    <origin rpy="0 0 0" xyz="0 0 0.096"/>
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.096"/>
     <parent link="left_base_link"/>
     <child link="left_link1_1"/>
     <axis xyz="0.0 -0.0 -1.0"/>
@@ -249,7 +249,7 @@
     <parent link="left_link1_1"/>
     <child link="left_link2_1"/>
     <axis xyz="1.0 0.0 -0.0"/>
-    <limit effort="100" lower="-3.570796" upper="3.308997" velocity="100"/>
+    <limit effort="100" lower="-1.570796" upper="1.308997" velocity="100"/>
     <dynamics damping="1" friction="0.05"/> 
   </joint>
   <joint name="left_joint3" type="revolute">
@@ -257,7 +257,7 @@
     <parent link="left_link2_1"/>
     <child link="left_link3_1"/>
     <axis xyz="-1.0 -0.0 -0.0"/>
-    <limit effort="200" lower="-3.500983" upper="3.570796" velocity="100"/>
+    <limit effort="200" lower="-1.500983" upper="1.570796" velocity="100"/>
 
   </joint>
   <joint name="left_joint4" type="revolute">
@@ -273,7 +273,7 @@
     <parent link="left_link4_1"/>
     <child link="left_link5_1"/>
     <axis xyz="-1.0 -0.0 -0.0"/>
-    <limit effort="200" lower="-3.919862" upper="3.094395" velocity="100"/>
+    <limit effort="200" lower="-1.919862" upper="2.094395" velocity="100"/>
     <dynamics damping="0.6" friction="0.06"/> 
   </joint>
   <joint name="left_joint6" type="revolute">
@@ -487,12 +487,12 @@
   <!-- 机械臂关节定义 -->
 
   <joint name="right_base_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0.3 -0.2 0"/> <!-- 机械臂偏移位置 -->
+    <origin rpy="0 0 0" xyz="0.3 -0.2 0.025"/> <!-- 机械臂偏移位置 -->
     <parent link="base_plate"/>
     <child link="right_base_link"/>
   </joint>
   <joint name="right_joint1" type="revolute">
-    <origin rpy="0 0 0" xyz="0 0 0.096"/>
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.096"/>
     <parent link="right_base_link"/>
     <child link="right_link1_1"/>
     <axis xyz="0.0 -0.0 -1.0"/>
@@ -504,7 +504,7 @@
     <parent link="right_link1_1"/>
     <child link="right_link2_1"/>
     <axis xyz="1.0 0.0 -0.0"/>
-    <limit effort="100" lower="-3.570796" upper="3.308997" velocity="100"/>
+    <limit effort="100" lower="-1.570796" upper="1.308997" velocity="100"/>
     <dynamics damping="1" friction="0.05"/> 
   </joint>
   <joint name="right_joint3" type="revolute">
@@ -512,7 +512,7 @@
     <parent link="right_link2_1"/>
     <child link="right_link3_1"/>
     <axis xyz="-1.0 -0.0 -0.0"/>
-    <limit effort="200" lower="-3.500983" upper="3.570796" velocity="100"/>
+    <limit effort="200" lower="-1.500983" upper="1.570796" velocity="100"/>
 
   </joint>
   <joint name="right_joint4" type="revolute">
@@ -528,7 +528,7 @@
     <parent link="right_link4_1"/>
     <child link="right_link5_1"/>
     <axis xyz="-1.0 -0.0 -0.0"/>
-    <limit effort="200" lower="-3.919862" upper="3.094395" velocity="100"/>
+    <limit effort="200" lower="-1.919862" upper="2.094395" velocity="100"/>
     <dynamics damping="0.6" friction="0.06"/> 
   </joint>
   <joint name="right_joint6" type="revolute">

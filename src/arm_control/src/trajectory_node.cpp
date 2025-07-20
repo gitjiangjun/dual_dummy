@@ -18,11 +18,11 @@ public:
         ik_sub_ = this->create_subscription<arm_control::msg::IKResult>(
             "ik_result", 10, bind(&TrajectoryNode::ik_callback, this, std::placeholders::_1));
         joint_sub_ = this->create_subscription<sensor_msgs::msg::JointState>(
-            "joint_states", 10, bind(&TrajectoryNode::joint_callback, this, std::placeholders::_1));
+            "joint_states", 20, bind(&TrajectoryNode::joint_callback, this, std::placeholders::_1));
         
         // 从参数服务器获取轨迹规划参数
         this->declare_parameter("trajectory_time", 5.0);
-        this->declare_parameter("dt", 0.01);
+        this->declare_parameter("dt", 0.1);
         this->declare_parameter("sync_mode", false);
         
         this->get_parameter("trajectory_time", trajectory_time);
@@ -35,44 +35,48 @@ public:
     }
 
 private:
+
     void ik_callback(const arm_control::msg::IKResult::SharedPtr msg) {
         if (!msg->success) {
             RCLCPP_WARN(this->get_logger(), "Ignoring failed IK result for %s", msg->arm_name.c_str());
             return;
         }
-        
-        // 获取起始和目标关节角
-        VectorXd q_start(6), q_end(6);
-        bool is_left = (msg->arm_name == "left_arm");
-        
-        if (is_left) {
-            q_start = left_current;
-        } else if (msg->arm_name == "right_arm") {
-            q_start = right_current;
-        } else {
-            RCLCPP_WARN(this->get_logger(), "Unknown arm: %s", msg->arm_name.c_str());
-            return;
+        std::vector<TrajectoryPoint> trajectory;
+        if(msg->arm_name!="dual_arm"){
+            // 获取起始和目标关节角
+            VectorXd q_start(6), q_end(6);
+            bool is_left = (msg->arm_name == "left_arm");
+            
+            if (is_left) {
+                q_start = left_current;
+            } else if (msg->arm_name == "right_arm") {
+                q_start = right_current;
+            } else {
+                RCLCPP_WARN(this->get_logger(), "Unknown arm: %s", msg->arm_name.c_str());
+                return;
+            }
+            
+            for (int i = 0; i < 6; i++) q_end[i] = msg->joint_angles[i];
+            
+            // 生成关节空间轨迹
+            RCLCPP_INFO(this->get_logger(), "Generating trajectory for %s (%.1fs)", 
+                    msg->arm_name.c_str(), trajectory_time);
+            
+            trajectory = jointSpaceTrajectory(q_start, q_end, trajectory_time, dt, joint_limits);
+            
+            RCLCPP_INFO(this->get_logger(), "Generated %zu trajectory points", trajectory.size());
+        }else{
+            if(msg->joint_angles.size()!=12)RCLCPP_INFO(this->get_logger(),"the dual arm angles size is not 12");
+            TrajectoryPoint point;
+            VectorXd temp(12);
+            for (int i = 0; i < 12; i++) temp[i] = msg->joint_angles[i];//双臂是12关节
+            point.positions=temp;
+            trajectory.push_back(point);
         }
-        
-        for (int i = 0; i < 6; i++) q_end[i] = msg->joint_angles[i];
-        
-        // 生成关节空间轨迹
-        RCLCPP_INFO(this->get_logger(), "Generating trajectory for %s (%.1fs)", 
-                  msg->arm_name.c_str(), trajectory_time);
-        
-        auto trajectory = jointSpaceTrajectory(
-            q_start, q_end, trajectory_time, dt, joint_limits
-        );
-        
-        RCLCPP_INFO(this->get_logger(), "Generated %zu trajectory points", trajectory.size());
-        
+ 
         // 存储轨迹（同步模式）或立即执行（非同步模式）
-        if (sync_mode) {
-            pending_trajectories[msg->arm_name] = trajectory;
-            check_and_execute_synchronized();
-        } else {
-            execute_trajectory(trajectory, msg->arm_name);
-        }
+        execute_trajectory(trajectory, msg->arm_name);
+        
     }
 
     void joint_callback(const sensor_msgs::msg::JointState::SharedPtr msg) {
@@ -87,21 +91,21 @@ private:
     }
 
     void execute_trajectory(const vector<TrajectoryPoint>& trajectory, const string& arm_name) {
+        //单双轨迹
+        int num=(arm_name=="dual_arm")?12:6;
         // 按时间顺序发布轨迹点
         for (size_t i = 0; i < trajectory.size(); i++) {
             const auto& pt = trajectory[i];
             auto msg = arm_control::msg::TrajectoryPoint();
             
             msg.arm_name = arm_name;
-            msg.positions.assign(pt.positions.data(), pt.positions.data()+6);
+            msg.positions.assign(pt.positions.data(), pt.positions.data()+num);//num用在这
             msg.time_from_start = pt.time;
             
             traj_pub_->publish(msg);
             
             // 等待适当的时间间隔
-            if (i < trajectory.size() - 1) {
-                this_thread::sleep_for(chrono::duration<double>(dt));
-            }
+            this_thread::sleep_for(chrono::duration<double>(dt));
         }
         
         RCLCPP_INFO(this->get_logger(), "Trajectory execution completed for %s", arm_name.c_str());
@@ -165,8 +169,8 @@ private:
     
     // 关节限制（与IK节点一致）
     vector<pair<double, double>> joint_limits = {
-        {-2.8, 2.8}, {-2.8, 2.8}, {-2.8, 2.8},
-        {-2.8, 2.8}, {-2.8, 2.8}, {-2.8, 2.8},
+        {-M_PI, M_PI}, {-M_PI, M_PI}, {-M_PI, M_PI},
+        {-M_PI, M_PI}, {-M_PI, M_PI}, {-M_PI, M_PI},
     };
 };
 

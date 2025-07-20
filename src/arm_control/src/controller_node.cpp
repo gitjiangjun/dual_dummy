@@ -17,14 +17,14 @@ public:
                           "left_joint4", "left_joint5", "left_joint6"};
         right_arm_joints = {"right_joint1", "right_joint2", "right_joint3", 
                            "right_joint4", "right_joint5", "right_joint6"};
-        left_hand_joint = "left_figer1";
-        right_hand_joint = "right_figer1";
+        left_hand_joints = {"left_figer1","left_figer2"};
+        right_hand_joints = {"right_figer1","right_figer2"};
         
         // 初始化关节位置
         current_left_arm = Eigen::VectorXd::Zero(6);
         current_right_arm = Eigen::VectorXd::Zero(6);
-        current_left_hand = 0.0;  // 0=打开, 0.028=闭合
-        current_right_hand = 0.0;
+        current_left_hand = Eigen::Vector2d::Zero(2);  // 0=打开, 0.028=闭合
+        current_right_hand = Eigen::Vector2d::Zero(2);
         
         // 订阅轨迹点和控制命令
         traj_sub_ = this->create_subscription<arm_control::msg::TrajectoryPoint>(
@@ -36,7 +36,7 @@ public:
             bind(&ArmControllerNode::command_callback, this, std::placeholders::_1));
         
         // 发布关节状态
-        joint_pub_ = this->create_publisher<sensor_msgs::msg::JointState>("joint_states", 10);
+        joint_pub_ = this->create_publisher<sensor_msgs::msg::JointState>("joint_states", 20);
         timer_ = this->create_wall_timer(10ms, bind(&ArmControllerNode::publish_joint_states, this));
         
         RCLCPP_INFO(this->get_logger(), "Arm controller node initialized");
@@ -44,6 +44,11 @@ public:
 
 private:
     void trajectory_callback(const arm_control::msg::TrajectoryPoint::SharedPtr msg) {
+        if(msg->arm_name=="dual_arm"){
+            for (int i = 0; i < 6; i++) current_left_arm[i] = msg->positions[i];
+            for (int i = 6; i < 12; i++) current_right_arm[i-6] = msg->positions[i];
+            RCLCPP_DEBUG(this->get_logger(), "Updated dual arm positions");
+        }
         // 验证消息有效性
         if (msg->positions.size() != 6) {
             RCLCPP_ERROR(this->get_logger(), "Invalid trajectory point received: %zu positions (expected 6)", 
@@ -80,14 +85,15 @@ private:
         // 处理夹爪命令
         if (msg->command_type == "gripper") {
             double target_pos = (msg->gripper_state == "close") ? 0.0 : 0.028;
-            
+            Eigen::Vector2d target_pos_1;
+            target_pos_1<<target_pos,target_pos;
             if (msg->arm_name == "left_arm") {
-                current_left_hand = target_pos;
+                current_left_hand = target_pos_1;
             } else if (msg->arm_name == "right_arm") {
-                current_right_hand = target_pos;
+                current_right_hand = target_pos_1;
             } else if (msg->arm_name == "both_arms") {
-                current_left_hand = target_pos;
-                current_right_hand = target_pos;
+                current_left_hand = target_pos_1;
+                current_right_hand = target_pos_1;
             }
             
             RCLCPP_INFO(this->get_logger(), "Set %s gripper to %s", 
@@ -101,14 +107,18 @@ private:
         
         // 组装所有关节名称和位置
         msg.name.insert(msg.name.end(), left_arm_joints.begin(), left_arm_joints.end());
-        msg.name.push_back(left_hand_joint);
+        msg.name.insert(msg.name.end(), left_hand_joints.begin(), left_hand_joints.end());
+        //msg.name.push_back(left_hand_joint);
         msg.name.insert(msg.name.end(), right_arm_joints.begin(), right_arm_joints.end());
-        msg.name.push_back(right_hand_joint);
+        msg.name.insert(msg.name.end(), right_hand_joints.begin(), right_hand_joints.end());
+        //msg.name.push_back(right_hand_joint);
         
         msg.position.insert(msg.position.end(), current_left_arm.data(), current_left_arm.data()+6);
-        msg.position.push_back(current_left_hand);
+        msg.position.insert(msg.position.end(), current_left_hand.data(), current_left_hand.data()+2);
+        //msg.position.push_back(current_left_hand);
         msg.position.insert(msg.position.end(), current_right_arm.data(), current_right_arm.data()+6);
-        msg.position.push_back(current_right_hand);
+        msg.position.insert(msg.position.end(), current_right_hand.data(), current_right_hand.data()+2);
+        //msg.position.push_back(current_right_hand);
         
         joint_pub_->publish(msg);
     }
@@ -119,14 +129,14 @@ private:
     TimerBase::SharedPtr timer_;
     
     vector<string> left_arm_joints, right_arm_joints;
-    string left_hand_joint, right_hand_joint;
+    vector<string> left_hand_joints, right_hand_joints;
     Eigen::VectorXd current_left_arm, current_right_arm;
-    double current_left_hand, current_right_hand;
+    Eigen::Vector2d current_left_hand, current_right_hand;
     
     // 关节限制（与IK节点一致）
     vector<pair<double, double>> joint_limits = {
-        {-2.8, 2.8}, {-1.8, 1.8}, {-2.8, 2.8},
-        {-1.8, 1.8}, {-2.8, 2.8}, {-1.8, 1.8},
+        {-M_PI, M_PI}, {-M_PI, M_PI}, {-M_PI, M_PI},
+        {-M_PI, M_PI}, {-M_PI, M_PI}, {-M_PI, M_PI},
     };
 };
 

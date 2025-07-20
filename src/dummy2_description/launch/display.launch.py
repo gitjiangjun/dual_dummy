@@ -5,8 +5,12 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 import os
+from ament_index_python.packages import get_package_share_directory
 
 def launch_setup(context, *args, **kwargs):
+
+    share_dir = get_package_share_directory('dummy2_description')
+    rviz_config_file = os.path.join(share_dir, 'config', 'robot_view.rviz')
     # 获取参数值
     urdf_filename = LaunchConfiguration('urdf_filename').perform(context)
     use_rviz = LaunchConfiguration('use_rviz').perform(context)
@@ -15,6 +19,8 @@ def launch_setup(context, *args, **kwargs):
     dummy2_description_path = FindPackageShare('dummy2_description').find('dummy2_description')
     urdf_path = os.path.join(dummy2_description_path, 'urdf', urdf_filename)
     
+
+        
     # 定义节点列表
     nodes = [
         # 1. 机器人状态发布器
@@ -26,13 +32,12 @@ def launch_setup(context, *args, **kwargs):
             arguments=[urdf_path]  # 直接传递字符串路径
         ),
         
-        # 2. 关节状态发布器（已注释，避免冲突）
-        # Node(
-        #     package='joint_state_publisher_gui',
-        #     executable='joint_state_publisher_gui',
-        #     name='joint_state_publisher_gui',
-        #     output='screen'
-        # )
+        #2. 关节状态发布器（已注释，避免冲突）
+        #Node(
+             #package='joint_state_publisher_gui',
+             #executable='joint_state_publisher_gui',
+             #name='joint_state_publisher_gui'
+         #)
     ]
     
     # 3. 可选：启动RViz
@@ -42,6 +47,7 @@ def launch_setup(context, *args, **kwargs):
                 package='rviz2',
                 executable='rviz2',
                 name='rviz2',
+                arguments=['-d',rviz_config_file],
                 output='screen'
             )
         )

@@ -28,12 +28,12 @@ private:
         Eigen::VectorXd joint_angles(6);
         for (int i = 0; i < 6; i++) joint_angles[i] = msg->positions[i];
         
-        Eigen::Matrix4d pose = forwardKinematics(left_dh_params, joint_angles, 1);
+        Eigen::Matrix4d pose = Eigen::Matrix4d::Identity();//forwardKinematics(left_dh_params, joint_angles, 1);
         Eigen::Vector3d position = pose.block<3, 1>(0, 3);
         
         // 创建可视化标记
         auto marker = visualization_msgs::msg::Marker();
-        marker.header.frame_id = "base_link";
+        marker.header.frame_id = "base_plate";
         marker.header.stamp = this->now();
         marker.ns = "trajectory";
         marker.id = next_marker_id++;
@@ -63,15 +63,6 @@ private:
     Subscription<arm_control::msg::TrajectoryPoint>::SharedPtr traj_sub_;
     int next_marker_id = 0;
     
-    // 左臂DH参数（与IK节点一致）
-    vector<ModifiedDHParameter> left_dh_params = {
-        {0.096, 0, 0.1, 0},   // 关节1
-        {0.0285, M_PI/2.0, 0.03448, M_PI/2.0}, // 关节2
-        {0.02451, M_PI/2.0, 0.168, 0},    // 关节3
-        {-0.01316, 0, 0.06247, -M_PI/2.0}, // 关节4
-        {-0.1141, 0, 0, -M_PI/2.0}, // 关节5
-        {-0.00148, M_PI, 0.00123, -M_PI/2.0}, // 关节6
-    };
 };
 
 int main(int argc, char * argv[]) {
