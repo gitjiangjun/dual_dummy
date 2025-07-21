@@ -1,0 +1,20 @@
+[1.650s] Invoking command in '/home/jj/dual_dummy/src/dummy2_description': PYTHONPATH=/home/jj/dual_dummy/build/dummy2_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dummy2_description build --build-base /home/jj/dual_dummy/build/dummy2_description/build install --record /home/jj/dual_dummy/build/dummy2_description/install.log --single-version-externally-managed install_data
+[2.062s] running egg_info
+[2.062s] writing ../../build/dummy2_description/dummy2_description.egg-info/PKG-INFO
+[2.064s] writing dependency_links to ../../build/dummy2_description/dummy2_description.egg-info/dependency_links.txt
+[2.069s] writing entry points to ../../build/dummy2_description/dummy2_description.egg-info/entry_points.txt
+[2.069s] writing requirements to ../../build/dummy2_description/dummy2_description.egg-info/requires.txt
+[2.070s] writing top-level names to ../../build/dummy2_description/dummy2_description.egg-info/top_level.txt
+[2.075s] reading manifest file '../../build/dummy2_description/dummy2_description.egg-info/SOURCES.txt'
+[2.078s] writing manifest file '../../build/dummy2_description/dummy2_description.egg-info/SOURCES.txt'
+[2.078s] running build
+[2.078s] running build_py
+[2.081s] running install
+[2.081s] running install_lib
+[2.082s] running install_data
+[2.083s] running install_egg_info
+[2.088s] removing '/home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages/dummy2_description-0.0.0-py3.10.egg-info' (and everything under it)
+[2.089s] Copying ../../build/dummy2_description/dummy2_description.egg-info to /home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages/dummy2_description-0.0.0-py3.10.egg-info
+[2.090s] running install_scripts
+[2.127s] writing list of installed files to '/home/jj/dual_dummy/build/dummy2_description/install.log'
+[2.220s] Invoked command in '/home/jj/dual_dummy/src/dummy2_description' returned '0': PYTHONPATH=/home/jj/dual_dummy/build/dummy2_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dummy2_description build --build-base /home/jj/dual_dummy/build/dummy2_description/build install --record /home/jj/dual_dummy/build/dummy2_description/install.log --single-version-externally-managed install_data

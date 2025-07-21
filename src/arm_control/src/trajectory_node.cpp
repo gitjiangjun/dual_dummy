@@ -21,7 +21,7 @@ public:
             "joint_states", 20, bind(&TrajectoryNode::joint_callback, this, std::placeholders::_1));
         
         // 从参数服务器获取轨迹规划参数
-        this->declare_parameter("trajectory_time", 5.0);
+        this->declare_parameter("trajectory_time", 4.0);
         this->declare_parameter("dt", 0.1);
         this->declare_parameter("sync_mode", false);
         

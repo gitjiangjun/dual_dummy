@@ -132,7 +132,7 @@ private:
             // 创建求解器
             ChainFkSolverPos_recursive fk_solver(chain);
             ChainIkSolverVel_pinv vel_ik_solver(chain);
-            ChainIkSolverPos_NR_JL ik_solver(chain, joint_min,joint_max,fk_solver, vel_ik_solver, 120, 1e-3);
+            ChainIkSolverPos_NR_JL ik_solver(chain, joint_min,joint_max,fk_solver, vel_ik_solver, 150, 1e-1);
 
             // 设置初始关节位置
             KDL::JntArray q_init(chain.getNrOfJoints());
@@ -188,27 +188,61 @@ private:
     }
     // 辅助函数：将机械臂移动到指定位姿
     void moveArmToPose(const std::string& arm, const Matrix4d& target_pose) {
-        VectorXd initial_angles = (arm == "left") ? left_current : right_current;
+
+        VectorXd initial_angles=(arm == "left")?left_current:right_current;
+
+        KDL::Frame start_=getCurrentEndEffectorPose(arm);
+        Matrix4d start_pose=Matrix4d::Identity();
+        // 提取位置信息
+        start_pose(0, 3) = start_.p.x();  // 平移 x
+        start_pose(1, 3) = start_.p.y();  // 平移 y
+        start_pose(2, 3) = start_.p.z();  // 平移 z
+
+        // 提取旋转信息（3x3 矩阵）
+        for (int i = 0; i < 3; ++i) {
+            for (int j = 0; j < 3; ++j) {
+                start_pose(i, j) = start_.M(i, j);  // 旋转矩阵
+            }
+        }
+        Matrix4d lo_start_pose=Convert_to_Arm(arm,start_pose);
         //转换到臂坐标系
         Eigen::Matrix4d lo_target_pose=Convert_to_Arm(arm,target_pose);
-        IKSolution sol = solve_ik(arm, lo_target_pose, initial_angles);
-        
-        if (sol.success) {
-            // 发布关节角度
-            auto msg = arm_control::msg::IKResult();
-            msg.arm_name = arm + "_arm";
-            msg.success = true;
-            msg.joint_angles.resize(6);
-            for (int i = 0; i < 6; i++) {
-                msg.joint_angles[i] = sol.angles[i];
+        std::vector<PathPoint> temp_j=cartesianLinearTrajectory(lo_start_pose,lo_target_pose,20,1);
+        std::vector<arm_control::msg::IKResult> ik_msgs;
+        RCLCPP_INFO(this->get_logger(),"num of cartesia:%d",temp_j.size());
+        for(int i=0;i<temp_j.size()-1;i++){
+            IKSolution sol = solve_ik(arm, temp_j[i+1].pose, initial_angles);
+            if(sol.success){
+                auto msg = arm_control::msg::IKResult();
+                msg.arm_name = arm + "_arm";
+                msg.success = true;
+                msg.joint_angles.resize(6);
+                for (int i = 0; i < 6; i++) {
+                    msg.joint_angles[i] = sol.angles[i];
+                }
+                ik_msgs.push_back(msg);
+            }else{
+                RCLCPP_ERROR(this->get_logger(), "Failed to compute IK for %s arm", arm.c_str());
+                break;
             }
-            ik_pub_->publish(msg);
-            RCLCPP_INFO(this->get_logger(), "IK solved for %s: [%.2f, %.2f, %.2f, %.2f, %.2f, %.2f]", 
-            arm.c_str(), sol.angles[0], sol.angles[1], sol.angles[2],sol.angles[3], sol.angles[4], sol.angles[5]);
-            // 等待到达位置（简化实现）
+            RCLCPP_INFO(this->get_logger(),"%d /10 of ik",i);
+        }
+
+        if (ik_msgs.size()==temp_j.size()-1) {
+            // 发布关节角度,解集最后一个
+            auto temp=ik_msgs.back();
+
+            ik_pub_->publish(temp);
+            RCLCPP_INFO(this->get_logger(),"sleep before");
             rclcpp::sleep_for(std::chrono::seconds(5));
-        } else {
-            RCLCPP_ERROR(this->get_logger(), "Failed to compute IK for %s arm", arm.c_str());
+            RCLCPP_INFO(this->get_logger(),"sleep after");
+
+            RCLCPP_INFO(this->get_logger(), "IK solved for %s: [%.3f, %.3f, %.3f, %.3f, %.2f, %.3f]", 
+            arm.c_str(), temp.joint_angles[0], temp.joint_angles[1], temp.joint_angles[2],temp.joint_angles[3], temp.joint_angles[4], temp.joint_angles[5]);
+            // 等待到达位置（简化实现）
+            //rclcpp::sleep_for(std::chrono::seconds(5));
+        }else{
+            RCLCPP_INFO(this->get_logger(),"ik_num is invalid");
         }
     }
     // 辅助函数：执行抓取动作
