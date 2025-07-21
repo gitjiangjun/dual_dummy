@@ -1,0 +1,52 @@
+[1.148s] Invoking command in '/home/jj/dual_dummy/src/dummy2_description': PYTHONPATH=/home/jj/dual_dummy/build/dummy2_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dummy2_description build --build-base /home/jj/dual_dummy/build/dummy2_description/build install --record /home/jj/dual_dummy/build/dummy2_description/install.log --single-version-externally-managed install_data
+[1.473s] running egg_info
+[1.474s] creating ../../build/dummy2_description/dummy2_description.egg-info
+[1.477s] writing ../../build/dummy2_description/dummy2_description.egg-info/PKG-INFO
+[1.477s] writing dependency_links to ../../build/dummy2_description/dummy2_description.egg-info/dependency_links.txt
+[1.477s] writing entry points to ../../build/dummy2_description/dummy2_description.egg-info/entry_points.txt
+[1.477s] writing requirements to ../../build/dummy2_description/dummy2_description.egg-info/requires.txt
+[1.477s] writing top-level names to ../../build/dummy2_description/dummy2_description.egg-info/top_level.txt
+[1.477s] writing manifest file '../../build/dummy2_description/dummy2_description.egg-info/SOURCES.txt'
+[1.478s] reading manifest file '../../build/dummy2_description/dummy2_description.egg-info/SOURCES.txt'
+[1.479s] writing manifest file '../../build/dummy2_description/dummy2_description.egg-info/SOURCES.txt'
+[1.480s] running build
+[1.480s] running build_py
+[1.480s] creating /home/jj/dual_dummy/build/dummy2_description/build
+[1.480s] creating /home/jj/dual_dummy/build/dummy2_description/build/lib
+[1.481s] creating /home/jj/dual_dummy/build/dummy2_description/build/lib/dummy2_description
+[1.481s] copying dummy2_description/__init__.py -> /home/jj/dual_dummy/build/dummy2_description/build/lib/dummy2_description
+[1.481s] running install
+[1.481s] running install_lib
+[1.482s] creating /home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages/dummy2_description
+[1.482s] copying /home/jj/dual_dummy/build/dummy2_description/build/lib/dummy2_description/__init__.py -> /home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages/dummy2_description
+[1.482s] byte-compiling /home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages/dummy2_description/__init__.py to __init__.cpython-310.pyc
+[1.483s] running install_data
+[1.483s] creating /home/jj/dual_dummy/install/dummy2_description/share/ament_index
+[1.483s] creating /home/jj/dual_dummy/install/dummy2_description/share/ament_index/resource_index
+[1.483s] creating /home/jj/dual_dummy/install/dummy2_description/share/ament_index/resource_index/packages
+[1.483s] copying resource/dummy2_description -> /home/jj/dual_dummy/install/dummy2_description/share/ament_index/resource_index/packages
+[1.483s] copying package.xml -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description
+[1.484s] creating /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/launch
+[1.484s] copying launch/display.launch.py -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/launch
+[1.484s] creating /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/urdf
+[1.484s] copying urdf/dual_dummy.urdf -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/urdf
+[1.485s] copying urdf/dual_dummy.urdf.bak -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/urdf
+[1.485s] creating /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/meshes
+[1.485s] copying meshes/camera_1.stl -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/meshes
+[1.498s] copying meshes/link5_1.stl -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/meshes
+[1.512s] copying meshes/link6_1.stl -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/meshes
+[1.516s] copying meshes/camera_eye_1.stl -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/meshes
+[1.517s] copying meshes/link1_1.stl -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/meshes
+[1.520s] copying meshes/link2_1.stl -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/meshes
+[1.537s] copying meshes/figer1_1.stl -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/meshes
+[1.539s] copying meshes/link3_1.stl -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/meshes
+[1.552s] copying meshes/base_link.stl -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/meshes
+[1.559s] copying meshes/figer2_1.stl -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/meshes
+[1.560s] copying meshes/link4_1.stl -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/meshes
+[1.571s] creating /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/config
+[1.571s] copying config/robot_view.rviz -> /home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/config
+[1.572s] running install_egg_info
+[1.574s] Copying ../../build/dummy2_description/dummy2_description.egg-info to /home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages/dummy2_description-0.0.0-py3.10.egg-info
+[1.575s] running install_scripts
+[1.602s] writing list of installed files to '/home/jj/dual_dummy/build/dummy2_description/install.log'
+[1.647s] Invoked command in '/home/jj/dual_dummy/src/dummy2_description' returned '0': PYTHONPATH=/home/jj/dual_dummy/build/dummy2_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dummy2_description build --build-base /home/jj/dual_dummy/build/dummy2_description/build install --record /home/jj/dual_dummy/build/dummy2_description/install.log --single-version-externally-managed install_data

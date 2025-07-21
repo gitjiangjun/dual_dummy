@@ -1,0 +1,278 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-41943199b9fc60089b48.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22
+					]
+				},
+				{
+					"build" : "arm_control__py",
+					"jsonFile" : "directory-arm_control__py-Debug-760e66b6e693a42945c1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/jj/dual_dummy/build/arm_control__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "arm_control",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_arm_control_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_arm_control_egg-Debug-fdd40f7b49fed7f4398a.json",
+					"name" : "ament_cmake_python_build_arm_control_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_arm_control::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_arm_control-Debug-955aae1ff97922c69e01.json",
+					"name" : "ament_cmake_python_copy_arm_control",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control-Debug-8f9b7ff2f5636b76504a.json",
+					"name" : "arm_control",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__cpp-Debug-3706c45b7f8c54a7f0d9.json",
+					"name" : "arm_control__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "arm_control__py::@6cada1500b174b273e0d",
+					"jsonFile" : "target-arm_control__py-Debug-a1a3525898bfeb842708.json",
+					"name" : "arm_control__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_generator_c-Debug-0b0860721fa1555e7ba5.json",
+					"name" : "arm_control__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_generator_py-Debug-e89c0e8c24afcd732a3b.json",
+					"name" : "arm_control__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_c-Debug-ccdfb52fecd0b98e36c7.json",
+					"name" : "arm_control__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_c__pyext-Debug-a658f401c0ea690f6641.json",
+					"name" : "arm_control__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_cpp-Debug-bd06d5b908b3194b3ff8.json",
+					"name" : "arm_control__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_fastrtps_c-Debug-fe98325b705db823f948.json",
+					"name" : "arm_control__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_fastrtps_c__pyext-Debug-b8ef053ec3b61481915d.json",
+					"name" : "arm_control__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_fastrtps_cpp-Debug-af186c060c80922dcd97.json",
+					"name" : "arm_control__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_introspection_c-Debug-ae0db1cb44605cb85866.json",
+					"name" : "arm_control__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_introspection_c__pyext-Debug-ae74f036c90248544f13.json",
+					"name" : "arm_control__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control__rosidl_typesupport_introspection_cpp-Debug-c4623d2cf2199834974f.json",
+					"name" : "arm_control__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_control_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_control_uninstall-Debug-157098a7e883883a86ee.json",
+					"name" : "arm_control_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_controller_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_controller_node-Debug-c8560642ebcbc7094972.json",
+					"name" : "arm_controller_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ik_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ik_node-Debug-ff67a2eab2bd7582ec25.json",
+					"name" : "ik_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motionlib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motionlib-Debug-1bb38efe9a1ff86876f6.json",
+					"name" : "motionlib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "trajectory_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-trajectory_node-Debug-bb954fcdf0d884e475bb.json",
+					"name" : "trajectory_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "trajectory_viewer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-trajectory_viewer-Debug-89a1c2e2f058460c4ad4.json",
+					"name" : "trajectory_viewer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-3c1efc8a4588937cb8bb.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jj/dual_dummy/build",
+		"source" : "/home/jj/dual_dummy/src/arm_control"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

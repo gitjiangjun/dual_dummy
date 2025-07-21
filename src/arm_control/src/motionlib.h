@@ -27,32 +27,16 @@ struct TrajectoryPoint {
     Eigen::VectorXd velocities;
     Eigen::VectorXd accelerations;
 };
-
-struct Solution {
-    Eigen::VectorXd angles;
-    bool success;
+struct PathPoint{
+    Eigen::Matrix4d pose;
+    double time;
 };
-// 计算所有关节的变换矩阵、位置和z轴
-std::vector<Frame> computeFrames(const std::vector<ModifiedDHParameter>& dh_params, const Eigen::VectorXd& joint_angles,const int& l_r);
-// 正运动学函数，使用改进的 DH 参数计算末端执行器的位置和姿态
-Eigen::Matrix4d forwardKinematics(const std::vector<ModifiedDHParameter>& dh_params, const Eigen::VectorXd& joint_angles,const int& l_r);
-// 计算空间雅可比矩阵
-Eigen::MatrixXd jacobian(const std::vector<ModifiedDHParameter>& dh_params, const Eigen::VectorXd& joint_angles,const int& l_r);
-// 数值雅可比验证函数
-Eigen::MatrixXd numericalJacobian(const std::vector<ModifiedDHParameter>& dh_params,
-    const Eigen::VectorXd& joint_angles,
-    const int& l_r,
-    const std::vector<std::pair<double, double>>& joint_limits,
-    double delta = 1e-6);
-//逆运动学求解函数（使用 SVD 和自适应阻尼）
-Solution inverseKinematics(const std::vector<ModifiedDHParameter>& dh_params,
-    const Eigen::VectorXd& initial_angles,
-    const Eigen::Matrix4d& target_pose,
-    const int& l_r,
-    const std::vector<std::pair<double, double>>& joint_limits,
-    int max_iterations = 50,
-    double tolerance = 1e-4,
-    double initial_damping = 1e-2);
+
+struct IKSolution {
+    bool success;
+    std::vector<double> angles;
+};
+
 // 关节空间五次多项式插值（改进后）
 std::vector<TrajectoryPoint> jointSpaceTrajectory(
     const Eigen::VectorXd& q_start,
@@ -61,22 +45,17 @@ std::vector<TrajectoryPoint> jointSpaceTrajectory(
     double dt,
     const std::vector<std::pair<double, double>>& joint_limits);
 
-// 笛卡尔直线规划（机械臂用）
-std::vector<TrajectoryPoint> cartesianLinearTrajectory(
-    const std::vector<ModifiedDHParameter>& dh_params,
-    const Eigen::Matrix4d& start_pose,
-    const Eigen::Matrix4d& end_pose,
-    double total_time,
-    double dt,
-    const std::vector<std::pair<double, double>>& joint_limits,
-    const Eigen::VectorXd& initial_angles);
 
-//绘图用
-std::vector<TrajectoryPoint> cartesianLinearTrajectoryForPlotting(
+//笛卡尔轨迹
+std::vector<PathPoint> cartesianLinearTrajectory(
     const Eigen::Matrix4d& start_pose,
     const Eigen::Matrix4d& end_pose,
     double total_time,
     double dt);
+
+Eigen::Matrix4d Convert_to_Arm(std::string arm,Eigen::Matrix4d T_gtarget);
+//协调变换
+std::vector<PathPoint> Convert_to_Arm_Path(const std::vector<PathPoint> Ob_Path,const std::string arm,const Eigen::Matrix4d T_gstart);
 
 void saveJointTrajectoryToCSV(const std::vector<TrajectoryPoint>& trajectory, const std::string& filename);
 void saveCartesianTrajectoryToCSV(const std::vector<TrajectoryPoint>& trajectory, const std::string& filename);

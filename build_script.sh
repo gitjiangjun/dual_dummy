@@ -25,12 +25,10 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# 第三步：自动source安装文件
+# 第三步：source安装文件并重新加载Shell
 echo -e "\n\033[1;36m第三步：设置环境变量...\033[0m"
 source install/setup.bash
-if [ $? -ne 0 ]; then
-    echo -e "\033[1;31mSource 失败！\033[0m"
-    exit 1
-fi
-
+echo -e "\n\033[1;32m所有步骤完成！环境已准备好使用。\033[0m"
+echo -e "\033[1;33m正在重新加载Shell以应用环境变量...\033[0m"
+exec bash
 echo -e "\n\033[1;32m所有步骤完成！环境已准备好使用。\033[0m"
