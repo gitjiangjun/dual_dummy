@@ -1,8 +1,0 @@
-{
-  "package_name": "arm_control",
-  "non_idl_tuples": [
-    "/home/jj/dual_dummy/src/arm_control:msg/IKResult.msg",
-    "/home/jj/dual_dummy/src/arm_control:msg/TrajectoryPoint.msg",
-    "/home/jj/dual_dummy/src/arm_control:msg/ControlCommand.msg"
-  ]
-}

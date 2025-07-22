@@ -1,6 +1,0 @@
-msg/ControlCommand.idl
-msg/ControlCommand.msg
-msg/IKResult.idl
-msg/IKResult.msg
-msg/TrajectoryPoint.idl
-msg/TrajectoryPoint.msg

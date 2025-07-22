@@ -1,4 +1,0 @@
-Invoking command in '/home/jj/dual_dummy/build/arm_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jj/dual_dummy/install/dummy2_description:/opt/ros/humble /usr/bin/cmake --build /home/jj/dual_dummy/build/arm_control -- -j4 -l4
-Invoked command in '/home/jj/dual_dummy/build/arm_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jj/dual_dummy/install/dummy2_description:/opt/ros/humble /usr/bin/cmake --build /home/jj/dual_dummy/build/arm_control -- -j4 -l4
-Invoking command in '/home/jj/dual_dummy/build/arm_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jj/dual_dummy/install/dummy2_description:/opt/ros/humble /usr/bin/cmake --install /home/jj/dual_dummy/build/arm_control
-Invoked command in '/home/jj/dual_dummy/build/arm_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jj/dual_dummy/install/dummy2_description:/opt/ros/humble /usr/bin/cmake --install /home/jj/dual_dummy/build/arm_control
