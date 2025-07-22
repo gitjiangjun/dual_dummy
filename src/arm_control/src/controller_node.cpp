@@ -5,9 +5,13 @@
 #include <Eigen/Dense>
 #include <vector>
 #include <string>
+#include "rclcpp_action/rclcpp_action.hpp"
+#include "control_msgs/action/follow_joint_trajectory.hpp"
 
 using namespace std;
 using namespace rclcpp;
+using FollowJointTrajectory = control_msgs::action::FollowJointTrajectory;
+using GoalHandleFJT = rclcpp_action::ClientGoalHandle<FollowJointTrajectory>;
 
 class ArmControllerNode : public Node {
 public:
@@ -34,10 +38,13 @@ public:
         cmd_sub_ = this->create_subscription<arm_control::msg::ControlCommand>(
             "control_command", 10,
             bind(&ArmControllerNode::command_callback, this, std::placeholders::_1));
-        
-        // 发布关节状态
-        joint_pub_ = this->create_publisher<sensor_msgs::msg::JointState>("joint_states", 20);
-        timer_ = this->create_wall_timer(10ms, bind(&ArmControllerNode::publish_joint_states, this));
+        //连接真实机械臂
+        left_client_=rclcpp_action::create_client<FollowJointTrajectory>(this,"left_arm_controller/follow_joint_trajectory");
+        right_client_=rclcpp_action::create_client<FollowJointTrajectory>(this,"right_arm_controller/follow_joint_trajectory");
+
+        // 发布关节状态//机械臂模型控制，但是dummy2_arm_controller.py中有/joint_states反馈
+        //joint_pub_ = this->create_publisher<sensor_msgs::msg::JointState>("joint_states", 20);
+        //timer_ = this->create_wall_timer(10ms, bind(&ArmControllerNode::publish_joint_states, this));
         
         RCLCPP_INFO(this->get_logger(), "Arm controller node initialized");
     }
@@ -79,6 +86,8 @@ private:
         } else {
             RCLCPP_WARN(this->get_logger(), "Trajectory point discarded due to joint limits violation");
         }
+
+        send_trajectory_to_dummy2();
     }
 
     void command_callback(const arm_control::msg::ControlCommand::SharedPtr msg) {
@@ -99,6 +108,59 @@ private:
             RCLCPP_INFO(this->get_logger(), "Set %s gripper to %s", 
                       msg->arm_name.c_str(), msg->gripper_state.c_str());
         }
+    }
+
+    void send_trajectory_to_dummy2(){
+        send_trajectory_to_left();
+        send_trajectory_to_right();
+    }
+    void send_trajectory_to_left()
+    {
+        if (!left_client_->wait_for_action_server(1s)) {
+            RCLCPP_ERROR(this->get_logger(), "Dummy2 left action server not available");
+            return;
+        }
+        auto left_goal_msg=FollowJointTrajectory::Goal();
+        left_goal_msg.trajectory.joint_names=left_arm_joints;
+        trajectory_msgs::msg::JointTrajectoryPoint point;
+        point.positions=std::vector<double>(current_left_arm.data(),current_left_arm.data()+6);
+        point.time_from_start=rclcpp::Duration::from_seconds(0.1);
+        left_goal_msg.trajectory.points.push_back(point);
+
+        auto send_goal_options=rclcpp_action::Client<FollowJointTrajectory>::SendGoalOptions();
+        send_goal_options.goal_response_callback = 
+            [this](const GoalHandleFJT::SharedPtr & goal_handle) {
+                if (!goal_handle) {
+                    RCLCPP_ERROR(this->get_logger(), "Trajectory goal rejected");
+                } else {
+                    RCLCPP_INFO(this->get_logger(), "Trajectory goal accepted");
+                }
+            };
+        left_client_->async_send_goal(left_goal_msg,send_goal_options);
+    }
+    void send_trajectory_to_right()
+    {
+        if (!right_client_->wait_for_action_server(1s)) {
+            RCLCPP_ERROR(this->get_logger(), "Dummy2 right action server not available");
+            return;
+        }
+        auto right_goal_msg=FollowJointTrajectory::Goal();
+        right_goal_msg.trajectory.joint_names=right_arm_joints;
+        trajectory_msgs::msg::JointTrajectoryPoint point;
+        point.positions=std::vector<double>(current_right_arm.data(),current_right_arm.data()+6);
+        point.time_from_start=rclcpp::Duration::from_seconds(0.1);
+        right_goal_msg.trajectory.points.push_back(point);
+
+        auto send_goal_options=rclcpp_action::Client<FollowJointTrajectory>::SendGoalOptions();
+        send_goal_options.goal_response_callback = 
+            [this](const GoalHandleFJT::SharedPtr & goal_handle) {
+                if (!goal_handle) {
+                    RCLCPP_ERROR(this->get_logger(), "Trajectory goal rejected");
+                } else {
+                    RCLCPP_INFO(this->get_logger(), "Trajectory goal accepted");
+                }
+            };
+        right_client_->async_send_goal(right_goal_msg,send_goal_options);
     }
 
     void publish_joint_states() {
@@ -122,6 +184,9 @@ private:
         
         joint_pub_->publish(msg);
     }
+    rclcpp_action::Client<FollowJointTrajectory>::SharedPtr left_client_;
+
+    rclcpp_action::Client<FollowJointTrajectory>::SharedPtr right_client_;
 
     Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_pub_;
     Subscription<arm_control::msg::TrajectoryPoint>::SharedPtr traj_sub_;

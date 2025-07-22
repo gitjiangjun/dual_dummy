@@ -1,2 +1,0 @@
-Invoking command in '/home/jj/dual_dummy/src/arm_control/build/arm_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jj/dual_dummy/src/arm_control -DCMAKE_INSTALL_PREFIX=/home/jj/dual_dummy/src/arm_control/install/arm_control
-Invoked command in '/home/jj/dual_dummy/src/arm_control/build/arm_control' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jj/dual_dummy/src/arm_control -DCMAKE_INSTALL_PREFIX=/home/jj/dual_dummy/src/arm_control/install/arm_control

@@ -16,6 +16,8 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(urdf REQUIRED)
 find_package(kdl_parser REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(control_msgs REQUIRED)
 
 # 自定义消息生成
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -81,6 +83,8 @@ ament_target_dependencies(arm_controller_node
   rclcpp
   sensor_msgs
   Eigen3
+  rclcpp_action
+  control_msgs
 )
 target_link_libraries(arm_controller_node
   ${cpp_typesupport_target}
