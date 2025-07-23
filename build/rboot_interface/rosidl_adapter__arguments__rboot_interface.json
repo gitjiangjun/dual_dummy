@@ -1,0 +1,10 @@
+{
+  "package_name": "rboot_interface",
+  "non_idl_tuples": [
+    "/home/jj/dual_dummy/src/rboot_interface:msg/ObjectPosition.msg",
+    "/home/jj/dual_dummy/src/rboot_interface:msg/RbootPosition.msg",
+    "/home/jj/dual_dummy/src/rboot_interface:srv/AddTwoInts.srv",
+    "/home/jj/dual_dummy/src/rboot_interface:srv/GetObjectPosition.srv",
+    "/home/jj/dual_dummy/src/rboot_interface:action/MoveCircle.action"
+  ]
+}

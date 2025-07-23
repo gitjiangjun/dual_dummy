@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "rboot_interface__py",
+		"source" : "/home/jj/dual_dummy/build/rboot_interface/rboot_interface__py"
+	}
+}

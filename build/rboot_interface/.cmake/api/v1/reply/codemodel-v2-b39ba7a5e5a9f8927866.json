@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c9a327538af96a8daff9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "rboot_interface__py",
+					"jsonFile" : "directory-rboot_interface__py-7720f550784e50f51cdc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/jj/dual_dummy/build/rboot_interface/rboot_interface__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "rboot_interface",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_rboot_interface_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_rboot_interface_egg-5f9411582fe4f7ef2266.json",
+					"name" : "ament_cmake_python_build_rboot_interface_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_rboot_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_rboot_interface-2dfa2b2b812368e96c5b.json",
+					"name" : "ament_cmake_python_copy_rboot_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rboot_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rboot_interface-96ff1e7ce69968bec8bd.json",
+					"name" : "rboot_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rboot_interface__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rboot_interface__cpp-217d24c5d2e3754d6a60.json",
+					"name" : "rboot_interface__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "rboot_interface__py::@9c80717ab6c3d73f4d30",
+					"jsonFile" : "target-rboot_interface__py-46851ad80c2e775dacd3.json",
+					"name" : "rboot_interface__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rboot_interface__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rboot_interface__rosidl_generator_c-9e8d696889c9b42a9227.json",
+					"name" : "rboot_interface__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rboot_interface__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rboot_interface__rosidl_generator_py-bf77308ef2278ee38af7.json",
+					"name" : "rboot_interface__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rboot_interface__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rboot_interface__rosidl_typesupport_c-fa6301a28df274b746a3.json",
+					"name" : "rboot_interface__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rboot_interface__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rboot_interface__rosidl_typesupport_c__pyext-4a14d41f4947edcb62b4.json",
+					"name" : "rboot_interface__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rboot_interface__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rboot_interface__rosidl_typesupport_cpp-86feaa6a5cf07dcf6198.json",
+					"name" : "rboot_interface__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rboot_interface__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rboot_interface__rosidl_typesupport_fastrtps_c-d55cd975ac265522f56d.json",
+					"name" : "rboot_interface__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rboot_interface__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rboot_interface__rosidl_typesupport_fastrtps_c__pyext-8227ac85f277a6c8f837.json",
+					"name" : "rboot_interface__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rboot_interface__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rboot_interface__rosidl_typesupport_fastrtps_cpp-ffd87a38b066b7a24c1f.json",
+					"name" : "rboot_interface__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rboot_interface__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rboot_interface__rosidl_typesupport_introspection_c-7c3790f9537070452d61.json",
+					"name" : "rboot_interface__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rboot_interface__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rboot_interface__rosidl_typesupport_introspection_c__pyext-9dd6923fa30939a93264.json",
+					"name" : "rboot_interface__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rboot_interface__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rboot_interface__rosidl_typesupport_introspection_cpp-ea887523313226352c29.json",
+					"name" : "rboot_interface__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rboot_interface_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rboot_interface_uninstall-8d5b9d29437328fc2ec1.json",
+					"name" : "rboot_interface_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-cf8f958834aeccd12fbb.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jj/dual_dummy/build/rboot_interface",
+		"source" : "/home/jj/dual_dummy/src/rboot_interface"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

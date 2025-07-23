@@ -1,0 +1,3 @@
+[console_scripts]
+dummy2_ros_controller = rboot_topic.dummy2_ros_controller:main
+

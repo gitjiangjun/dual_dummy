@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/rboot_libs/rboot_libs.egg-info/PKG-INFO
+../../build/rboot_libs/rboot_libs.egg-info/SOURCES.txt
+../../build/rboot_libs/rboot_libs.egg-info/dependency_links.txt
+../../build/rboot_libs/rboot_libs.egg-info/entry_points.txt
+../../build/rboot_libs/rboot_libs.egg-info/requires.txt
+../../build/rboot_libs/rboot_libs.egg-info/top_level.txt
+../../build/rboot_libs/rboot_libs.egg-info/zip-safe
+rboot_libs/__init__.py
+rboot_libs/rbootlibs.py
+resource/rboot_libs
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

@@ -1,0 +1,271 @@
+[0.081s] Invoking command in '/home/jj/dual_dummy/build/rboot_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jj/dual_dummy/install/rboot_topic:/home/jj/dual_dummy/install/rboot_libs:/home/jj/dual_dummy/install/rboot_launch:/home/jj/dual_dummy/install/dummy2_description:/opt/ros/humble /usr/bin/cmake --build /home/jj/dual_dummy/build/rboot_interface -- -j4 -l4
+[1.147s] [35m[1mConsolidate compiler generated dependencies of target rboot_interface__rosidl_generator_c[0m
+[1.147s] [  1%] Built target rboot_interface__cpp
+[1.147s] [35m[1mConsolidate compiler generated dependencies of target rboot_interface__rosidl_typesupport_cpp[0m
+[1.148s] [ 12%] Built target rboot_interface__rosidl_generator_c
+[1.148s] [35m[1mConsolidate compiler generated dependencies of target rboot_interface__rosidl_typesupport_fastrtps_cpp[0m
+[1.148s] [ 12%] Built target ament_cmake_python_copy_rboot_interface
+[1.148s] [ 23%] Built target rboot_interface__rosidl_typesupport_cpp
+[1.148s] [35m[1mConsolidate compiler generated dependencies of target rboot_interface__rosidl_typesupport_introspection_cpp[0m
+[1.148s] [ 34%] Built target rboot_interface__rosidl_typesupport_fastrtps_cpp
+[1.148s] [35m[1mConsolidate compiler generated dependencies of target rboot_interface__rosidl_typesupport_fastrtps_c[0m
+[1.148s] [ 46%] Built target rboot_interface__rosidl_typesupport_introspection_cpp
+[1.148s] [35m[1mConsolidate compiler generated dependencies of target rboot_interface__rosidl_typesupport_introspection_c[0m
+[1.148s] [35m[1mConsolidate compiler generated dependencies of target rboot_interface__rosidl_typesupport_c[0m
+[1.148s] [ 57%] Built target rboot_interface__rosidl_typesupport_introspection_c
+[1.148s] [ 68%] Built target rboot_interface__rosidl_typesupport_fastrtps_c
+[1.148s] [ 79%] Built target rboot_interface__rosidl_typesupport_c
+[1.148s] [ 79%] Built target rboot_interface
+[1.149s] [ 80%] Built target rboot_interface__py
+[1.149s] [35m[1mConsolidate compiler generated dependencies of target rboot_interface__rosidl_generator_py[0m
+[1.149s] [ 90%] Built target rboot_interface__rosidl_generator_py
+[1.149s] [35m[1mConsolidate compiler generated dependencies of target rboot_interface__rosidl_typesupport_c__pyext[0m
+[1.149s] [35m[1mConsolidate compiler generated dependencies of target rboot_interface__rosidl_typesupport_introspection_c__pyext[0m
+[1.149s] [35m[1mConsolidate compiler generated dependencies of target rboot_interface__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.149s] [ 93%] Built target rboot_interface__rosidl_typesupport_c__pyext
+[1.149s] [ 96%] Built target rboot_interface__rosidl_typesupport_fastrtps_c__pyext
+[1.149s] [100%] Built target rboot_interface__rosidl_typesupport_introspection_c__pyext
+[1.149s] running egg_info
+[1.150s] writing rboot_interface.egg-info/PKG-INFO
+[1.150s] writing dependency_links to rboot_interface.egg-info/dependency_links.txt
+[1.151s] writing top-level names to rboot_interface.egg-info/top_level.txt
+[1.151s] reading manifest file 'rboot_interface.egg-info/SOURCES.txt'
+[1.163s] writing manifest file 'rboot_interface.egg-info/SOURCES.txt'
+[1.211s] [100%] Built target ament_cmake_python_build_rboot_interface_egg
+[1.488s] Invoked command in '/home/jj/dual_dummy/build/rboot_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jj/dual_dummy/install/rboot_topic:/home/jj/dual_dummy/install/rboot_libs:/home/jj/dual_dummy/install/rboot_launch:/home/jj/dual_dummy/install/dummy2_description:/opt/ros/humble /usr/bin/cmake --build /home/jj/dual_dummy/build/rboot_interface -- -j4 -l4
+[1.507s] Invoking command in '/home/jj/dual_dummy/build/rboot_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jj/dual_dummy/install/rboot_topic:/home/jj/dual_dummy/install/rboot_libs:/home/jj/dual_dummy/install/rboot_launch:/home/jj/dual_dummy/install/dummy2_description:/opt/ros/humble /usr/bin/cmake --install /home/jj/dual_dummy/build/rboot_interface
+[1.531s] -- Install configuration: ""
+[1.531s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/ament_index/resource_index/rosidl_interfaces/rboot_interface
+[1.531s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface
+[1.531s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv
+[1.533s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/add_two_ints.h
+[1.534s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/get_object_position.h
+[1.534s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail
+[1.535s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/get_object_position__functions.c
+[1.536s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/add_two_ints__functions.c
+[1.537s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/get_object_position__type_support.h
+[1.537s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/add_two_ints__type_support.h
+[1.537s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/get_object_position__struct.h
+[1.537s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/get_object_position__functions.h
+[1.537s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/add_two_ints__struct.h
+[1.537s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/add_two_ints__functions.h
+[1.537s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action
+[1.537s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/move_circle.h
+[1.538s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail
+[1.538s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail/move_circle__functions.h
+[1.538s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail/move_circle__struct.h
+[1.538s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail/move_circle__functions.c
+[1.541s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail/move_circle__type_support.h
+[1.541s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg
+[1.542s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/rboot_position.h
+[1.542s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/rosidl_generator_c__visibility_control.h
+[1.546s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/object_position.h
+[1.546s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail
+[1.546s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/object_position__functions.c
+[1.546s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/rboot_position__struct.h
+[1.546s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/object_position__type_support.h
+[1.546s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/rboot_position__type_support.h
+[1.546s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/rboot_position__functions.h
+[1.546s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/object_position__functions.h
+[1.546s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/rboot_position__functions.c
+[1.547s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/object_position__struct.h
+[1.547s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/environment/library_path.sh
+[1.547s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/environment/library_path.dsv
+[1.547s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/lib/librboot_interface__rosidl_generator_c.so
+[1.547s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface
+[1.547s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv
+[1.547s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail
+[1.547s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/get_object_position__rosidl_typesupport_fastrtps_c.h
+[1.547s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/add_two_ints__rosidl_typesupport_fastrtps_c.h
+[1.547s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action
+[1.547s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail
+[1.547s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail/move_circle__rosidl_typesupport_fastrtps_c.h
+[1.547s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg
+[1.547s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.547s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/rboot_position__rosidl_typesupport_fastrtps_c.h
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/object_position__rosidl_typesupport_fastrtps_c.h
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/lib/librboot_interface__rosidl_typesupport_fastrtps_c.so
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/add_two_ints__type_support.c
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/add_two_ints__rosidl_typesupport_introspection_c.h
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/get_object_position__type_support.c
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/get_object_position__rosidl_typesupport_introspection_c.h
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail/move_circle__rosidl_typesupport_introspection_c.h
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail/move_circle__type_support.c
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/object_position__type_support.c
+[1.548s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/object_position__rosidl_typesupport_introspection_c.h
+[1.549s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/rboot_position__type_support.c
+[1.549s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/rboot_position__rosidl_typesupport_introspection_c.h
+[1.549s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/lib/librboot_interface__rosidl_typesupport_introspection_c.so
+[1.549s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/lib/librboot_interface__rosidl_typesupport_c.so
+[1.549s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface
+[1.549s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv
+[1.549s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/add_two_ints.hpp
+[1.549s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/get_object_position.hpp
+[1.549s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail
+[1.557s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/get_object_position__type_support.hpp
+[1.557s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/get_object_position__struct.hpp
+[1.558s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/add_two_ints__builder.hpp
+[1.558s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/add_two_ints__type_support.hpp
+[1.558s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/get_object_position__traits.hpp
+[1.561s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/add_two_ints__struct.hpp
+[1.561s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/add_two_ints__traits.hpp
+[1.561s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/get_object_position__builder.hpp
+[1.561s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action
+[1.561s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/move_circle.hpp
+[1.562s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail
+[1.562s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail/move_circle__struct.hpp
+[1.562s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail/move_circle__traits.hpp
+[1.562s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail/move_circle__type_support.hpp
+[1.562s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail/move_circle__builder.hpp
+[1.562s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg
+[1.562s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.562s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/rboot_position.hpp
+[1.562s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail
+[1.562s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/rboot_position__struct.hpp
+[1.562s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/object_position__struct.hpp
+[1.562s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/rboot_position__type_support.hpp
+[1.565s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/rboot_position__builder.hpp
+[1.565s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/object_position__builder.hpp
+[1.565s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/rboot_position__traits.hpp
+[1.565s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/object_position__type_support.hpp
+[1.565s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/object_position__traits.hpp
+[1.565s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/object_position.hpp
+[1.566s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface
+[1.566s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv
+[1.566s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail
+[1.566s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/dds_fastrtps
+[1.566s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/add_two_ints__rosidl_typesupport_fastrtps_cpp.hpp
+[1.566s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/get_object_position__rosidl_typesupport_fastrtps_cpp.hpp
+[1.566s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action
+[1.566s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail
+[1.566s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail/dds_fastrtps
+[1.569s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail/move_circle__rosidl_typesupport_fastrtps_cpp.hpp
+[1.569s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg
+[1.569s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.569s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail
+[1.569s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/dds_fastrtps
+[1.570s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/rboot_position__rosidl_typesupport_fastrtps_cpp.hpp
+[1.570s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/object_position__rosidl_typesupport_fastrtps_cpp.hpp
+[1.588s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/lib/librboot_interface__rosidl_typesupport_fastrtps_cpp.so
+[1.588s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface
+[1.588s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv
+[1.588s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail
+[1.588s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/get_object_position__rosidl_typesupport_introspection_cpp.hpp
+[1.589s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/get_object_position__type_support.cpp
+[1.589s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/add_two_ints__type_support.cpp
+[1.589s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/srv/detail/add_two_ints__rosidl_typesupport_introspection_cpp.hpp
+[1.589s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action
+[1.589s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail
+[1.589s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail/move_circle__rosidl_typesupport_introspection_cpp.hpp
+[1.597s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/action/detail/move_circle__type_support.cpp
+[1.597s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg
+[1.597s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail
+[1.598s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/rboot_position__type_support.cpp
+[1.598s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/object_position__rosidl_typesupport_introspection_cpp.hpp
+[1.598s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/rboot_position__rosidl_typesupport_introspection_cpp.hpp
+[1.598s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/include/rboot_interface/rboot_interface/msg/detail/object_position__type_support.cpp
+[1.599s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/lib/librboot_interface__rosidl_typesupport_introspection_cpp.so
+[1.599s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/lib/librboot_interface__rosidl_typesupport_cpp.so
+[1.599s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/environment/pythonpath.sh
+[1.599s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/environment/pythonpath.dsv
+[1.599s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface-0.0.0-py3.10.egg-info
+[1.599s] -- Installing: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface-0.0.0-py3.10.egg-info/top_level.txt
+[1.599s] -- Installing: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.599s] -- Installing: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.608s] -- Installing: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[1.608s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface
+[1.608s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/rboot_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.608s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/_rboot_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.608s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/librboot_interface__rosidl_generator_py.so
+[1.608s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/rboot_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.608s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/__init__.py
+[1.608s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/srv
+[1.608s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/srv/_get_object_position.py
+[1.608s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/srv/_add_two_ints_s.c
+[1.609s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/srv/__init__.py
+[1.612s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/srv/_add_two_ints.py
+[1.612s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/srv/_get_object_position_s.c
+[1.612s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/action
+[1.612s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/action/_move_circle_s.c
+[1.612s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/action/__init__.py
+[1.612s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/action/_move_circle.py
+[1.612s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/msg
+[1.613s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/msg/_object_position.py
+[1.613s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/msg/_rboot_position.py
+[1.613s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/msg/__init__.py
+[1.613s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/msg/_rboot_position_s.c
+[1.613s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/msg/_object_position_s.c
+[1.613s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/rboot_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.613s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/_rboot_interface_s.ep.rosidl_typesupport_introspection_c.c
+[1.613s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/_rboot_interface_s.ep.rosidl_typesupport_c.c
+[1.636s] Listing '/home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface'...
+[1.636s] Listing '/home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/action'...
+[1.636s] Listing '/home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/msg'...
+[1.636s] Listing '/home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/srv'...
+[1.648s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/rboot_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.652s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/rboot_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.652s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages/rboot_interface/rboot_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.652s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/lib/librboot_interface__rosidl_generator_py.so
+[1.652s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/msg/ObjectPosition.idl
+[1.652s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/msg/RbootPosition.idl
+[1.653s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/srv/AddTwoInts.idl
+[1.653s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/srv/GetObjectPosition.idl
+[1.653s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/action/MoveCircle.idl
+[1.653s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/msg/ObjectPosition.msg
+[1.654s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/msg/RbootPosition.msg
+[1.654s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/srv/AddTwoInts.srv
+[1.654s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/srv/AddTwoInts_Request.msg
+[1.654s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/srv/AddTwoInts_Response.msg
+[1.657s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/srv/GetObjectPosition.srv
+[1.657s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/srv/GetObjectPosition_Request.msg
+[1.657s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/srv/GetObjectPosition_Response.msg
+[1.657s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/action/MoveCircle.action
+[1.658s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/ament_index/resource_index/package_run_dependencies/rboot_interface
+[1.658s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/ament_index/resource_index/parent_prefix_path/rboot_interface
+[1.658s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/environment/ament_prefix_path.sh
+[1.658s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/environment/ament_prefix_path.dsv
+[1.658s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/environment/path.sh
+[1.658s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/environment/path.dsv
+[1.658s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/local_setup.bash
+[1.658s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/local_setup.sh
+[1.659s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/local_setup.zsh
+[1.659s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/local_setup.dsv
+[1.659s] -- Installing: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/package.dsv
+[1.659s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/ament_index/resource_index/packages/rboot_interface
+[1.662s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/export_rboot_interface__rosidl_generator_cExport.cmake
+[1.662s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/export_rboot_interface__rosidl_generator_cExport-noconfig.cmake
+[1.662s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/export_rboot_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[1.662s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/export_rboot_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.665s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/rboot_interface__rosidl_typesupport_introspection_cExport.cmake
+[1.665s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/rboot_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.666s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/rboot_interface__rosidl_typesupport_cExport.cmake
+[1.668s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/rboot_interface__rosidl_typesupport_cExport-noconfig.cmake
+[1.669s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/export_rboot_interface__rosidl_generator_cppExport.cmake
+[1.674s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/export_rboot_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.674s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/export_rboot_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.674s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/rboot_interface__rosidl_typesupport_introspection_cppExport.cmake
+[1.680s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/rboot_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.681s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/rboot_interface__rosidl_typesupport_cppExport.cmake
+[1.681s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/rboot_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[1.684s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/export_rboot_interface__rosidl_generator_pyExport.cmake
+[1.684s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/export_rboot_interface__rosidl_generator_pyExport-noconfig.cmake
+[1.684s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/rosidl_cmake-extras.cmake
+[1.684s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.684s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.684s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[1.684s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/ament_cmake_export_targets-extras.cmake
+[1.684s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.684s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.684s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/rboot_interfaceConfig.cmake
+[1.684s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/cmake/rboot_interfaceConfig-version.cmake
+[1.684s] -- Up-to-date: /home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/package.xml
+[1.698s] Invoked command in '/home/jj/dual_dummy/build/rboot_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jj/dual_dummy/install/rboot_topic:/home/jj/dual_dummy/install/rboot_libs:/home/jj/dual_dummy/install/rboot_launch:/home/jj/dual_dummy/install/dummy2_description:/opt/ros/humble /usr/bin/cmake --install /home/jj/dual_dummy/build/rboot_interface

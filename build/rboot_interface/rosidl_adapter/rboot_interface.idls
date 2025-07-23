@@ -1,0 +1,5 @@
+/home/jj/dual_dummy/build/rboot_interface/rosidl_adapter/rboot_interface:msg/ObjectPosition.idl
+/home/jj/dual_dummy/build/rboot_interface/rosidl_adapter/rboot_interface:msg/RbootPosition.idl
+/home/jj/dual_dummy/build/rboot_interface/rosidl_adapter/rboot_interface:srv/AddTwoInts.idl
+/home/jj/dual_dummy/build/rboot_interface/rosidl_adapter/rboot_interface:srv/GetObjectPosition.idl
+/home/jj/dual_dummy/build/rboot_interface/rosidl_adapter/rboot_interface:action/MoveCircle.idl

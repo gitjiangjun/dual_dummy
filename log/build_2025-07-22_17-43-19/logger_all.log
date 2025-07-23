@@ -1,0 +1,424 @@
+[0.261s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.261s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x73044b72bbe0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73044b72b670>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73044b72b670>>)
+[0.596s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.596s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.596s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.596s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.596s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.596s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.596s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jj/dual_dummy'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_control) by extensions ['ignore', 'ignore_ament_install']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_control) by extension 'ignore'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_control) by extension 'ignore_ament_install'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_control) by extensions ['colcon_pkg']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_control) by extension 'colcon_pkg'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_control) by extensions ['colcon_meta']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_control) by extension 'colcon_meta'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_control) by extensions ['ros']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_control) by extension 'ros'
+[0.626s] DEBUG:colcon.colcon_core.package_identification:Package 'src/arm_control' with type 'ros.ament_cmake' and name 'arm_control'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/dummy2_description) by extensions ['ignore', 'ignore_ament_install']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/dummy2_description) by extension 'ignore'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/dummy2_description) by extension 'ignore_ament_install'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/dummy2_description) by extensions ['colcon_pkg']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/dummy2_description) by extension 'colcon_pkg'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/dummy2_description) by extensions ['colcon_meta']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/dummy2_description) by extension 'colcon_meta'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/dummy2_description) by extensions ['ros']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/dummy2_description) by extension 'ros'
+[0.629s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dummy2_description' with type 'ros.ament_python' and name 'dummy2_description'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_interface) by extension 'ignore'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_interface) by extension 'ignore_ament_install'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_interface) by extensions ['colcon_pkg']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_interface) by extension 'colcon_pkg'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_interface) by extensions ['colcon_meta']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_interface) by extension 'colcon_meta'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_interface) by extensions ['ros']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_interface) by extension 'ros'
+[0.631s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rboot_interface' with type 'ros.ament_cmake' and name 'rboot_interface'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_launch) by extension 'ignore'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_launch) by extension 'ignore_ament_install'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_launch) by extensions ['colcon_pkg']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_launch) by extension 'colcon_pkg'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_launch) by extensions ['colcon_meta']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_launch) by extension 'colcon_meta'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_launch) by extensions ['ros']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_launch) by extension 'ros'
+[0.633s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rboot_launch' with type 'ros.ament_python' and name 'rboot_launch'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_libs) by extensions ['ignore', 'ignore_ament_install']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_libs) by extension 'ignore'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_libs) by extension 'ignore_ament_install'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_libs) by extensions ['colcon_pkg']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_libs) by extension 'colcon_pkg'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_libs) by extensions ['colcon_meta']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_libs) by extension 'colcon_meta'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_libs) by extensions ['ros']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_libs) by extension 'ros'
+[0.635s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rboot_libs' with type 'ros.ament_python' and name 'rboot_libs'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_topic) by extensions ['ignore', 'ignore_ament_install']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_topic) by extension 'ignore'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_topic) by extension 'ignore_ament_install'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_topic) by extensions ['colcon_pkg']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_topic) by extension 'colcon_pkg'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_topic) by extensions ['colcon_meta']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_topic) by extension 'colcon_meta'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_topic) by extensions ['ros']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(src/rboot_topic) by extension 'ros'
+[0.637s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rboot_topic' with type 'ros.ament_python' and name 'rboot_topic'
+[0.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.688s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 360 installed packages in /opt/ros/humble
+[0.708s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.833s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'cmake_args' from command line to 'None'
+[0.833s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'cmake_target' from command line to 'None'
+[0.833s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.833s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.833s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.833s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.833s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.833s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.833s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.833s] DEBUG:colcon.colcon_core.verb:Building package 'arm_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jj/dual_dummy/build/arm_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jj/dual_dummy/install/arm_control', 'merge_install': False, 'path': '/home/jj/dual_dummy/src/arm_control', 'symlink_install': False, 'test_result_base': None}
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'dummy2_description' build argument 'cmake_args' from command line to 'None'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'dummy2_description' build argument 'cmake_target' from command line to 'None'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'dummy2_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'dummy2_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'dummy2_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'dummy2_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'dummy2_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'dummy2_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'dummy2_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.834s] DEBUG:colcon.colcon_core.verb:Building package 'dummy2_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jj/dual_dummy/build/dummy2_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jj/dual_dummy/install/dummy2_description', 'merge_install': False, 'path': '/home/jj/dual_dummy/src/dummy2_description', 'symlink_install': False, 'test_result_base': None}
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'rboot_interface' build argument 'cmake_args' from command line to 'None'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'rboot_interface' build argument 'cmake_target' from command line to 'None'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'rboot_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'rboot_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'rboot_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'rboot_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'rboot_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'rboot_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.834s] Level 5:colcon.colcon_core.verb:set package 'rboot_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.834s] DEBUG:colcon.colcon_core.verb:Building package 'rboot_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jj/dual_dummy/build/rboot_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jj/dual_dummy/install/rboot_interface', 'merge_install': False, 'path': '/home/jj/dual_dummy/src/rboot_interface', 'symlink_install': False, 'test_result_base': None}
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'rboot_launch' build argument 'cmake_args' from command line to 'None'
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'rboot_launch' build argument 'cmake_target' from command line to 'None'
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'rboot_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'rboot_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'rboot_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'rboot_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'rboot_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'rboot_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'rboot_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.835s] DEBUG:colcon.colcon_core.verb:Building package 'rboot_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jj/dual_dummy/build/rboot_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jj/dual_dummy/install/rboot_launch', 'merge_install': False, 'path': '/home/jj/dual_dummy/src/rboot_launch', 'symlink_install': False, 'test_result_base': None}
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'rboot_libs' build argument 'cmake_args' from command line to 'None'
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'rboot_libs' build argument 'cmake_target' from command line to 'None'
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'rboot_libs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.835s] Level 5:colcon.colcon_core.verb:set package 'rboot_libs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'rboot_libs' build argument 'cmake_clean_first' from command line to 'False'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'rboot_libs' build argument 'cmake_force_configure' from command line to 'False'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'rboot_libs' build argument 'ament_cmake_args' from command line to 'None'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'rboot_libs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'rboot_libs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.836s] DEBUG:colcon.colcon_core.verb:Building package 'rboot_libs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jj/dual_dummy/build/rboot_libs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jj/dual_dummy/install/rboot_libs', 'merge_install': False, 'path': '/home/jj/dual_dummy/src/rboot_libs', 'symlink_install': False, 'test_result_base': None}
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'rboot_topic' build argument 'cmake_args' from command line to 'None'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'rboot_topic' build argument 'cmake_target' from command line to 'None'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'rboot_topic' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'rboot_topic' build argument 'cmake_clean_cache' from command line to 'False'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'rboot_topic' build argument 'cmake_clean_first' from command line to 'False'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'rboot_topic' build argument 'cmake_force_configure' from command line to 'False'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'rboot_topic' build argument 'ament_cmake_args' from command line to 'None'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'rboot_topic' build argument 'catkin_cmake_args' from command line to 'None'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'rboot_topic' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.836s] DEBUG:colcon.colcon_core.verb:Building package 'rboot_topic' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jj/dual_dummy/build/rboot_topic', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jj/dual_dummy/install/rboot_topic', 'merge_install': False, 'path': '/home/jj/dual_dummy/src/rboot_topic', 'symlink_install': False, 'test_result_base': None}
+[0.837s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.838s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.839s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jj/dual_dummy/src/rboot_interface' with build type 'ament_cmake'
+[0.840s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jj/dual_dummy/src/rboot_interface'
+[0.847s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.847s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.848s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.856s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jj/dual_dummy/src/arm_control' with build type 'ament_cmake'
+[0.856s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jj/dual_dummy/src/arm_control'
+[0.856s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.856s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.862s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jj/dual_dummy/src/dummy2_description' with build type 'ament_python'
+[0.863s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy2_description', 'ament_prefix_path')
+[0.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/hook/ament_prefix_path.ps1'
+[0.865s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/hook/ament_prefix_path.dsv'
+[0.866s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/hook/ament_prefix_path.sh'
+[0.869s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.869s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.876s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jj/dual_dummy/src/rboot_launch' with build type 'ament_python'
+[0.876s] Level 1:colcon.colcon_core.shell:create_environment_hook('rboot_launch', 'ament_prefix_path')
+[0.877s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_launch/share/rboot_launch/hook/ament_prefix_path.ps1'
+[0.878s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/rboot_launch/share/rboot_launch/hook/ament_prefix_path.dsv'
+[0.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_launch/share/rboot_launch/hook/ament_prefix_path.sh'
+[0.880s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.880s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.892s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jj/dual_dummy/build/rboot_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jj/dual_dummy/src/rboot_interface -DCMAKE_INSTALL_PREFIX=/home/jj/dual_dummy/install/rboot_interface
+[0.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jj/dual_dummy/build/arm_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jj/dual_dummy/src/arm_control -DCMAKE_INSTALL_PREFIX=/home/jj/dual_dummy/install/arm_control
+[1.278s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jj/dual_dummy/src/dummy2_description'
+[1.278s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.278s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.617s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jj/dual_dummy/src/rboot_launch'
+[1.618s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.618s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.386s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jj/dual_dummy/src/rboot_launch': PYTHONPATH=/home/jj/dual_dummy/build/rboot_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/rboot_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rboot_launch build --build-base /home/jj/dual_dummy/build/rboot_launch/build install --record /home/jj/dual_dummy/build/rboot_launch/install.log --single-version-externally-managed install_data
+[2.419s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jj/dual_dummy/src/dummy2_description': PYTHONPATH=/home/jj/dual_dummy/build/dummy2_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dummy2_description build --build-base /home/jj/dual_dummy/build/dummy2_description/build install --record /home/jj/dual_dummy/build/dummy2_description/install.log --single-version-externally-managed install_data
+[2.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jj/dual_dummy/src/rboot_launch' returned '0': PYTHONPATH=/home/jj/dual_dummy/build/rboot_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/rboot_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rboot_launch build --build-base /home/jj/dual_dummy/build/rboot_launch/build install --record /home/jj/dual_dummy/build/rboot_launch/install.log --single-version-externally-managed install_data
+[2.846s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_launch' for CMake module files
+[2.847s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_launch' for CMake config files
+[2.848s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_launch/lib'
+[2.848s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_launch/bin'
+[2.848s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_launch/lib/pkgconfig/rboot_launch.pc'
+[2.848s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_launch/lib/python3.10/site-packages'
+[2.848s] Level 1:colcon.colcon_core.shell:create_environment_hook('rboot_launch', 'pythonpath')
+[2.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_launch/share/rboot_launch/hook/pythonpath.ps1'
+[2.851s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/rboot_launch/share/rboot_launch/hook/pythonpath.dsv'
+[2.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_launch/share/rboot_launch/hook/pythonpath.sh'
+[2.855s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_launch/bin'
+[2.855s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rboot_launch)
+[2.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_launch/share/rboot_launch/package.ps1'
+[2.859s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jj/dual_dummy/install/rboot_launch/share/rboot_launch/package.dsv'
+[2.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_launch/share/rboot_launch/package.sh'
+[2.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_launch/share/rboot_launch/package.bash'
+[2.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_launch/share/rboot_launch/package.zsh'
+[2.868s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jj/dual_dummy/install/rboot_launch/share/colcon-core/packages/rboot_launch)
+[2.869s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jj/dual_dummy/src/rboot_libs' with build type 'ament_python'
+[2.869s] Level 1:colcon.colcon_core.shell:create_environment_hook('rboot_libs', 'ament_prefix_path')
+[2.870s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_libs/share/rboot_libs/hook/ament_prefix_path.ps1'
+[2.870s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/rboot_libs/share/rboot_libs/hook/ament_prefix_path.dsv'
+[2.873s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_libs/share/rboot_libs/hook/ament_prefix_path.sh'
+[2.874s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.874s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.245s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jj/dual_dummy/src/rboot_libs'
+[3.246s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.246s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.254s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/dummy2_description' for CMake module files
+[3.255s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/dummy2_description' for CMake config files
+[3.256s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jj/dual_dummy/src/dummy2_description' returned '0': PYTHONPATH=/home/jj/dual_dummy/build/dummy2_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dummy2_description build --build-base /home/jj/dual_dummy/build/dummy2_description/build install --record /home/jj/dual_dummy/build/dummy2_description/install.log --single-version-externally-managed install_data
+[3.257s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/dummy2_description/lib'
+[3.257s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/dummy2_description/bin'
+[3.257s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/dummy2_description/lib/pkgconfig/dummy2_description.pc'
+[3.258s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages'
+[3.258s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy2_description', 'pythonpath')
+[3.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/hook/pythonpath.ps1'
+[3.260s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/hook/pythonpath.dsv'
+[3.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/hook/pythonpath.sh'
+[3.263s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/dummy2_description/bin'
+[3.263s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy2_description)
+[3.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/package.ps1'
+[3.264s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/package.dsv'
+[3.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/package.sh'
+[3.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/package.bash'
+[3.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/dummy2_description/share/dummy2_description/package.zsh'
+[3.266s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jj/dual_dummy/install/dummy2_description/share/colcon-core/packages/dummy2_description)
+[3.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jj/dual_dummy/src/rboot_libs': PYTHONPATH=/home/jj/dual_dummy/build/rboot_libs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/rboot_libs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rboot_libs build --build-base /home/jj/dual_dummy/build/rboot_libs/build install --record /home/jj/dual_dummy/build/rboot_libs/install.log --single-version-externally-managed install_data
+[4.012s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_libs' for CMake module files
+[4.012s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jj/dual_dummy/src/rboot_libs' returned '0': PYTHONPATH=/home/jj/dual_dummy/build/rboot_libs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/rboot_libs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rboot_libs build --build-base /home/jj/dual_dummy/build/rboot_libs/build install --record /home/jj/dual_dummy/build/rboot_libs/install.log --single-version-externally-managed install_data
+[4.012s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_libs' for CMake config files
+[4.013s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_libs/lib'
+[4.013s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_libs/bin'
+[4.013s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_libs/lib/pkgconfig/rboot_libs.pc'
+[4.013s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_libs/lib/python3.10/site-packages'
+[4.013s] Level 1:colcon.colcon_core.shell:create_environment_hook('rboot_libs', 'pythonpath')
+[4.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_libs/share/rboot_libs/hook/pythonpath.ps1'
+[4.014s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/rboot_libs/share/rboot_libs/hook/pythonpath.dsv'
+[4.015s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_libs/share/rboot_libs/hook/pythonpath.sh'
+[4.015s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_libs/bin'
+[4.015s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rboot_libs)
+[4.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_libs/share/rboot_libs/package.ps1'
+[4.016s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jj/dual_dummy/install/rboot_libs/share/rboot_libs/package.dsv'
+[4.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_libs/share/rboot_libs/package.sh'
+[4.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_libs/share/rboot_libs/package.bash'
+[4.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_libs/share/rboot_libs/package.zsh'
+[4.017s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jj/dual_dummy/install/rboot_libs/share/colcon-core/packages/rboot_libs)
+[4.054s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jj/dual_dummy/build/rboot_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jj/dual_dummy/src/rboot_interface -DCMAKE_INSTALL_PREFIX=/home/jj/dual_dummy/install/rboot_interface
+[4.055s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jj/dual_dummy/build/rboot_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jj/dual_dummy/build/rboot_interface -- -j4 -l4
+[5.977s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jj/dual_dummy/build/arm_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jj/dual_dummy/src/arm_control -DCMAKE_INSTALL_PREFIX=/home/jj/dual_dummy/install/arm_control
+[5.977s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jj/dual_dummy/build/arm_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jj/dual_dummy/build/arm_control -- -j4 -l4
+[30.075s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jj/dual_dummy/build/rboot_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jj/dual_dummy/build/rboot_interface -- -j4 -l4
+[30.103s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jj/dual_dummy/build/rboot_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jj/dual_dummy/build/rboot_interface
+[30.717s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rboot_interface)
+[30.718s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_interface' for CMake module files
+[30.718s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_interface' for CMake config files
+[30.719s] Level 1:colcon.colcon_core.shell:create_environment_hook('rboot_interface', 'cmake_prefix_path')
+[30.719s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/hook/cmake_prefix_path.ps1'
+[30.720s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jj/dual_dummy/build/rboot_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jj/dual_dummy/build/rboot_interface
+[30.726s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/hook/cmake_prefix_path.dsv'
+[30.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/hook/cmake_prefix_path.sh'
+[30.731s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_interface/lib'
+[30.731s] Level 1:colcon.colcon_core.shell:create_environment_hook('rboot_interface', 'ld_library_path_lib')
+[30.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/hook/ld_library_path_lib.ps1'
+[30.733s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/hook/ld_library_path_lib.dsv'
+[30.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/hook/ld_library_path_lib.sh'
+[30.738s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_interface/bin'
+[30.738s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_interface/lib/pkgconfig/rboot_interface.pc'
+[30.741s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_interface/lib/python3.10/site-packages'
+[30.741s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_interface/bin'
+[30.743s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/package.ps1'
+[30.748s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/package.dsv'
+[30.750s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/package.sh'
+[30.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/package.bash'
+[30.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/package.zsh'
+[30.758s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jj/dual_dummy/install/rboot_interface/share/colcon-core/packages/rboot_interface)
+[30.762s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rboot_interface)
+[30.767s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_interface' for CMake module files
+[30.768s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_interface' for CMake config files
+[30.768s] Level 1:colcon.colcon_core.shell:create_environment_hook('rboot_interface', 'cmake_prefix_path')
+[30.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/hook/cmake_prefix_path.ps1'
+[30.776s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/hook/cmake_prefix_path.dsv'
+[30.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/hook/cmake_prefix_path.sh'
+[30.785s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_interface/lib'
+[30.785s] Level 1:colcon.colcon_core.shell:create_environment_hook('rboot_interface', 'ld_library_path_lib')
+[30.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/hook/ld_library_path_lib.ps1'
+[30.786s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/hook/ld_library_path_lib.dsv'
+[30.796s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/hook/ld_library_path_lib.sh'
+[30.799s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_interface/bin'
+[30.801s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_interface/lib/pkgconfig/rboot_interface.pc'
+[30.801s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_interface/lib/python3.10/site-packages'
+[30.802s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_interface/bin'
+[30.802s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/package.ps1'
+[30.809s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/package.dsv'
+[30.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/package.sh'
+[30.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/package.bash'
+[30.818s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_interface/share/rboot_interface/package.zsh'
+[30.819s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jj/dual_dummy/install/rboot_interface/share/colcon-core/packages/rboot_interface)
+[30.820s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jj/dual_dummy/src/rboot_topic' with build type 'ament_python'
+[30.824s] Level 1:colcon.colcon_core.shell:create_environment_hook('rboot_topic', 'ament_prefix_path')
+[30.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_topic/share/rboot_topic/hook/ament_prefix_path.ps1'
+[30.825s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/rboot_topic/share/rboot_topic/hook/ament_prefix_path.dsv'
+[30.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_topic/share/rboot_topic/hook/ament_prefix_path.sh'
+[30.829s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[30.829s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[32.449s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jj/dual_dummy/src/rboot_topic'
+[32.449s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[32.449s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[33.762s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jj/dual_dummy/src/rboot_topic': AMENT_PREFIX_PATH=/home/jj/dual_dummy/install/rboot_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jj/dual_dummy/install/rboot_interface LD_LIBRARY_PATH=/home/jj/dual_dummy/install/rboot_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jj/dual_dummy/build/rboot_topic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/rboot_topic/lib/python3.10/site-packages:/home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rboot_topic build --build-base /home/jj/dual_dummy/build/rboot_topic/build install --record /home/jj/dual_dummy/build/rboot_topic/install.log --single-version-externally-managed install_data
+[34.517s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_topic' for CMake module files
+[34.518s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_topic' for CMake config files
+[34.519s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_topic/lib'
+[34.519s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_topic/bin'
+[34.519s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_topic/lib/pkgconfig/rboot_topic.pc'
+[34.519s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_topic/lib/python3.10/site-packages'
+[34.519s] Level 1:colcon.colcon_core.shell:create_environment_hook('rboot_topic', 'pythonpath')
+[34.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_topic/share/rboot_topic/hook/pythonpath.ps1'
+[34.520s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jj/dual_dummy/src/rboot_topic' returned '0': AMENT_PREFIX_PATH=/home/jj/dual_dummy/install/rboot_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jj/dual_dummy/install/rboot_interface LD_LIBRARY_PATH=/home/jj/dual_dummy/install/rboot_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jj/dual_dummy/build/rboot_topic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/rboot_topic/lib/python3.10/site-packages:/home/jj/dual_dummy/install/rboot_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rboot_topic build --build-base /home/jj/dual_dummy/build/rboot_topic/build install --record /home/jj/dual_dummy/build/rboot_topic/install.log --single-version-externally-managed install_data
+[34.521s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/rboot_topic/share/rboot_topic/hook/pythonpath.dsv'
+[34.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/rboot_topic/share/rboot_topic/hook/pythonpath.sh'
+[34.522s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/rboot_topic/bin'
+[34.523s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rboot_topic)
+[34.523s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_topic/share/rboot_topic/package.ps1'
+[34.524s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jj/dual_dummy/install/rboot_topic/share/rboot_topic/package.dsv'
+[34.525s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_topic/share/rboot_topic/package.sh'
+[34.525s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_topic/share/rboot_topic/package.bash'
+[34.526s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/rboot_topic/share/rboot_topic/package.zsh'
+[34.527s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jj/dual_dummy/install/rboot_topic/share/colcon-core/packages/rboot_topic)
+[75.945s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jj/dual_dummy/build/arm_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jj/dual_dummy/build/arm_control -- -j4 -l4
+[75.990s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jj/dual_dummy/build/arm_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jj/dual_dummy/build/arm_control
+[76.199s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_control)
+[76.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jj/dual_dummy/build/arm_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jj/dual_dummy/build/arm_control
+[76.209s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/arm_control' for CMake module files
+[76.211s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/arm_control' for CMake config files
+[76.213s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_control', 'cmake_prefix_path')
+[76.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/arm_control/share/arm_control/hook/cmake_prefix_path.ps1'
+[76.221s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/arm_control/share/arm_control/hook/cmake_prefix_path.dsv'
+[76.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/arm_control/share/arm_control/hook/cmake_prefix_path.sh'
+[76.228s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/arm_control/lib'
+[76.229s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_control', 'ld_library_path_lib')
+[76.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/arm_control/share/arm_control/hook/ld_library_path_lib.ps1'
+[76.230s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/arm_control/share/arm_control/hook/ld_library_path_lib.dsv'
+[76.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/arm_control/share/arm_control/hook/ld_library_path_lib.sh'
+[76.232s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/arm_control/bin'
+[76.232s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/arm_control/lib/pkgconfig/arm_control.pc'
+[76.236s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/arm_control/lib/python3.10/site-packages'
+[76.236s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/arm_control/bin'
+[76.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/arm_control/share/arm_control/package.ps1'
+[76.241s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jj/dual_dummy/install/arm_control/share/arm_control/package.dsv'
+[76.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/arm_control/share/arm_control/package.sh'
+[76.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/arm_control/share/arm_control/package.bash'
+[76.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/arm_control/share/arm_control/package.zsh'
+[76.248s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jj/dual_dummy/install/arm_control/share/colcon-core/packages/arm_control)
+[76.251s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_control)
+[76.254s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/arm_control' for CMake module files
+[76.256s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/arm_control' for CMake config files
+[76.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_control', 'cmake_prefix_path')
+[76.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/arm_control/share/arm_control/hook/cmake_prefix_path.ps1'
+[76.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/arm_control/share/arm_control/hook/cmake_prefix_path.dsv'
+[76.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/arm_control/share/arm_control/hook/cmake_prefix_path.sh'
+[76.263s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/arm_control/lib'
+[76.263s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_control', 'ld_library_path_lib')
+[76.263s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/arm_control/share/arm_control/hook/ld_library_path_lib.ps1'
+[76.264s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jj/dual_dummy/install/arm_control/share/arm_control/hook/ld_library_path_lib.dsv'
+[76.265s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jj/dual_dummy/install/arm_control/share/arm_control/hook/ld_library_path_lib.sh'
+[76.266s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/arm_control/bin'
+[76.266s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/arm_control/lib/pkgconfig/arm_control.pc'
+[76.267s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/arm_control/lib/python3.10/site-packages'
+[76.267s] Level 1:colcon.colcon_core.environment:checking '/home/jj/dual_dummy/install/arm_control/bin'
+[76.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/arm_control/share/arm_control/package.ps1'
+[76.269s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jj/dual_dummy/install/arm_control/share/arm_control/package.dsv'
+[76.270s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/arm_control/share/arm_control/package.sh'
+[76.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/arm_control/share/arm_control/package.bash'
+[76.272s] INFO:colcon.colcon_core.shell:Creating package script '/home/jj/dual_dummy/install/arm_control/share/arm_control/package.zsh'
+[76.274s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jj/dual_dummy/install/arm_control/share/colcon-core/packages/arm_control)
+[76.279s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[76.282s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[76.283s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[76.284s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[76.372s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[76.372s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[76.373s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[76.696s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[76.701s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jj/dual_dummy/install/local_setup.ps1'
+[76.704s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jj/dual_dummy/install/_local_setup_util_ps1.py'
+[76.707s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jj/dual_dummy/install/setup.ps1'
+[76.713s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jj/dual_dummy/install/local_setup.sh'
+[76.715s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jj/dual_dummy/install/_local_setup_util_sh.py'
+[76.715s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jj/dual_dummy/install/setup.sh'
+[76.718s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jj/dual_dummy/install/local_setup.bash'
+[76.721s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jj/dual_dummy/install/setup.bash'
+[76.724s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jj/dual_dummy/install/local_setup.zsh'
+[76.726s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jj/dual_dummy/install/setup.zsh'

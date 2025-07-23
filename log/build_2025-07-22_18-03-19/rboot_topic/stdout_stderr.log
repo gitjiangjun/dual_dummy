@@ -1,0 +1,25 @@
+running egg_info
+writing ../../build/rboot_topic/rboot_topic.egg-info/PKG-INFO
+writing dependency_links to ../../build/rboot_topic/rboot_topic.egg-info/dependency_links.txt
+writing entry points to ../../build/rboot_topic/rboot_topic.egg-info/entry_points.txt
+writing requirements to ../../build/rboot_topic/rboot_topic.egg-info/requires.txt
+writing top-level names to ../../build/rboot_topic/rboot_topic.egg-info/top_level.txt
+reading manifest file '../../build/rboot_topic/rboot_topic.egg-info/SOURCES.txt'
+writing manifest file '../../build/rboot_topic/rboot_topic.egg-info/SOURCES.txt'
+running build
+running build_py
+copying rboot_topic/right_ros_controller.py -> /home/jj/dual_dummy/build/rboot_topic/build/lib/rboot_topic
+copying rboot_topic/left_ros_controller.py -> /home/jj/dual_dummy/build/rboot_topic/build/lib/rboot_topic
+running install
+running install_lib
+copying /home/jj/dual_dummy/build/rboot_topic/build/lib/rboot_topic/right_ros_controller.py -> /home/jj/dual_dummy/install/rboot_topic/lib/python3.10/site-packages/rboot_topic
+copying /home/jj/dual_dummy/build/rboot_topic/build/lib/rboot_topic/left_ros_controller.py -> /home/jj/dual_dummy/install/rboot_topic/lib/python3.10/site-packages/rboot_topic
+byte-compiling /home/jj/dual_dummy/install/rboot_topic/lib/python3.10/site-packages/rboot_topic/right_ros_controller.py to right_ros_controller.cpython-310.pyc
+byte-compiling /home/jj/dual_dummy/install/rboot_topic/lib/python3.10/site-packages/rboot_topic/left_ros_controller.py to left_ros_controller.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/jj/dual_dummy/install/rboot_topic/lib/python3.10/site-packages/rboot_topic-0.0.1-py3.10.egg-info' (and everything under it)
+Copying ../../build/rboot_topic/rboot_topic.egg-info to /home/jj/dual_dummy/install/rboot_topic/lib/python3.10/site-packages/rboot_topic-0.0.1-py3.10.egg-info
+running install_scripts
+Installing dummy2_ros_controller script to /home/jj/dual_dummy/install/rboot_topic/lib/rboot_topic
+writing list of installed files to '/home/jj/dual_dummy/build/rboot_topic/install.log'

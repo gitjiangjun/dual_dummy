@@ -1,0 +1,6 @@
+source;share/rboot_libs/hook/pythonpath.ps1
+source;share/rboot_libs/hook/pythonpath.dsv
+source;share/rboot_libs/hook/pythonpath.sh
+source;share/rboot_libs/hook/ament_prefix_path.ps1
+source;share/rboot_libs/hook/ament_prefix_path.dsv
+source;share/rboot_libs/hook/ament_prefix_path.sh

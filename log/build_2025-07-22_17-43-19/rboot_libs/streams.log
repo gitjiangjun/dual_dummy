@@ -1,0 +1,36 @@
+[0.812s] Invoking command in '/home/jj/dual_dummy/src/rboot_libs': PYTHONPATH=/home/jj/dual_dummy/build/rboot_libs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/rboot_libs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rboot_libs build --build-base /home/jj/dual_dummy/build/rboot_libs/build install --record /home/jj/dual_dummy/build/rboot_libs/install.log --single-version-externally-managed install_data
+[1.052s] running egg_info
+[1.052s] creating ../../build/rboot_libs/rboot_libs.egg-info
+[1.053s] writing ../../build/rboot_libs/rboot_libs.egg-info/PKG-INFO
+[1.053s] writing dependency_links to ../../build/rboot_libs/rboot_libs.egg-info/dependency_links.txt
+[1.054s] writing entry points to ../../build/rboot_libs/rboot_libs.egg-info/entry_points.txt
+[1.054s] writing requirements to ../../build/rboot_libs/rboot_libs.egg-info/requires.txt
+[1.054s] writing top-level names to ../../build/rboot_libs/rboot_libs.egg-info/top_level.txt
+[1.054s] writing manifest file '../../build/rboot_libs/rboot_libs.egg-info/SOURCES.txt'
+[1.057s] reading manifest file '../../build/rboot_libs/rboot_libs.egg-info/SOURCES.txt'
+[1.058s] writing manifest file '../../build/rboot_libs/rboot_libs.egg-info/SOURCES.txt'
+[1.059s] running build
+[1.059s] running build_py
+[1.059s] creating /home/jj/dual_dummy/build/rboot_libs/build
+[1.059s] creating /home/jj/dual_dummy/build/rboot_libs/build/lib
+[1.059s] creating /home/jj/dual_dummy/build/rboot_libs/build/lib/rboot_libs
+[1.061s] copying rboot_libs/__init__.py -> /home/jj/dual_dummy/build/rboot_libs/build/lib/rboot_libs
+[1.061s] copying rboot_libs/rbootlibs.py -> /home/jj/dual_dummy/build/rboot_libs/build/lib/rboot_libs
+[1.062s] running install
+[1.062s] running install_lib
+[1.071s] creating /home/jj/dual_dummy/install/rboot_libs/lib/python3.10/site-packages/rboot_libs
+[1.071s] copying /home/jj/dual_dummy/build/rboot_libs/build/lib/rboot_libs/__init__.py -> /home/jj/dual_dummy/install/rboot_libs/lib/python3.10/site-packages/rboot_libs
+[1.071s] copying /home/jj/dual_dummy/build/rboot_libs/build/lib/rboot_libs/rbootlibs.py -> /home/jj/dual_dummy/install/rboot_libs/lib/python3.10/site-packages/rboot_libs
+[1.071s] byte-compiling /home/jj/dual_dummy/install/rboot_libs/lib/python3.10/site-packages/rboot_libs/__init__.py to __init__.cpython-310.pyc
+[1.072s] byte-compiling /home/jj/dual_dummy/install/rboot_libs/lib/python3.10/site-packages/rboot_libs/rbootlibs.py to rbootlibs.cpython-310.pyc
+[1.076s] running install_data
+[1.076s] creating /home/jj/dual_dummy/install/rboot_libs/share/ament_index
+[1.076s] creating /home/jj/dual_dummy/install/rboot_libs/share/ament_index/resource_index
+[1.076s] creating /home/jj/dual_dummy/install/rboot_libs/share/ament_index/resource_index/packages
+[1.077s] copying resource/rboot_libs -> /home/jj/dual_dummy/install/rboot_libs/share/ament_index/resource_index/packages
+[1.077s] copying package.xml -> /home/jj/dual_dummy/install/rboot_libs/share/rboot_libs
+[1.077s] running install_egg_info
+[1.079s] Copying ../../build/rboot_libs/rboot_libs.egg-info to /home/jj/dual_dummy/install/rboot_libs/lib/python3.10/site-packages/rboot_libs-0.0.0-py3.10.egg-info
+[1.082s] running install_scripts
+[1.104s] writing list of installed files to '/home/jj/dual_dummy/build/rboot_libs/install.log'
+[1.140s] Invoked command in '/home/jj/dual_dummy/src/rboot_libs' returned '0': PYTHONPATH=/home/jj/dual_dummy/build/rboot_libs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/rboot_libs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rboot_libs build --build-base /home/jj/dual_dummy/build/rboot_libs/build install --record /home/jj/dual_dummy/build/rboot_libs/install.log --single-version-externally-managed install_data

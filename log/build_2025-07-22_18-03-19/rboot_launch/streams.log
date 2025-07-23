@@ -1,0 +1,20 @@
+[2.602s] Invoking command in '/home/jj/dual_dummy/src/rboot_launch': PYTHONPATH=/home/jj/dual_dummy/build/rboot_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/rboot_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rboot_launch build --build-base /home/jj/dual_dummy/build/rboot_launch/build install --record /home/jj/dual_dummy/build/rboot_launch/install.log --single-version-externally-managed install_data
+[3.062s] running egg_info
+[3.063s] writing ../../build/rboot_launch/rboot_launch.egg-info/PKG-INFO
+[3.063s] writing dependency_links to ../../build/rboot_launch/rboot_launch.egg-info/dependency_links.txt
+[3.063s] writing entry points to ../../build/rboot_launch/rboot_launch.egg-info/entry_points.txt
+[3.065s] writing requirements to ../../build/rboot_launch/rboot_launch.egg-info/requires.txt
+[3.065s] writing top-level names to ../../build/rboot_launch/rboot_launch.egg-info/top_level.txt
+[3.072s] reading manifest file '../../build/rboot_launch/rboot_launch.egg-info/SOURCES.txt'
+[3.073s] writing manifest file '../../build/rboot_launch/rboot_launch.egg-info/SOURCES.txt'
+[3.074s] running build
+[3.074s] running build_py
+[3.075s] running install
+[3.077s] running install_lib
+[3.087s] running install_data
+[3.087s] running install_egg_info
+[3.090s] removing '/home/jj/dual_dummy/install/rboot_launch/lib/python3.10/site-packages/rboot_launch-0.0.0-py3.10.egg-info' (and everything under it)
+[3.092s] Copying ../../build/rboot_launch/rboot_launch.egg-info to /home/jj/dual_dummy/install/rboot_launch/lib/python3.10/site-packages/rboot_launch-0.0.0-py3.10.egg-info
+[3.096s] running install_scripts
+[3.213s] writing list of installed files to '/home/jj/dual_dummy/build/rboot_launch/install.log'
+[3.287s] Invoked command in '/home/jj/dual_dummy/src/rboot_launch' returned '0': PYTHONPATH=/home/jj/dual_dummy/build/rboot_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/rboot_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rboot_launch build --build-base /home/jj/dual_dummy/build/rboot_launch/build install --record /home/jj/dual_dummy/build/rboot_launch/install.log --single-version-externally-managed install_data
