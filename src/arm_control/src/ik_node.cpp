@@ -132,7 +132,7 @@ private:
             // 创建求解器
             ChainFkSolverPos_recursive fk_solver(chain);
             ChainIkSolverVel_pinv vel_ik_solver(chain);
-            ChainIkSolverPos_NR_JL ik_solver(chain, joint_min,joint_max,fk_solver, vel_ik_solver, 150, 1e-1);
+            ChainIkSolverPos_NR_JL ik_solver(chain, joint_min,joint_max,fk_solver, vel_ik_solver, 150, 0.5*1e-2);
 
             // 设置初始关节位置
             KDL::JntArray q_init(chain.getNrOfJoints());
@@ -150,7 +150,7 @@ private:
             if (ret >= 0) {
                 result.success = true;
                 for (size_t i = 0; i < 6; i++) {
-                    result.angles[i] = q_out(i);
+                    result.angles[i] = std::fmod(q_out(i)+M_PI,2*M_PI)-M_PI;
                 }
             } else {
                 RCLCPP_WARN(this->get_logger(), "IK solver failed with error code: %d", ret);
@@ -207,42 +207,32 @@ private:
         Matrix4d lo_start_pose=Convert_to_Arm(arm,start_pose);
         //转换到臂坐标系
         Eigen::Matrix4d lo_target_pose=Convert_to_Arm(arm,target_pose);
-        std::vector<PathPoint> temp_j=cartesianLinearTrajectory(lo_start_pose,lo_target_pose,20,1);
-        std::vector<arm_control::msg::IKResult> ik_msgs;
+        std::vector<PathPoint> temp_j=cartesianLinearTrajectory(lo_start_pose,lo_target_pose,10,1);
+        IKSolution sol;
+        auto ik_msgs=arm_control::msg::IKResult();
         RCLCPP_INFO(this->get_logger(),"num of cartesia:%d",temp_j.size());
         for(int i=0;i<temp_j.size()-1;i++){
-            IKSolution sol = solve_ik(arm, temp_j[i+1].pose, initial_angles);
+            sol = solve_ik(arm, temp_j[i+1].pose, initial_angles);
             if(sol.success){
-                auto msg = arm_control::msg::IKResult();
-                msg.arm_name = arm + "_arm";
-                msg.success = true;
-                msg.joint_angles.resize(6);
                 for (int i = 0; i < 6; i++) {
-                    msg.joint_angles[i] = sol.angles[i];
+                    initial_angles[i] = sol.angles[i];//模拟逼近
                 }
-                ik_msgs.push_back(msg);
-            }else{
-                RCLCPP_ERROR(this->get_logger(), "Failed to compute IK for %s arm", arm.c_str());
-                break;
-            }
+            } 
             RCLCPP_INFO(this->get_logger(),"%d /10 of ik",i);
         }
-
-        if (ik_msgs.size()==temp_j.size()-1) {
-            // 发布关节角度,解集最后一个
-            auto temp=ik_msgs.back();
-
-            ik_pub_->publish(temp);
+        //只要最后的结果
+        if(sol.success){
+            ik_msgs.success=sol.success;
+            ik_msgs.arm_name=arm+"_arm";
+            ik_msgs.joint_angles=sol.angles;
+            ik_pub_->publish(ik_msgs);
+            RCLCPP_INFO(this->get_logger(), "IK solved for %s: [%.3f, %.3f, %.3f, %.3f, %.2f, %.3f]", 
+        arm.c_str(), sol.angles[0], sol.angles[1], sol.angles[2],sol.angles[3], sol.angles[4], sol.angles[5]);
             RCLCPP_INFO(this->get_logger(),"sleep before");
             rclcpp::sleep_for(std::chrono::seconds(5));
             RCLCPP_INFO(this->get_logger(),"sleep after");
-
-            RCLCPP_INFO(this->get_logger(), "IK solved for %s: [%.3f, %.3f, %.3f, %.3f, %.2f, %.3f]", 
-            arm.c_str(), temp.joint_angles[0], temp.joint_angles[1], temp.joint_angles[2],temp.joint_angles[3], temp.joint_angles[4], temp.joint_angles[5]);
-            // 等待到达位置（简化实现）
-            //rclcpp::sleep_for(std::chrono::seconds(5));
         }else{
-            RCLCPP_INFO(this->get_logger(),"ik_num is invalid");
+            RCLCPP_ERROR(this->get_logger(), "Failed to compute IK for %s arm", arm.c_str());
         }
     }
     // 辅助函数：执行抓取动作
@@ -290,7 +280,7 @@ private:
                 
                 joint_path[i]=arm_msg;
                 
-                // 更新当前角度,应为还没执行
+                // 更新当前角度,因为还没执行
                 left_current = Map<VectorXd>(left_sol.angles.data(), 6);
                 right_current = Map<VectorXd>(right_sol.angles.data(), 6);
             } else {
@@ -435,18 +425,19 @@ private:
         joint_max.resize(num_joints);
         
         // 设置左臂关节限制（单位：弧度）
-        joint_min(0) = -M_PI;  // 关节1最小值
-        joint_max(0) = M_PI;   // 关节1最大值
-        joint_min(1) = -M_PI;  // 关节2最小值
-        joint_max(1) = M_PI;   // 关节2最大值
-        joint_min(2) = -M_PI;  // 关节3最小值
-        joint_max(2) = M_PI;   // 关节3最大值
-        joint_min(3) = -M_PI;  // 关节4最小值
-        joint_max(3) = M_PI;   // 关节4最大值
-        joint_min(4) = -M_PI;  // 关节5最小值
-        joint_max(4) = M_PI;   // 关节5最大值
-        joint_min(5) = -M_PI;  // 关节6最小值
-        joint_max(5) = M_PI;   // 关节6最大值
+        joint_min(0) = -2*M_PI;  // 关节1最小值
+        joint_max(0) = 2*M_PI;   // 关节1最大值
+        joint_min(1) = -2*M_PI;  // 关节2最小值
+        joint_max(1) = 2*M_PI;   // 关节2最大值
+        joint_min(2) = -2*M_PI;  // 关节3最小值
+        joint_max(2) = 2*M_PI;   // 关节3最大值
+        joint_min(3) = -2*M_PI;  // 关节4最小值
+        joint_max(3) = 2*M_PI;   // 关节4最大值
+        joint_min(4) = -2*M_PI;  // 关节5最小值
+        joint_max(4) = 2*M_PI;   // 关节5最大值
+        joint_min(5) = -2*M_PI;  // 关节6最小值
+        joint_max(5) = 2*M_PI;   // 关节6最大值
+
         
     }
 
