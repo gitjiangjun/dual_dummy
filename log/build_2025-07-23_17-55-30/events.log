@@ -1,0 +1,468 @@
+[0.000000] (-) TimerEvent: {}
+[0.001048] (arm_control) JobQueued: {'identifier': 'arm_control', 'dependencies': OrderedDict()}
+[0.001306] (dummy2_description) JobQueued: {'identifier': 'dummy2_description', 'dependencies': OrderedDict()}
+[0.001334] (arm_control) JobStarted: {'identifier': 'arm_control'}
+[0.020594] (dummy2_description) JobStarted: {'identifier': 'dummy2_description'}
+[0.045454] (arm_control) JobProgress: {'identifier': 'arm_control', 'progress': 'cmake'}
+[0.051733] (arm_control) JobProgress: {'identifier': 'arm_control', 'progress': 'build'}
+[0.052588] (arm_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jj/dual_dummy/build/arm_control', '--', '-j4', '-l4'], 'cwd': '/home/jj/dual_dummy/build/arm_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jj'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jj/dual_dummy/install/arm_control/lib:/home/jj/dummy2_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jj'), ('OLDPWD', '/home/jj'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '2073'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jj/dual_dummy/install:/home/jj/dummy2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jj'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jj-virtual-machine:@/tmp/.ICE-unix/1251,unix/jj-virtual-machine:/tmp/.ICE-unix/1251'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d92a53e9_6469_490b_a247_938a73c3504c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BNP892'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jj/dual_dummy/install/dummy2_description:/home/jj/dual_dummy/install/arm_control:/home/jj/dummy2_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jj/dual_dummy/build/arm_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages:/home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages:/home/jj/dummy2_ws/build/rboot_libs:/home/jj/dummy2_ws/build/dummy2_can2eth:/home/jj/dummy2_ws/install/local/lib/python3.10/dist-packages:/home/jj/dummy2_ws/build/dummy2_description:/home/jj/dummy2_ws/build/dummy2-gripperv2_description:/home/jj/dummy2_ws/install/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jj/dual_dummy/install/arm_control:/home/jj/dummy2_ws/install:/home/jj/dual_dummy/install/dummy2_description:/opt/ros/humble')]), 'shell': False}
+[0.099371] (-) TimerEvent: {}
+[0.202135] (-) TimerEvent: {}
+[0.302823] (-) TimerEvent: {}
+[0.403222] (-) TimerEvent: {}
+[0.468141] (arm_control) StdoutLine: {'line': b'[  3%] Built target motionlib\n'}
+[0.468391] (arm_control) StdoutLine: {'line': b'[  5%] Built target arm_control__cpp\n'}
+[0.487260] (arm_control) StdoutLine: {'line': b'[ 14%] Built target arm_control__rosidl_generator_c\n'}
+[0.506628] (-) TimerEvent: {}
+[0.531215] (arm_control) StdoutLine: {'line': b'[ 14%] Built target ament_cmake_python_copy_arm_control\n'}
+[0.561626] (arm_control) StdoutLine: {'line': b'[ 22%] Built target arm_control__rosidl_typesupport_fastrtps_cpp\n'}
+[0.568190] (arm_control) StdoutLine: {'line': b'[ 31%] Built target arm_control__rosidl_typesupport_cpp\n'}
+[0.587078] (arm_control) StdoutLine: {'line': b'[ 40%] Built target arm_control__rosidl_typesupport_introspection_cpp\n'}
+[0.607334] (-) TimerEvent: {}
+[0.633796] (arm_control) StdoutLine: {'line': b'[ 49%] Built target arm_control__rosidl_typesupport_c\n'}
+[0.645191] (arm_control) StdoutLine: {'line': b'[ 57%] Built target arm_control__rosidl_typesupport_introspection_c\n'}
+[0.673571] (arm_control) StdoutLine: {'line': b'[ 66%] Built target arm_control__rosidl_typesupport_fastrtps_c\n'}
+[0.710201] (-) TimerEvent: {}
+[0.728138] (arm_control) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/ik_node.dir/src/ik_node.cpp.o\x1b[0m\n'}
+[0.760755] (arm_control) StdoutLine: {'line': b'[ 71%] Built target arm_controller_node\n'}
+[0.775186] (arm_control) StdoutLine: {'line': b'[ 75%] Built target trajectory_node\n'}
+[0.810429] (-) TimerEvent: {}
+[0.848292] (arm_control) StdoutLine: {'line': b'[ 75%] Built target arm_control\n'}
+[0.911517] (-) TimerEvent: {}
+[0.915383] (arm_control) StdoutLine: {'line': b'[ 78%] Built target trajectory_viewer\n'}
+[0.965844] (arm_control) StdoutLine: {'line': b'[ 80%] Built target arm_control__py\n'}
+[1.012709] (-) TimerEvent: {}
+[1.021746] (arm_control) StdoutLine: {'line': b'[ 87%] Built target arm_control__rosidl_generator_py\n'}
+[1.085972] (arm_control) StdoutLine: {'line': b'[ 91%] Built target arm_control__rosidl_typesupport_introspection_c__pyext\n'}
+[1.113168] (-) TimerEvent: {}
+[1.134099] (arm_control) StdoutLine: {'line': b'[ 94%] Built target arm_control__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.154696] (arm_control) StdoutLine: {'line': b'[ 98%] Built target arm_control__rosidl_typesupport_c__pyext\n'}
+[1.213601] (-) TimerEvent: {}
+[1.314105] (-) TimerEvent: {}
+[1.385496] (arm_control) StdoutLine: {'line': b'running egg_info\n'}
+[1.390885] (arm_control) StdoutLine: {'line': b'writing arm_control.egg-info/PKG-INFO\n'}
+[1.393626] (arm_control) StdoutLine: {'line': b'writing dependency_links to arm_control.egg-info/dependency_links.txt\n'}
+[1.395881] (arm_control) StdoutLine: {'line': b'writing top-level names to arm_control.egg-info/top_level.txt\n'}
+[1.401419] (arm_control) StdoutLine: {'line': b"reading manifest file 'arm_control.egg-info/SOURCES.txt'\n"}
+[1.402194] (arm_control) StdoutLine: {'line': b"writing manifest file 'arm_control.egg-info/SOURCES.txt'\n"}
+[1.417192] (-) TimerEvent: {}
+[1.520028] (-) TimerEvent: {}
+[1.542136] (arm_control) StdoutLine: {'line': b'[ 98%] Built target ament_cmake_python_build_arm_control_egg\n'}
+[1.621028] (-) TimerEvent: {}
+[1.721746] (-) TimerEvent: {}
+[1.824216] (-) TimerEvent: {}
+[1.886944] (dummy2_description) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/dummy2_description', 'build', '--build-base', '/home/jj/dual_dummy/build/dummy2_description/build', 'install', '--record', '/home/jj/dual_dummy/build/dummy2_description/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jj/dual_dummy/src/dummy2_description', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'jj', 'LC_TIME': 'zh_CN.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/jj/dual_dummy/install/arm_control/lib:/home/jj/dummy2_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/jj', 'OLDPWD': '/home/jj', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'zh_CN.UTF-8', 'SYSTEMD_EXEC_PID': '2073', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/jj/dual_dummy/install:/home/jj/dummy2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'jj', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jj', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jj-virtual-machine:@/tmp/.ICE-unix/1251,unix/jj-virtual-machine:/tmp/.ICE-unix/1251', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d92a53e9_6469_490b_a247_938a73c3504c', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.BNP892', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jj/dual_dummy/install/dummy2_description:/home/jj/dual_dummy/install/arm_control:/home/jj/dummy2_ws/install:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jj/dual_dummy/build/dummy2_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jj/dual_dummy/build/dummy2_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages:/home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages:/home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages:/home/jj/dummy2_ws/build/rboot_libs:/home/jj/dummy2_ws/build/dummy2_can2eth:/home/jj/dummy2_ws/install/local/lib/python3.10/dist-packages:/home/jj/dummy2_ws/build/dummy2_description:/home/jj/dummy2_ws/build/dummy2-gripperv2_description:/home/jj/dummy2_ws/install/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/jj/dual_dummy/install/arm_control:/home/jj/dummy2_ws/install'}, 'shell': False}
+[1.925849] (-) TimerEvent: {}
+[2.026754] (-) TimerEvent: {}
+[2.127911] (-) TimerEvent: {}
+[2.231100] (-) TimerEvent: {}
+[2.322301] (dummy2_description) StdoutLine: {'line': b'running egg_info\n'}
+[2.322554] (dummy2_description) StdoutLine: {'line': b'writing ../../build/dummy2_description/dummy2_description.egg-info/PKG-INFO\n'}
+[2.331221] (-) TimerEvent: {}
+[2.338402] (dummy2_description) StdoutLine: {'line': b'writing dependency_links to ../../build/dummy2_description/dummy2_description.egg-info/dependency_links.txt\n'}
+[2.338692] (dummy2_description) StdoutLine: {'line': b'writing entry points to ../../build/dummy2_description/dummy2_description.egg-info/entry_points.txt\n'}
+[2.338787] (dummy2_description) StdoutLine: {'line': b'writing requirements to ../../build/dummy2_description/dummy2_description.egg-info/requires.txt\n'}
+[2.338844] (dummy2_description) StdoutLine: {'line': b'writing top-level names to ../../build/dummy2_description/dummy2_description.egg-info/top_level.txt\n'}
+[2.338896] (dummy2_description) StdoutLine: {'line': b"reading manifest file '../../build/dummy2_description/dummy2_description.egg-info/SOURCES.txt'\n"}
+[2.340040] (dummy2_description) StdoutLine: {'line': b"writing manifest file '../../build/dummy2_description/dummy2_description.egg-info/SOURCES.txt'\n"}
+[2.340361] (dummy2_description) StdoutLine: {'line': b'running build\n'}
+[2.340444] (dummy2_description) StdoutLine: {'line': b'running build_py\n'}
+[2.340713] (dummy2_description) StdoutLine: {'line': b'running install\n'}
+[2.344155] (dummy2_description) StdoutLine: {'line': b'running install_lib\n'}
+[2.346790] (dummy2_description) StdoutLine: {'line': b'running install_data\n'}
+[2.347136] (dummy2_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.353997] (dummy2_description) StdoutLine: {'line': b"removing '/home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages/dummy2_description-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.355770] (dummy2_description) StdoutLine: {'line': b'Copying ../../build/dummy2_description/dummy2_description.egg-info to /home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages/dummy2_description-0.0.0-py3.10.egg-info\n'}
+[2.357594] (dummy2_description) StdoutLine: {'line': b'running install_scripts\n'}
+[2.398792] (dummy2_description) StdoutLine: {'line': b"writing list of installed files to '/home/jj/dual_dummy/build/dummy2_description/install.log'\n"}
+[2.435333] (-) TimerEvent: {}
+[2.453187] (dummy2_description) CommandEnded: {'returncode': 0}
+[2.519547] (dummy2_description) JobEnded: {'identifier': 'dummy2_description', 'rc': 0}
+[2.539364] (-) TimerEvent: {}
+[2.640719] (-) TimerEvent: {}
+[2.743461] (-) TimerEvent: {}
+[2.844121] (-) TimerEvent: {}
+[2.950348] (-) TimerEvent: {}
+[3.050980] (-) TimerEvent: {}
+[3.152313] (-) TimerEvent: {}
+[3.254320] (-) TimerEvent: {}
+[3.355032] (-) TimerEvent: {}
+[3.459545] (-) TimerEvent: {}
+[3.560204] (-) TimerEvent: {}
+[3.661312] (-) TimerEvent: {}
+[3.763092] (-) TimerEvent: {}
+[3.863621] (-) TimerEvent: {}
+[3.964627] (-) TimerEvent: {}
+[4.068565] (-) TimerEvent: {}
+[4.169173] (-) TimerEvent: {}
+[4.270046] (-) TimerEvent: {}
+[4.371204] (-) TimerEvent: {}
+[4.472318] (-) TimerEvent: {}
+[4.574325] (-) TimerEvent: {}
+[4.676351] (-) TimerEvent: {}
+[4.776947] (-) TimerEvent: {}
+[4.882323] (-) TimerEvent: {}
+[4.982863] (-) TimerEvent: {}
+[5.083429] (-) TimerEvent: {}
+[5.183874] (-) TimerEvent: {}
+[5.284701] (-) TimerEvent: {}
+[5.386178] (-) TimerEvent: {}
+[5.486741] (-) TimerEvent: {}
+[5.588684] (-) TimerEvent: {}
+[5.690383] (-) TimerEvent: {}
+[5.791526] (-) TimerEvent: {}
+[5.894040] (-) TimerEvent: {}
+[5.996948] (-) TimerEvent: {}
+[6.097310] (-) TimerEvent: {}
+[6.198612] (-) TimerEvent: {}
+[6.299198] (-) TimerEvent: {}
+[6.401075] (-) TimerEvent: {}
+[6.503847] (-) TimerEvent: {}
+[6.604788] (-) TimerEvent: {}
+[6.707664] (-) TimerEvent: {}
+[6.809211] (-) TimerEvent: {}
+[6.912747] (-) TimerEvent: {}
+[7.016314] (-) TimerEvent: {}
+[7.117524] (-) TimerEvent: {}
+[7.216160] (arm_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[7.217226] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[7.217342] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[7.217416] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[7.217487] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[7.217604] (-) TimerEvent: {}
+[7.217756] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[7.217844] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[7.217917] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[7.217993] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[7.218066] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[7.218136] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[7.218306] (arm_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/ik_node.cpp:1\x1b[m\x1b[K:\n'}
+[7.221484] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/ik_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid IKNode::moveArmToPose(const string&, const Matrix4d&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.221613] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/ik_node.cpp:213:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PathPoint>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.221686] (arm_control) StderrLine: {'line': b'  213 |         RCLCPP_INFO(this->get_logger(),\x1b[01;35m\x1b[K"num of cartesia:%d"\x1b[m\x1b[K,\x1b[32m\x1b[Ktemp_j.size()\x1b[m\x1b[K);\n'}
+[7.221755] (arm_control) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K \x1b[32m\x1b[K~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.221821] (arm_control) StderrLine: {'line': b'      |                                                                        \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[7.222529] (arm_control) StderrLine: {'line': b'      |                                                                        \x1b[32m\x1b[Kstd::vector<PathPoint>::size_type {aka long unsigned int}\x1b[m\x1b[K\n'}
+[7.222639] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/ik_node.cpp:213:58:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[7.222709] (arm_control) StderrLine: {'line': b'  213 |         RCLCPP_INFO(this->get_logger(),"num of cartesia:\x1b[01;36m\x1b[K%d\x1b[m\x1b[K",temp_j.size());\n'}
+[7.222777] (arm_control) StderrLine: {'line': b'      |                                                         \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[7.222843] (arm_control) StderrLine: {'line': b'      |                                                          \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[7.222910] (arm_control) StderrLine: {'line': b'      |                                                          \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[7.222993] (arm_control) StderrLine: {'line': b'      |                                                         \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[7.223058] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/ik_node.cpp:214:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PathPoint>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.223259] (arm_control) StderrLine: {'line': b'  214 |         for(int i=0;\x1b[01;35m\x1b[Ki<temp_j.size()-1\x1b[m\x1b[K;i++){\n'}
+[7.223339] (arm_control) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.247423] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/ik_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid IKNode::executeSynchronizedMotion(const std::vector<PathPoint>&, const std::vector<PathPoint>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.247992] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/ik_node.cpp:285:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.248242] (arm_control) StderrLine: {'line': b'  285 |         for(int i=1;\x1b[01;35m\x1b[Ki<path_length\x1b[m\x1b[K;i++){//\xe5\x8f\x91\xe4\xb8\x8b\xe4\xb8\x80\xe4\xb8\xaa\xe7\x8a\xb6\xe6\x80\x81\n'}
+[7.252006] (arm_control) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.253428] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/ik_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid IKNode::handleCooperativeManipulation(const string&, const Matrix4d&, const Matrix4d&, const Matrix4d&, const Matrix4d&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.253608] (arm_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jj/dual_dummy/src/arm_control/src/ik_node.cpp:292:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kobject_id\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.253681] (arm_control) StderrLine: {'line': b'  292 |     void handleCooperativeManipulation(\x1b[01;35m\x1b[Kconst std::string& object_id\x1b[m\x1b[K,\n'}
+[7.253746] (arm_control) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.317873] (-) TimerEvent: {}
+[7.419151] (-) TimerEvent: {}
+[7.521412] (-) TimerEvent: {}
+[7.621903] (-) TimerEvent: {}
+[7.722669] (-) TimerEvent: {}
+[7.825222] (-) TimerEvent: {}
+[7.925987] (-) TimerEvent: {}
+[8.026683] (-) TimerEvent: {}
+[8.127443] (-) TimerEvent: {}
+[8.228305] (-) TimerEvent: {}
+[8.331438] (-) TimerEvent: {}
+[8.432001] (-) TimerEvent: {}
+[8.532980] (-) TimerEvent: {}
+[8.634407] (-) TimerEvent: {}
+[8.736585] (-) TimerEvent: {}
+[8.840941] (-) TimerEvent: {}
+[8.941649] (-) TimerEvent: {}
+[9.042789] (-) TimerEvent: {}
+[9.143512] (-) TimerEvent: {}
+[9.244304] (-) TimerEvent: {}
+[9.345699] (-) TimerEvent: {}
+[9.448294] (-) TimerEvent: {}
+[9.552156] (-) TimerEvent: {}
+[9.652796] (-) TimerEvent: {}
+[9.753573] (-) TimerEvent: {}
+[9.857844] (-) TimerEvent: {}
+[9.959529] (-) TimerEvent: {}
+[10.060177] (-) TimerEvent: {}
+[10.163060] (-) TimerEvent: {}
+[10.264211] (-) TimerEvent: {}
+[10.366897] (-) TimerEvent: {}
+[10.467431] (-) TimerEvent: {}
+[10.568577] (-) TimerEvent: {}
+[10.669176] (-) TimerEvent: {}
+[10.772185] (-) TimerEvent: {}
+[10.873162] (-) TimerEvent: {}
+[10.975021] (-) TimerEvent: {}
+[11.078073] (-) TimerEvent: {}
+[11.179060] (-) TimerEvent: {}
+[11.280063] (-) TimerEvent: {}
+[11.381540] (-) TimerEvent: {}
+[11.485276] (-) TimerEvent: {}
+[11.585742] (-) TimerEvent: {}
+[11.686300] (-) TimerEvent: {}
+[11.788426] (-) TimerEvent: {}
+[11.890866] (-) TimerEvent: {}
+[11.991631] (-) TimerEvent: {}
+[12.094964] (-) TimerEvent: {}
+[12.197147] (-) TimerEvent: {}
+[12.298278] (-) TimerEvent: {}
+[12.400972] (-) TimerEvent: {}
+[12.501622] (-) TimerEvent: {}
+[12.602275] (-) TimerEvent: {}
+[12.702964] (-) TimerEvent: {}
+[12.804779] (-) TimerEvent: {}
+[12.905438] (-) TimerEvent: {}
+[13.008003] (-) TimerEvent: {}
+[13.109542] (-) TimerEvent: {}
+[13.212796] (-) TimerEvent: {}
+[13.318395] (-) TimerEvent: {}
+[13.419476] (-) TimerEvent: {}
+[13.520416] (-) TimerEvent: {}
+[13.621014] (-) TimerEvent: {}
+[13.721659] (-) TimerEvent: {}
+[13.822454] (-) TimerEvent: {}
+[13.924608] (-) TimerEvent: {}
+[14.028372] (-) TimerEvent: {}
+[14.129087] (-) TimerEvent: {}
+[14.231470] (-) TimerEvent: {}
+[14.332374] (-) TimerEvent: {}
+[14.432862] (-) TimerEvent: {}
+[14.534486] (-) TimerEvent: {}
+[14.635993] (-) TimerEvent: {}
+[14.736997] (-) TimerEvent: {}
+[14.837750] (-) TimerEvent: {}
+[14.941366] (-) TimerEvent: {}
+[15.042031] (-) TimerEvent: {}
+[15.142580] (-) TimerEvent: {}
+[15.244328] (-) TimerEvent: {}
+[15.347183] (-) TimerEvent: {}
+[15.447834] (-) TimerEvent: {}
+[15.549233] (-) TimerEvent: {}
+[15.652336] (-) TimerEvent: {}
+[15.753022] (-) TimerEvent: {}
+[15.853724] (-) TimerEvent: {}
+[15.954373] (-) TimerEvent: {}
+[16.055105] (-) TimerEvent: {}
+[16.156148] (-) TimerEvent: {}
+[16.256929] (-) TimerEvent: {}
+[16.357911] (-) TimerEvent: {}
+[16.458573] (-) TimerEvent: {}
+[16.560234] (-) TimerEvent: {}
+[16.661030] (-) TimerEvent: {}
+[16.761601] (-) TimerEvent: {}
+[16.862264] (-) TimerEvent: {}
+[16.962988] (-) TimerEvent: {}
+[17.063802] (-) TimerEvent: {}
+[17.164820] (-) TimerEvent: {}
+[17.265655] (-) TimerEvent: {}
+[17.366425] (-) TimerEvent: {}
+[17.467083] (-) TimerEvent: {}
+[17.567869] (-) TimerEvent: {}
+[17.671060] (-) TimerEvent: {}
+[17.772150] (-) TimerEvent: {}
+[17.872919] (-) TimerEvent: {}
+[17.973643] (-) TimerEvent: {}
+[18.074359] (-) TimerEvent: {}
+[18.174995] (-) TimerEvent: {}
+[18.275710] (-) TimerEvent: {}
+[18.376411] (-) TimerEvent: {}
+[18.477286] (-) TimerEvent: {}
+[18.577936] (-) TimerEvent: {}
+[18.675252] (arm_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ik_node\x1b[0m\n'}
+[18.678152] (-) TimerEvent: {}
+[18.778934] (-) TimerEvent: {}
+[18.881583] (-) TimerEvent: {}
+[18.982448] (-) TimerEvent: {}
+[19.083027] (-) TimerEvent: {}
+[19.183618] (-) TimerEvent: {}
+[19.284347] (-) TimerEvent: {}
+[19.387415] (-) TimerEvent: {}
+[19.488132] (-) TimerEvent: {}
+[19.590109] (-) TimerEvent: {}
+[19.690733] (-) TimerEvent: {}
+[19.793254] (-) TimerEvent: {}
+[19.894119] (-) TimerEvent: {}
+[19.993048] (arm_control) StdoutLine: {'line': b'[100%] Built target ik_node\n'}
+[19.994300] (-) TimerEvent: {}
+[20.012692] (arm_control) CommandEnded: {'returncode': 0}
+[20.015718] (arm_control) JobProgress: {'identifier': 'arm_control', 'progress': 'install'}
+[20.034642] (arm_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jj/dual_dummy/build/arm_control'], 'cwd': '/home/jj/dual_dummy/build/arm_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'jj'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jj/dual_dummy/install/arm_control/lib:/home/jj/dummy2_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jj'), ('OLDPWD', '/home/jj'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '2073'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jj/dual_dummy/install:/home/jj/dummy2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jj'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jj'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jj-virtual-machine:@/tmp/.ICE-unix/1251,unix/jj-virtual-machine:/tmp/.ICE-unix/1251'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d92a53e9_6469_490b_a247_938a73c3504c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BNP892'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/jj/dual_dummy/install/dummy2_description:/home/jj/dual_dummy/install/arm_control:/home/jj/dummy2_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jj/dual_dummy/build/arm_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jj/dual_dummy/install/dummy2_description/lib/python3.10/site-packages:/home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages:/home/jj/dummy2_ws/build/rboot_libs:/home/jj/dummy2_ws/build/dummy2_can2eth:/home/jj/dummy2_ws/install/local/lib/python3.10/dist-packages:/home/jj/dummy2_ws/build/dummy2_description:/home/jj/dummy2_ws/build/dummy2-gripperv2_description:/home/jj/dummy2_ws/install/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/jj/dual_dummy/install/arm_control:/home/jj/dummy2_ws/install:/home/jj/dual_dummy/install/dummy2_description:/opt/ros/humble')]), 'shell': False}
+[20.052156] (arm_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.053422] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/ament_index/resource_index/rosidl_interfaces/arm_control\n'}
+[20.053614] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control\n'}
+[20.053672] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg\n'}
+[20.053721] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/control_command.h\n'}
+[20.053791] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/rosidl_generator_c__visibility_control.h\n'}
+[20.053846] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/ik_result.h\n'}
+[20.053914] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail\n'}
+[20.053963] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__functions.h\n'}
+[20.054024] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__type_support.h\n'}
+[20.054084] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__struct.h\n'}
+[20.054144] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__struct.h\n'}
+[20.054202] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__functions.h\n'}
+[20.054260] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__struct.h\n'}
+[20.054319] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__functions.c\n'}
+[20.054413] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__functions.c\n'}
+[20.054476] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__functions.c\n'}
+[20.054535] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__type_support.h\n'}
+[20.054602] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__type_support.h\n'}
+[20.054661] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__functions.h\n'}
+[20.054719] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/trajectory_point.h\n'}
+[20.054777] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/library_path.sh\n'}
+[20.054834] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/library_path.dsv\n'}
+[20.054892] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_generator_c.so\n'}
+[20.058350] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control\n'}
+[20.059024] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg\n'}
+[20.059234] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[20.059402] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail\n'}
+[20.059550] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__rosidl_typesupport_fastrtps_c.h\n'}
+[20.069321] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__rosidl_typesupport_fastrtps_c.h\n'}
+[20.069511] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_c.h\n'}
+[20.069563] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_typesupport_fastrtps_c.so\n'}
+[20.069625] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control\n'}
+[20.069673] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg\n'}
+[20.069718] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/control_command.hpp\n'}
+[20.069794] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/ik_result.hpp\n'}
+[20.069848] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[20.069896] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/trajectory_point.hpp\n'}
+[20.069943] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail\n'}
+[20.070001] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__type_support.hpp\n'}
+[20.070053] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__type_support.hpp\n'}
+[20.070099] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__struct.hpp\n'}
+[20.070145] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__builder.hpp\n'}
+[20.070191] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__struct.hpp\n'}
+[20.070237] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__builder.hpp\n'}
+[20.070282] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__struct.hpp\n'}
+[20.070327] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__builder.hpp\n'}
+[20.070478] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__type_support.hpp\n'}
+[20.070533] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__traits.hpp\n'}
+[20.070576] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__traits.hpp\n'}
+[20.070621] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__traits.hpp\n'}
+[20.070666] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control\n'}
+[20.070712] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg\n'}
+[20.070773] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[20.070820] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail\n'}
+[20.070865] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/dds_fastrtps\n'}
+[20.070910] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.071017] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.071087] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.071135] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_typesupport_fastrtps_cpp.so\n'}
+[20.071179] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control\n'}
+[20.071225] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg\n'}
+[20.071270] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[20.071315] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail\n'}
+[20.071360] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__rosidl_typesupport_introspection_c.h\n'}
+[20.071406] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__rosidl_typesupport_introspection_c.h\n'}
+[20.071451] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__rosidl_typesupport_introspection_c.h\n'}
+[20.071496] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__type_support.c\n'}
+[20.071588] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__type_support.c\n'}
+[20.071644] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__type_support.c\n'}
+[20.071699] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_typesupport_introspection_c.so\n'}
+[20.071746] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_typesupport_c.so\n'}
+[20.071790] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control\n'}
+[20.071835] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg\n'}
+[20.071880] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail\n'}
+[20.071927] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__type_support.cpp\n'}
+[20.071972] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__type_support.cpp\n'}
+[20.072017] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.072062] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.072107] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__type_support.cpp\n'}
+[20.080317] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.093158] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_typesupport_introspection_cpp.so\n'}
+[20.093591] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_typesupport_cpp.so\n'}
+[20.094224] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/pythonpath.sh\n'}
+[20.094425] (-) TimerEvent: {}
+[20.094734] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/pythonpath.dsv\n'}
+[20.094914] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control-0.0.0-py3.10.egg-info\n'}
+[20.094994] (arm_control) StdoutLine: {'line': b'-- Installing: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[20.095089] (arm_control) StdoutLine: {'line': b'-- Installing: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[20.095160] (arm_control) StdoutLine: {'line': b'-- Installing: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[20.110243] (arm_control) StdoutLine: {'line': b'-- Installing: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[20.110520] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control\n'}
+[20.110616] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/arm_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.110754] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/_arm_control_s.ep.rosidl_typesupport_c.c\n'}
+[20.110979] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/__init__.py\n'}
+[20.111136] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/_arm_control_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[20.111194] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/libarm_control__rosidl_generator_py.so\n'}
+[20.111287] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/_arm_control_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[20.111369] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/arm_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.111424] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg\n'}
+[20.111500] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg/_ik_result_s.c\n'}
+[20.111555] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg/_trajectory_point.py\n'}
+[20.111607] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg/_control_command.py\n'}
+[20.111668] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg/__init__.py\n'}
+[20.111722] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg/_control_command_s.c\n'}
+[20.111774] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg/_ik_result.py\n'}
+[20.111929] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg/_trajectory_point_s.c\n'}
+[20.112006] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/arm_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.154830] (arm_control) StdoutLine: {'line': b"Listing '/home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control'...\n"}
+[20.155040] (arm_control) StdoutLine: {'line': b"Listing '/home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg'...\n"}
+[20.169962] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/arm_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.170680] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/arm_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.170902] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/arm_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.171528] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_generator_py.so\n'}
+[20.172020] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/IKResult.idl\n'}
+[20.172326] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/TrajectoryPoint.idl\n'}
+[20.172662] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/ControlCommand.idl\n'}
+[20.172879] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/IKResult.msg\n'}
+[20.173156] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/TrajectoryPoint.msg\n'}
+[20.173602] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/ControlCommand.msg\n'}
+[20.173768] (arm_control) StdoutLine: {'line': b'-- Installing: /home/jj/dual_dummy/install/arm_control/lib/arm_control/ik_node\n'}
+[20.188312] (arm_control) StdoutLine: {'line': b'-- Set runtime path of "/home/jj/dual_dummy/install/arm_control/lib/arm_control/ik_node" to ""\n'}
+[20.188627] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/arm_control/trajectory_node\n'}
+[20.188711] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/arm_control/arm_controller_node\n'}
+[20.190396] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/arm_control/trajectory_viewer\n'}
+[20.190586] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg\n'}
+[20.191094] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/ControlCommand.msg\n'}
+[20.191231] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/TrajectoryPoint.msg\n'}
+[20.191764] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/IKResult.msg\n'}
+[20.192491] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/launch\n'}
+[20.196121] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/launch/ik_node.launch.py\n'}
+[20.196337] (-) TimerEvent: {}
+[20.198080] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/ament_index/resource_index/package_run_dependencies/arm_control\n'}
+[20.198415] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/ament_index/resource_index/parent_prefix_path/arm_control\n'}
+[20.198586] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/ament_prefix_path.sh\n'}
+[20.198675] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/ament_prefix_path.dsv\n'}
+[20.198736] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/path.sh\n'}
+[20.198797] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/path.dsv\n'}
+[20.198857] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/local_setup.bash\n'}
+[20.201815] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/local_setup.sh\n'}
+[20.201977] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/local_setup.zsh\n'}
+[20.202039] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/local_setup.dsv\n'}
+[20.202093] (arm_control) StdoutLine: {'line': b'-- Installing: /home/jj/dual_dummy/install/arm_control/share/arm_control/package.dsv\n'}
+[20.202147] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/ament_index/resource_index/packages/arm_control\n'}
+[20.202203] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_generator_cExport.cmake\n'}
+[20.202259] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_generator_cExport-noconfig.cmake\n'}
+[20.202319] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[20.203592] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[20.209517] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_generator_cppExport.cmake\n'}
+[20.210478] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[20.210755] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[20.210849] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_introspection_cExport.cmake\n'}
+[20.213314] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[20.213951] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_cExport.cmake\n'}
+[20.215271] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[20.215393] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[20.215456] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[20.215654] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_cppExport.cmake\n'}
+[20.215739] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[20.215808] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_generator_pyExport.cmake\n'}
+[20.215876] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_generator_pyExport-noconfig.cmake\n'}
+[20.215944] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/rosidl_cmake-extras.cmake\n'}
+[20.216031] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[20.217363] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[20.217520] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[20.217589] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[20.217670] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[20.217739] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[20.217805] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_controlConfig.cmake\n'}
+[20.217930] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_controlConfig-version.cmake\n'}
+[20.218007] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/package.xml\n'}
+[20.220322] (arm_control) CommandEnded: {'returncode': 0}
+[20.298440] (arm_control) JobEnded: {'identifier': 'arm_control', 'rc': 0}
+[20.300773] (-) TimerEvent: {}
+[20.301547] (-) EventReactorShutdown: {}

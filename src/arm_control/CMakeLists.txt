@@ -95,6 +95,8 @@ ament_target_dependencies(trajectory_viewer
   sensor_msgs
   visualization_msgs
   Eigen3
+  urdf
+  kdl_parser
 )
 target_link_libraries(trajectory_viewer
   ${cpp_typesupport_target}

@@ -37,7 +37,18 @@ def launch_setup(context, *args, **kwargs):
                 output='screen',  # 建议添加以便查看日志
                 emulate_tty=True,  # 新增这行
                 prefix=['xterm -e']
-            )
+            ),
+            #Node(
+            #    package='arm_control',
+            #    executable='trajectory_viewer',
+            #    name='trajectory_viewer_node',
+            #    parameters=[{
+            #        'robot_description': robot_desc,
+            #        'use_sim_time': False
+            #    }],
+            #    output='screen',  # 建议添加以便查看日志
+            #    emulate_tty=True  # 新增这行
+            #)
         ]
 
     except Exception as e:

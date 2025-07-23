@@ -920,8 +920,91 @@ CMakeFiles/trajectory_viewer.dir/src/trajectory_viewer.cpp.o: /home/jj/dual_dumm
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+  /opt/ros/humble/include/kdl_parser/kdl_parser/kdl_parser.hpp \
+  /usr/include/kdl/tree.hpp \
+  /usr/include/kdl/config.h \
+  /usr/include/kdl/segment.hpp \
+  /usr/include/kdl/frames.hpp \
+  /usr/include/kdl/utilities/kdl-config.h \
+  /usr/include/kdl/utilities/utility.h \
+  /usr/include/kdl/utilities/kdl-config.h \
+  /usr/include/kdl/frames.inl \
+  /usr/include/kdl/rigidbodyinertia.hpp \
+  /usr/include/kdl/rotationalinertia.hpp \
+  /usr/include/kdl/joint.hpp \
+  /usr/include/kdl/chain.hpp \
+  /opt/ros/humble/include/urdfdom_headers/urdf_model/model.h \
+  /opt/ros/humble/include/urdfdom_headers/urdf_model/link.h \
+  /opt/ros/humble/include/urdfdom_headers/urdf_model/joint.h \
+  /opt/ros/humble/include/urdfdom_headers/urdf_model/pose.h \
+  /opt/ros/humble/include/urdfdom_headers/urdf_exception/exception.h \
+  /opt/ros/humble/include/urdfdom_headers/urdf_model/utils.h \
+  /opt/ros/humble/include/urdfdom_headers/urdf_model/types.h \
+  /opt/ros/humble/include/urdfdom_headers/urdf_model/color.h \
+  /usr/include/c++/11/math.h \
+  /opt/ros/humble/include/urdfdom_headers/urdf_model/types.h \
+  /opt/ros/humble/include/kdl_parser/kdl_parser/visibility_control.hpp \
+  /opt/ros/humble/include/urdf/urdf/model.h \
+  /opt/ros/humble/include/urdf/urdf/urdfdom_compatibility.h \
+  /opt/ros/humble/include/urdfdom_headers/urdf_world/types.h \
+  /opt/ros/humble/include/urdf/urdf/visibility_control.hpp \
+  /usr/include/kdl/chain.hpp \
+  /usr/include/kdl/chainfksolverpos_recursive.hpp \
+  /usr/include/kdl/chainfksolver.hpp \
+  /usr/include/kdl/framevel.hpp \
+  /usr/include/kdl/utilities/rall1d.h \
+  /usr/include/kdl/utilities/utility.h \
+  /usr/include/kdl/utilities/traits.h \
+  /usr/include/kdl/framevel.inl \
+  /usr/include/kdl/frameacc.hpp \
+  /usr/include/kdl/utilities/rall2d.h \
+  /usr/include/kdl/frameacc.inl \
+  /usr/include/kdl/jntarray.hpp \
+  /usr/include/kdl/jacobian.hpp \
+  /usr/include/eigen3/Eigen/Core \
+  /usr/include/kdl/jntarrayvel.hpp \
+  /usr/include/kdl/jntarrayacc.hpp \
+  /usr/include/kdl/solveri.hpp
 
+
+/usr/include/kdl/solveri.hpp:
+
+/usr/include/kdl/jntarrayvel.hpp:
+
+/usr/include/kdl/jacobian.hpp:
+
+/usr/include/kdl/jntarray.hpp:
+
+/usr/include/kdl/utilities/rall2d.h:
+
+/usr/include/kdl/framevel.inl:
+
+/usr/include/kdl/chainfksolverpos_recursive.hpp:
+
+/opt/ros/humble/include/urdf/urdf/model.h:
+
+/opt/ros/humble/include/kdl_parser/kdl_parser/visibility_control.hpp:
+
+/opt/ros/humble/include/urdfdom_headers/urdf_model/utils.h:
+
+/opt/ros/humble/include/urdfdom_headers/urdf_exception/exception.h:
+
+/opt/ros/humble/include/urdfdom_headers/urdf_model/joint.h:
+
+/usr/include/kdl/chain.hpp:
+
+/usr/include/kdl/joint.hpp:
+
+/usr/include/kdl/rigidbodyinertia.hpp:
+
+/usr/include/kdl/frames.inl:
+
+/usr/include/kdl/utilities/kdl-config.h:
+
+/usr/include/kdl/segment.hpp:
+
+/usr/include/kdl/tree.hpp:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
 
@@ -1077,6 +1160,8 @@ CMakeFiles/trajectory_viewer.dir/src/trajectory_viewer.cpp.o: /home/jj/dual_dumm
 
 /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
 
+/opt/ros/humble/include/urdfdom_headers/urdf_model/link.h:
+
 /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h:
 
 /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h:
@@ -1139,6 +1224,8 @@ CMakeFiles/trajectory_viewer.dir/src/trajectory_viewer.cpp.o: /home/jj/dual_dumm
 
 /usr/include/c++/11/climits:
 
+/usr/include/kdl/frames.hpp:
+
 /usr/include/c++/11/cstddef:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
@@ -1199,6 +1286,8 @@ rosidl_generator_cpp/arm_control/msg/trajectory_point.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
+/usr/include/kdl/rotationalinertia.hpp:
+
 /usr/include/limits.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/dynamic_storage.hpp:
@@ -1208,6 +1297,8 @@ rosidl_generator_cpp/arm_control/msg/trajectory_point.hpp:
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_event_handler.hpp:
 
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h:
+
+/opt/ros/humble/include/kdl_parser/kdl_parser/kdl_parser.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp:
 
@@ -1294,6 +1385,8 @@ rosidl_generator_cpp/arm_control/msg/trajectory_point.hpp:
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp:
+
+/usr/include/kdl/jntarrayacc.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp:
 
@@ -1386,6 +1479,8 @@ rosidl_generator_cpp/arm_control/msg/trajectory_point.hpp:
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
+
+/opt/ros/humble/include/urdfdom_headers/urdf_model/types.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -1585,6 +1680,8 @@ rosidl_generator_cpp/arm_control/msg/trajectory_point.hpp:
 
 /usr/include/c++/11/exception:
 
+/usr/include/kdl/utilities/traits.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
@@ -1631,6 +1728,8 @@ rosidl_generator_cpp/arm_control/msg/trajectory_point.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
+/opt/ros/humble/include/urdf/urdf/visibility_control.hpp:
+
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
 /usr/include/endian.h:
@@ -1640,6 +1739,8 @@ rosidl_generator_cpp/arm_control/msg/trajectory_point.hpp:
 /usr/include/stdint.h:
 
 /usr/include/c++/11/bits/ptr_traits.h:
+
+/usr/include/kdl/frameacc.hpp:
 
 /usr/include/c++/11/bits/refwrap.h:
 
@@ -1662,6 +1763,8 @@ rosidl_generator_cpp/arm_control/msg/trajectory_point.hpp:
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:
+
+/usr/include/kdl/utilities/utility.h:
 
 /usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
 
@@ -1805,6 +1908,8 @@ rosidl_generator_cpp/arm_control/msg/trajectory_point.hpp:
 
 /usr/include/c++/11/tr1/special_function_util.h:
 
+/usr/include/kdl/config.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
@@ -1912,6 +2017,8 @@ rosidl_generator_cpp/arm_control/msg/detail/trajectory_point__builder.hpp:
 /usr/include/c++/11/memory:
 
 /opt/ros/humble/include/rmw/rmw/serialized_message.h:
+
+/opt/ros/humble/include/urdf/urdf/urdfdom_compatibility.h:
 
 /usr/include/c++/11/cstdlib:
 
@@ -2033,6 +2140,8 @@ rosidl_generator_cpp/arm_control/msg/detail/trajectory_point__traits.hpp:
 
 /usr/include/c++/11/bits/locale_facets.h:
 
+/opt/ros/humble/include/urdfdom_headers/urdf_model/model.h:
+
 /opt/ros/humble/include/rmw/rmw/get_topic_names_and_types.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
@@ -2143,6 +2252,8 @@ rosidl_generator_cpp/arm_control/msg/detail/trajectory_point__traits.hpp:
 
 /usr/include/wchar.h:
 
+/opt/ros/humble/include/urdfdom_headers/urdf_model/color.h:
+
 /usr/include/c++/11/bits/std_mutex.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
@@ -2205,6 +2316,8 @@ rosidl_generator_cpp/arm_control/msg/detail/trajectory_point__traits.hpp:
 
 /usr/include/c++/11/bits/istream.tcc:
 
+/opt/ros/humble/include/urdfdom_headers/urdf_model/pose.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
 
 /usr/include/c++/11/list:
@@ -2246,6 +2359,8 @@ rosidl_generator_cpp/arm_control/msg/detail/trajectory_point__traits.hpp:
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
+
+/usr/include/c++/11/math.h:
 
 /usr/include/eigen3/Eigen/Eigenvalues:
 
@@ -2339,6 +2454,8 @@ rosidl_generator_cpp/arm_control/msg/detail/trajectory_point__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:
 
+/opt/ros/humble/include/urdfdom_headers/urdf_world/types.h:
+
 /opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
 
 /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
@@ -2364,6 +2481,8 @@ rosidl_generator_cpp/arm_control/msg/detail/trajectory_point__traits.hpp:
 /opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
+
+/usr/include/kdl/utilities/rall1d.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
 
@@ -2503,6 +2622,8 @@ rosidl_generator_cpp/arm_control/msg/detail/trajectory_point__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
 
+/usr/include/kdl/frameacc.inl:
+
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__struct.hpp:
 
 /usr/include/c++/11/tr1/hypergeometric.tcc:
@@ -2532,6 +2653,8 @@ rosidl_generator_cpp/arm_control/msg/detail/trajectory_point__traits.hpp:
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:
+
+/usr/include/kdl/chainfksolver.hpp:
 
 /opt/ros/humble/include/rmw/rmw/names_and_types.h:
 
@@ -2702,6 +2825,8 @@ rosidl_generator_cpp/arm_control/msg/detail/trajectory_point__traits.hpp:
 /opt/ros/humble/include/rmw/rmw/qos_profiles.h:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
+
+/usr/include/kdl/framevel.hpp:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:
 

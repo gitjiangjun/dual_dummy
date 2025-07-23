@@ -236,18 +236,15 @@ private:
         }
     }
     // 辅助函数：执行抓取动作
-    void executeGrasp(const std::string& arm) {
+    void executeGripper(const std::string& arm,const std::string& command) {
         auto msg = arm_control::msg::ControlCommand();
         msg.arm_name = arm + "_arm";
         msg.command_type = "gripper";
-        msg.gripper_state = "open";
+        msg.gripper_state = command;
         cmd_pub_->publish(msg);
-        rclcpp::sleep_for(std::chrono::seconds(2));  // 等待抓取完成
-        msg.gripper_state="close";
-        cmd_pub_->publish(msg);
+        rclcpp::sleep_for(std::chrono::seconds(1));  // 等待抓取完成
 
-        RCLCPP_INFO(this->get_logger(), "Executing grasp for %s arm", arm.c_str());
-        rclcpp::sleep_for(std::chrono::seconds(2));  // 等待抓取完成
+        RCLCPP_INFO(this->get_logger(), "Executing %s for %s arm", command.c_str(),arm.c_str());
     }
     // 辅助函数：同步执行双臂运动
     void executeSynchronizedMotion(const std::vector<PathPoint>& left_path, 
@@ -259,16 +256,13 @@ private:
         double dt=left_path[1].time-left_path[1].time;
         std::chrono::nanoseconds duration(static_cast<int64_t>(dt*1e9));
 
-        std::vector<arm_control::msg::IKResult> joint_path(path_length);
-        for (size_t i = 0; i < path_length; i++) {
-            
+        std::vector<arm_control::msg::IKResult> joint_path(path_length);//映射到关节的轨迹结果
+        VectorXd left_initial = left_current;//在此时，left_current为离线状态，没有其他节点引起更新，自己节点也没有那个能力更新
+        VectorXd right_initial = right_current;
+        for (size_t i = 1; i < path_length; i++) {//不是从0,而从1开始，去下一个点的意思
             // 对左右臂同时求解并发布
-            VectorXd left_initial = left_current;//在此时，left_current为离状态，没有其他节点引起更新，自己节点也没有那个能力更新
-            VectorXd right_initial = right_current;
-            
             IKSolution left_sol = solve_ik("left", left_path[i].pose, left_initial);
             IKSolution right_sol = solve_ik("right", right_path[i].pose, right_initial);
-            
             if (left_sol.success && right_sol.success) {
                 // 发布左臂关节角度
                 auto arm_msg = arm_control::msg::IKResult();
@@ -281,14 +275,14 @@ private:
                 joint_path[i]=arm_msg;
                 
                 // 更新当前角度,因为还没执行
-                left_current = Map<VectorXd>(left_sol.angles.data(), 6);
-                right_current = Map<VectorXd>(right_sol.angles.data(), 6);
+                left_initial = Map<VectorXd>(left_sol.angles.data(), 6);
+                right_initial= Map<VectorXd>(right_sol.angles.data(), 6);
             } else {
                 RCLCPP_ERROR(this->get_logger(), "Failed to compute synchronized IK at path point %zu", i);
                 break;
             }
         }
-        for(int i=0;i<path_length;i++){
+        for(int i=1;i<path_length;i++){//发下一个状态
             ik_pub_->publish(joint_path[i]);//发送执行
             //rclcpp::sleep_for(duration);
             this_thread::sleep_for(chrono::duration<double>(0.1));
@@ -301,13 +295,16 @@ private:
                                     const Matrix4d& left_grasp_pose,
                                     const Matrix4d& right_grasp_pose) {
         
+        executeGripper("left","open");
+        executeGripper("right","open");
+
         // 1. 双臂分别移动到抓取位姿（非同步）
         moveArmToPose("left", left_grasp_pose);
         moveArmToPose("right", right_grasp_pose);
         
         // 2. 执行抓取动作
-        executeGrasp("left");
-        executeGrasp("right");
+        executeGripper("left","close");
+        executeGripper("right","close");
         
         // 3. 生成物体路径（从初始位置到目标位置）
         int num_path_points = 20;  // 路径点数量

@@ -111,49 +111,6 @@ private:
         RCLCPP_INFO(this->get_logger(), "Trajectory execution completed for %s", arm_name.c_str());
     }
 
-    void check_and_execute_synchronized() {
-        // 检查是否同时有左右臂的轨迹待执行
-        if (pending_trajectories.size() < 2) return;
-        
-        if (pending_trajectories.count("left_arm") && pending_trajectories.count("right_arm")) {
-            RCLCPP_INFO(this->get_logger(), "Executing synchronized trajectories for both arms");
-            
-            const auto& left_traj = pending_trajectories["left_arm"];
-            const auto& right_traj = pending_trajectories["right_arm"];
-            
-            // 计算最长轨迹的点数
-            size_t max_points = max(left_traj.size(), right_traj.size());
-            
-            // 同步执行轨迹
-            for (size_t i = 0; i < max_points; i++) {
-                // 发布左臂轨迹点
-                if (i < left_traj.size()) {
-                    auto msg = arm_control::msg::TrajectoryPoint();
-                    msg.arm_name = "left_arm";
-                    msg.positions.assign(left_traj[i].positions.data(), left_traj[i].positions.data()+6);
-                    msg.time_from_start = left_traj[i].time;
-                    traj_pub_->publish(msg);
-                }
-                
-                // 发布右臂轨迹点
-                if (i < right_traj.size()) {
-                    auto msg = arm_control::msg::TrajectoryPoint();
-                    msg.arm_name = "right_arm";
-                    msg.positions.assign(right_traj[i].positions.data(), right_traj[i].positions.data()+6);
-                    msg.time_from_start = right_traj[i].time;
-                    traj_pub_->publish(msg);
-                }
-                
-                // 等待适当的时间间隔
-                this_thread::sleep_for(chrono::duration<double>(dt));
-            }
-            
-            // 清除已执行的轨迹
-            pending_trajectories.clear();
-            RCLCPP_INFO(this->get_logger(), "Synchronized trajectory execution completed");
-        }
-    }
-
     Publisher<arm_control::msg::TrajectoryPoint>::SharedPtr traj_pub_;
     Subscription<arm_control::msg::IKResult>::SharedPtr ik_sub_;
     Subscription<sensor_msgs::msg::JointState>::SharedPtr joint_sub_;

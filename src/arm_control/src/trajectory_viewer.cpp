@@ -4,12 +4,34 @@
 #include "motionlib.h"
 #include <Eigen/Dense>
 
+#include <kdl_parser/kdl_parser.hpp>
+#include <urdf/model.h>
+#include <kdl/chain.hpp>
+#include <kdl/chainfksolverpos_recursive.hpp>
+
 using namespace std;
 using namespace rclcpp;
 
 class TrajectoryViewer : public Node {
 public:
     TrajectoryViewer() : Node("trajectory_viewer") {
+
+        // 获取参数
+        std::string urdf_string = this->declare_parameter("robot_description", "");
+        // 解析URDF
+        urdf::Model model;
+        if (!model.initString(urdf_string)) {
+            RCLCPP_ERROR(this->get_logger(), "URDF parse failed");
+            rclcpp::shutdown();
+            return;
+        }
+        // 从URDF构建KDL树
+        if (!kdl_parser::treeFromUrdfModel(model, kdl_tree_)) {
+            RCLCPP_ERROR(this->get_logger(), "Failed to construct KDL tree from URDF");
+            rclcpp::shutdown();
+        }
+
+        
         marker_pub_ = this->create_publisher<visualization_msgs::msg::Marker>(
             "visualization_marker", 10);
         
@@ -20,6 +42,8 @@ public:
     }
 
 private:
+
+    KDL::Tree kdl_tree_;
     void traj_callback(const arm_control::msg::TrajectoryPoint::SharedPtr msg) {
         // 只处理左臂轨迹（可扩展到右臂）
         if (msg->arm_name != "left_arm") return;

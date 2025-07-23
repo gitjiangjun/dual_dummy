@@ -1,0 +1,256 @@
+[0.044s] Invoking command in '/home/jj/dual_dummy/build/arm_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jj/dual_dummy/install/dummy2_description:/opt/ros/humble /usr/bin/cmake --build /home/jj/dual_dummy/build/arm_control -- -j4 -l4
+[0.378s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.378s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.378s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.378s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.378s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.396s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.418s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.490s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.491s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.640s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.740s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.796s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.831s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.848s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[0.890s] -- Found kdl_parser: 2.6.4 (/opt/ros/humble/share/kdl_parser/cmake)
+[0.891s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.894s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.356s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.014s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.259s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.294s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.323s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.324s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.324s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.405s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.419s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.421s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/jj/dual_dummy/src/arm_control/src>
+[2.421s] -- Configured cppcheck exclude dirs and/or files: 
+[2.421s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.422s] -- Added test 'lint_cmake' to check CMake code style
+[2.422s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.423s] -- Added test 'uncrustify' to check C / C++ code style
+[2.423s] -- Configured uncrustify additional arguments: 
+[2.423s] -- Added test 'xmllint' to check XML markup files
+[2.428s] -- Configuring done
+[2.577s] -- Generating done
+[2.613s] -- Build files have been written to: /home/jj/dual_dummy/build/arm_control
+[2.664s] [35m[1mConsolidate compiler generated dependencies of target motionlib[0m
+[2.670s] [35m[1mConsolidate compiler generated dependencies of target arm_control__rosidl_generator_c[0m
+[2.678s] [  1%] Built target arm_control__cpp
+[2.695s] [  5%] Built target motionlib
+[2.701s] [ 14%] Built target arm_control__rosidl_generator_c
+[2.703s] [ 14%] Built target ament_cmake_python_copy_arm_control
+[2.708s] [35m[1mConsolidate compiler generated dependencies of target arm_control__rosidl_typesupport_cpp[0m
+[2.728s] [35m[1mConsolidate compiler generated dependencies of target arm_control__rosidl_typesupport_introspection_cpp[0m
+[2.734s] [35m[1mConsolidate compiler generated dependencies of target arm_control__rosidl_typesupport_fastrtps_cpp[0m
+[2.734s] [35m[1mConsolidate compiler generated dependencies of target arm_control__rosidl_typesupport_fastrtps_c[0m
+[2.740s] [ 22%] Built target arm_control__rosidl_typesupport_cpp
+[2.763s] [ 31%] Built target arm_control__rosidl_typesupport_introspection_cpp
+[2.765s] [ 40%] Built target arm_control__rosidl_typesupport_fastrtps_cpp
+[2.766s] [35m[1mConsolidate compiler generated dependencies of target arm_control__rosidl_typesupport_introspection_c[0m
+[2.774s] [ 49%] Built target arm_control__rosidl_typesupport_fastrtps_c
+[2.791s] [ 57%] Built target arm_control__rosidl_typesupport_introspection_c
+[2.791s] [35m[1mConsolidate compiler generated dependencies of target arm_control__rosidl_typesupport_c[0m
+[2.796s] [35m[1mConsolidate compiler generated dependencies of target ik_node[0m
+[2.830s] [35m[1mConsolidate compiler generated dependencies of target trajectory_node[0m
+[2.837s] [ 61%] Built target ik_node
+[2.837s] [ 70%] Built target arm_control__rosidl_typesupport_c
+[2.858s] [35m[1mConsolidate compiler generated dependencies of target arm_controller_node[0m
+[2.863s] [35m[1mConsolidate compiler generated dependencies of target trajectory_viewer[0m
+[2.887s] [ 73%] Built target trajectory_node
+[2.892s] [ 77%] Built target arm_controller_node
+[2.914s] [ 78%] [32mBuilding CXX object CMakeFiles/trajectory_viewer.dir/src/trajectory_viewer.cpp.o[0m
+[2.920s] [ 78%] Built target arm_control
+[2.955s] [ 80%] Built target arm_control__py
+[2.975s] [35m[1mConsolidate compiler generated dependencies of target arm_control__rosidl_generator_py[0m
+[3.000s] [ 87%] Built target arm_control__rosidl_generator_py
+[3.027s] [35m[1mConsolidate compiler generated dependencies of target arm_control__rosidl_typesupport_introspection_c__pyext[0m
+[3.036s] [35m[1mConsolidate compiler generated dependencies of target arm_control__rosidl_typesupport_fastrtps_c__pyext[0m
+[3.062s] [ 91%] Built target arm_control__rosidl_typesupport_introspection_c__pyext
+[3.077s] [ 94%] Built target arm_control__rosidl_typesupport_fastrtps_c__pyext
+[3.087s] [35m[1mConsolidate compiler generated dependencies of target arm_control__rosidl_typesupport_c__pyext[0m
+[3.115s] [ 98%] Built target arm_control__rosidl_typesupport_c__pyext
+[3.152s] running egg_info
+[3.156s] writing arm_control.egg-info/PKG-INFO
+[3.156s] writing dependency_links to arm_control.egg-info/dependency_links.txt
+[3.156s] writing top-level names to arm_control.egg-info/top_level.txt
+[3.158s] reading manifest file 'arm_control.egg-info/SOURCES.txt'
+[3.159s] writing manifest file 'arm_control.egg-info/SOURCES.txt'
+[3.219s] [ 98%] Built target ament_cmake_python_build_arm_control_egg
+[16.432s] [100%] [32m[1mLinking CXX executable trajectory_viewer[0m
+[17.565s] [100%] Built target trajectory_viewer
+[17.588s] Invoked command in '/home/jj/dual_dummy/build/arm_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jj/dual_dummy/install/dummy2_description:/opt/ros/humble /usr/bin/cmake --build /home/jj/dual_dummy/build/arm_control -- -j4 -l4
+[17.605s] Invoking command in '/home/jj/dual_dummy/build/arm_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jj/dual_dummy/install/dummy2_description:/opt/ros/humble /usr/bin/cmake --install /home/jj/dual_dummy/build/arm_control
+[17.629s] -- Install configuration: ""
+[17.629s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/ament_index/resource_index/rosidl_interfaces/arm_control
+[17.631s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control
+[17.631s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg
+[17.631s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/control_command.h
+[17.631s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/rosidl_generator_c__visibility_control.h
+[17.631s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/ik_result.h
+[17.631s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail
+[17.632s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__functions.h
+[17.632s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__type_support.h
+[17.632s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__struct.h
+[17.632s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__struct.h
+[17.632s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__functions.h
+[17.632s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__struct.h
+[17.632s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__functions.c
+[17.632s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__functions.c
+[17.632s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__functions.c
+[17.632s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__type_support.h
+[17.632s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__type_support.h
+[17.633s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__functions.h
+[17.633s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/trajectory_point.h
+[17.633s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/library_path.sh
+[17.633s] -- Installing: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/library_path.dsv
+[17.633s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_generator_c.so
+[17.633s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control
+[17.633s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg
+[17.634s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[17.634s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail
+[17.634s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__rosidl_typesupport_fastrtps_c.h
+[17.634s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__rosidl_typesupport_fastrtps_c.h
+[17.634s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_c.h
+[17.634s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_typesupport_fastrtps_c.so
+[17.634s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control
+[17.635s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg
+[17.635s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/control_command.hpp
+[17.635s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/ik_result.hpp
+[17.635s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/rosidl_generator_cpp__visibility_control.hpp
+[17.635s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/trajectory_point.hpp
+[17.635s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail
+[17.635s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__type_support.hpp
+[17.635s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__type_support.hpp
+[17.635s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__struct.hpp
+[17.635s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__builder.hpp
+[17.636s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__struct.hpp
+[17.636s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__builder.hpp
+[17.636s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__struct.hpp
+[17.636s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__builder.hpp
+[17.636s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__type_support.hpp
+[17.636s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__traits.hpp
+[17.636s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__traits.hpp
+[17.636s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__traits.hpp
+[17.637s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control
+[17.637s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg
+[17.637s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[17.637s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail
+[17.637s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/dds_fastrtps
+[17.637s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__rosidl_typesupport_fastrtps_cpp.hpp
+[17.637s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__rosidl_typesupport_fastrtps_cpp.hpp
+[17.637s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_cpp.hpp
+[17.637s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_typesupport_fastrtps_cpp.so
+[17.637s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control
+[17.637s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg
+[17.637s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[17.638s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail
+[17.638s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__rosidl_typesupport_introspection_c.h
+[17.638s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__rosidl_typesupport_introspection_c.h
+[17.638s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__rosidl_typesupport_introspection_c.h
+[17.638s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__type_support.c
+[17.638s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__type_support.c
+[17.638s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__type_support.c
+[17.638s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_typesupport_introspection_c.so
+[17.638s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_typesupport_c.so
+[17.638s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control
+[17.638s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg
+[17.638s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail
+[17.638s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__type_support.cpp
+[17.638s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__type_support.cpp
+[17.639s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/trajectory_point__rosidl_typesupport_introspection_cpp.hpp
+[17.639s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/control_command__rosidl_typesupport_introspection_cpp.hpp
+[17.639s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__type_support.cpp
+[17.639s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/include/arm_control/arm_control/msg/detail/ik_result__rosidl_typesupport_introspection_cpp.hpp
+[17.639s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_typesupport_introspection_cpp.so
+[17.639s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_typesupport_cpp.so
+[17.639s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/pythonpath.sh
+[17.639s] -- Installing: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/pythonpath.dsv
+[17.639s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control-0.0.0-py3.10.egg-info
+[17.639s] -- Installing: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control-0.0.0-py3.10.egg-info/top_level.txt
+[17.640s] -- Installing: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control-0.0.0-py3.10.egg-info/dependency_links.txt
+[17.640s] -- Installing: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control-0.0.0-py3.10.egg-info/SOURCES.txt
+[17.640s] -- Installing: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control-0.0.0-py3.10.egg-info/PKG-INFO
+[17.640s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control
+[17.640s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/arm_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[17.640s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/_arm_control_s.ep.rosidl_typesupport_c.c
+[17.640s] -- Installing: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/__init__.py
+[17.640s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/_arm_control_s.ep.rosidl_typesupport_fastrtps_c.c
+[17.640s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/libarm_control__rosidl_generator_py.so
+[17.640s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/_arm_control_s.ep.rosidl_typesupport_introspection_c.c
+[17.641s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/arm_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[17.641s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg
+[17.641s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg/_ik_result_s.c
+[17.641s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg/_trajectory_point.py
+[17.641s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg/_control_command.py
+[17.641s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg/__init__.py
+[17.641s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg/_control_command_s.c
+[17.641s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg/_ik_result.py
+[17.641s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg/_trajectory_point_s.c
+[17.641s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/arm_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[17.694s] Listing '/home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control'...
+[17.694s] Compiling '/home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/__init__.py'...
+[17.694s] Listing '/home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/msg'...
+[17.703s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/arm_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[17.703s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/arm_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[17.704s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/local/lib/python3.10/dist-packages/arm_control/arm_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[17.704s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/libarm_control__rosidl_generator_py.so
+[17.704s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/IKResult.idl
+[17.704s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/TrajectoryPoint.idl
+[17.704s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/ControlCommand.idl
+[17.704s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/IKResult.msg
+[17.704s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/TrajectoryPoint.msg
+[17.705s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/ControlCommand.msg
+[17.705s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/arm_control/ik_node
+[17.705s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/arm_control/trajectory_node
+[17.705s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/lib/arm_control/arm_controller_node
+[17.706s] -- Installing: /home/jj/dual_dummy/install/arm_control/lib/arm_control/trajectory_viewer
+[17.715s] -- Set runtime path of "/home/jj/dual_dummy/install/arm_control/lib/arm_control/trajectory_viewer" to ""
+[17.715s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg
+[17.715s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/ControlCommand.msg
+[17.715s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/TrajectoryPoint.msg
+[17.715s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/msg/IKResult.msg
+[17.715s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/launch
+[17.715s] -- Installing: /home/jj/dual_dummy/install/arm_control/share/arm_control/launch/ik_node.launch.py
+[17.716s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/ament_index/resource_index/package_run_dependencies/arm_control
+[17.716s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/ament_index/resource_index/parent_prefix_path/arm_control
+[17.716s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/ament_prefix_path.sh
+[17.716s] -- Installing: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/ament_prefix_path.dsv
+[17.716s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/path.sh
+[17.716s] -- Installing: /home/jj/dual_dummy/install/arm_control/share/arm_control/environment/path.dsv
+[17.716s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/local_setup.bash
+[17.716s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/local_setup.sh
+[17.717s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/local_setup.zsh
+[17.717s] -- Installing: /home/jj/dual_dummy/install/arm_control/share/arm_control/local_setup.dsv
+[17.717s] -- Installing: /home/jj/dual_dummy/install/arm_control/share/arm_control/package.dsv
+[17.717s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/ament_index/resource_index/packages/arm_control
+[17.717s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_generator_cExport.cmake
+[17.717s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_generator_cExport-noconfig.cmake
+[17.717s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_typesupport_fastrtps_cExport.cmake
+[17.718s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[17.718s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_generator_cppExport.cmake
+[17.718s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_typesupport_fastrtps_cppExport.cmake
+[17.718s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[17.718s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_introspection_cExport.cmake
+[17.719s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[17.719s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_cExport.cmake
+[17.719s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_cExport-noconfig.cmake
+[17.719s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_introspection_cppExport.cmake
+[17.719s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[17.719s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_cppExport.cmake
+[17.719s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_control__rosidl_typesupport_cppExport-noconfig.cmake
+[17.719s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_generator_pyExport.cmake
+[17.719s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/export_arm_control__rosidl_generator_pyExport-noconfig.cmake
+[17.719s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/rosidl_cmake-extras.cmake
+[17.719s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/ament_cmake_export_dependencies-extras.cmake
+[17.719s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/ament_cmake_export_include_directories-extras.cmake
+[17.719s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/ament_cmake_export_libraries-extras.cmake
+[17.719s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/ament_cmake_export_targets-extras.cmake
+[17.719s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[17.720s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[17.720s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_controlConfig.cmake
+[17.720s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/cmake/arm_controlConfig-version.cmake
+[17.720s] -- Up-to-date: /home/jj/dual_dummy/install/arm_control/share/arm_control/package.xml
+[17.725s] Invoked command in '/home/jj/dual_dummy/build/arm_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jj/dual_dummy/install/dummy2_description:/opt/ros/humble /usr/bin/cmake --install /home/jj/dual_dummy/build/arm_control

@@ -97,6 +97,7 @@ trajectory_viewer: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport
 trajectory_viewer: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_introspection_c.so
 trajectory_viewer: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_introspection_cpp.so
 trajectory_viewer: /opt/ros/humble/lib/libvisualization_msgs__rosidl_generator_py.so
+trajectory_viewer: /opt/ros/humble/lib/libkdl_parser.so
 trajectory_viewer: libarm_control__rosidl_typesupport_cpp.so
 trajectory_viewer: libmotionlib.a
 trajectory_viewer: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
@@ -122,6 +123,16 @@ trajectory_viewer: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 trajectory_viewer: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 trajectory_viewer: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 trajectory_viewer: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
+trajectory_viewer: /opt/ros/humble/lib/liburdf.so
+trajectory_viewer: /opt/ros/humble/lib/x86_64-linux-gnu/liburdfdom_sensor.so.3.0
+trajectory_viewer: /opt/ros/humble/lib/x86_64-linux-gnu/liburdfdom_model_state.so.3.0
+trajectory_viewer: /opt/ros/humble/lib/x86_64-linux-gnu/liburdfdom_model.so.3.0
+trajectory_viewer: /opt/ros/humble/lib/x86_64-linux-gnu/liburdfdom_world.so.3.0
+trajectory_viewer: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+trajectory_viewer: /opt/ros/humble/lib/libclass_loader.so
+trajectory_viewer: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
+trajectory_viewer: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+trajectory_viewer: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
 trajectory_viewer: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_cpp.so
 trajectory_viewer: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 trajectory_viewer: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
